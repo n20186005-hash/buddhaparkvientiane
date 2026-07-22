@@ -1,0 +1,462 @@
+{
+  "meta": {
+    "title": "香昆寺（万佛公园 · Buddha Park）— 万象湄公河畔的雕塑花园，老挝",
+    "description": "一份独立、非营利的香昆寺（Wat Xieng Khouane Luang / Buddha Park）游览指南：200 余尊水泥佛像与印度教神像、大南瓜塔、卧佛与三头象——开放时间、交通方式与最佳游览季节。"
+  },
+  "header": {
+    "home": "首页",
+    "about": "关于",
+    "history": "历史",
+    "guide": "游览指南",
+    "food": "附近美食",
+    "gallery": "相册",
+    "reviews": "评价",
+    "map": "地图"
+  },
+  "hero": {
+    "eyebrow": "万象 · 老挝",
+    "titleMain": "香昆寺（万佛公园）",
+    "titleAccent": "万佛公园",
+    "subtitle": "湄公河畔一座拥有 200 多尊奇异水泥雕像的园林——卧佛、印度教神祇，以及从地狱直通天堂的巨型南瓜塔。",
+    "cta1": "规划行程",
+    "cta2": "如何到达",
+    "rating": "4.3",
+    "reviewCount": "5,400",
+    "viewLocation": "在 Google 地图上查看",
+    "boardCategory": "万象景点",
+    "boardTitle": "香昆寺",
+    "boardEn": "Buddha Park · Wat Xieng Khouane Luang",
+    "coordsLabel": "17.9124°N, 102.7622°E · 德阿，万象",
+    "plannerTitle": "日照与天色规划",
+    "liveWeather": "实时",
+    "plannerNote": "时间为按公园坐标估算",
+    "defaultTemp": "31°",
+    "defaultCond": "局部多云",
+    "defaultWind": "8 公里/时",
+    "sunsetIndexLabel": "今夜天色",
+    "sunsetIndexDefault": "柔和日落",
+    "goldenHourLabel": "黄金时刻",
+    "sunsetLabel": "日落",
+    "blueHourLabel": "蓝调时刻",
+    "crowdWarningLabel": "人流",
+    "defaultGolden": "17:35 – 18:05",
+    "defaultSunset": "18:25",
+    "defaultBlue": "18:45 – 19:15",
+    "defaultTip": "清晨最清静",
+    "lightCaption": "来自 Open-Meteo 的公园坐标实时数据",
+    "weatherError": "无法加载天气",
+    "goldenChanceLabel": "黄金光线概率"
+  },
+  "about": {
+    "label": "关于公园",
+    "heading": "当湄公河遇见 200 尊雕像",
+    "lead": "香昆寺（Buddha Park）是万象城外、湄公河东岸的一座雕塑花园——一处宁静而超现实的所在，佛教与印度教共享同一片草坪。",
+    "paragraph1": "公园由云游僧侣本勒亚·苏里拉（Luang Pu Bunleua Sulilat）于 1958 年创建。他兼修佛教与印度教，召集当地工匠以钢筋混凝土塑造了 200 多尊雕像，把两种信仰熔铸进同一座河畔花园。",
+    "paragraph2": "如今，香昆寺是万象最超现实的去处之一。穿行于 40 米长的卧佛、可攀爬的巨型南瓜塔与三头大象之间，是老挝别处难寻的体验。",
+    "quote": "慢慢走——公园会一尊一尊地向你显现。",
+    "quoteAuthor": "一位常客",
+    "stats": [
+      { "value": "200+", "label": "水泥雕像" },
+      { "value": "1958", "label": "创建年份" },
+      { "value": "08:00", "label": "开园" }
+    ],
+    "highlights": [
+      { "tag": "🎃", "title": "巨型南瓜塔", "desc": "在三层球形建筑里从地狱经人间爬向天堂。" },
+      { "tag": "🛕", "title": "卧佛", "desc": "长达 40 米的卧佛，是老挝最大的佛像之一。" },
+      { "tag": "🐘", "title": "三头大象", "desc": "公园的标志——立于大地之上的因陀罗（Erawan）。" }
+    ],
+    "editorTip": {
+      "tag": "编辑建议",
+      "text": "约 08:30 抵达，避开高温与旅行团，再等到光线转柔。",
+      "ctaLabel": "查看完整指南"
+    }
+  },
+  "eco": {
+    "label": "河畔与自然",
+    "heading": "湄公河畔的生命",
+    "quote": "一条活水旁的静谧花园——请像对待寺庙一样对待它。",
+    "intro": "香昆寺坐落在湄公河边缘。清晨，水面上浮起薄雾；草坪与遮荫的树木是雕像之间鸟类与蜥蜴的家园。",
+    "microTitle": "气候与河流",
+    "micro": [
+      { "title": "清晨更凉爽", "desc": "河风让公园在正午高温前格外宜人。" },
+      { "title": "莲花与灌丛", "desc": "池塘与边植过滤空气，为小动物提供庇护。" },
+      { "title": "季节性水位", "desc": "湄公河在雨季（5–10 月）上涨，旱季回落。" }
+    ],
+    "plantsTitle": "园中植物",
+    "plants": [
+      {
+        "title": "莲花",
+        "desc": "在佛教中神圣，于静池的黎明绽放。",
+        "items": [
+          { "name": "粉莲", "desc": "常见于安静的南侧池塘" },
+          { "name": "白莲", "desc": "正午开放，黄昏前收拢" }
+        ]
+      },
+      {
+        "title": "遮荫树与草地",
+        "desc": "大树为游人歇脚的草坪带来阴凉。",
+        "items": [
+          { "name": "雨树", "desc": "树冠宽大，正午最受欢迎的荫凉" },
+          { "name": "竹子", "desc": "在河风中沙沙作响" }
+        ]
+      }
+    ],
+    "wildlifeTitle": "你可能看到的野生动物",
+    "wildlife": [
+      "浅水处觅食的鹭鸟",
+      "岸边的巨蜥",
+      "池塘上空的蜻蜓",
+      "沿河飞行的翠鸟",
+      "水边的小龟"
+    ],
+    "lntTitle": "无痕游览",
+    "lntIntro": "帮助下一位游客与当地社区，保持公园洁净。",
+    "lnt": [
+      "把所有包装带回家",
+      "不要攀爬脆弱的雕像",
+      "食物残渣投入垃圾桶",
+      "入夜后降低音量",
+      "不要把垃圾丢进或丢近河流"
+    ],
+    "lntCheckHint": "边走边勾选——小小的举动让 200 尊雕像的公园保持宁静",
+    "checklist": {
+      "title": "按季节留意什么",
+      "intro": "一年中可观察到的景物",
+      "items": [
+        { "emoji": "🪷", "name": "莲花绽放", "best": "全年，黎明最佳", "rare": "静水中常见", "rareClass": "" },
+        { "emoji": "🦎", "name": "巨蜥", "best": "凉爽的清晨", "rare": "颇为常见", "rareClass": "" },
+        { "emoji": "🐦", "name": "翠鸟", "best": "雨后，5–10 月", "rare": "雨季常见", "rareClass": "" }
+      ]
+    }
+  },
+  "history": {
+    "label": "历史",
+    "heading": "从一位僧人的愿景到河畔公园",
+    "intro": "香昆寺的故事，是一个人不寻常信仰的故事——以混凝土建在湄公河畔。",
+    "blocks": [
+      {
+        "title": "本勒亚·苏里拉",
+        "text": "1958 年，神秘僧人本勒亚·苏里拉创建了公园，将他所修习的佛教与印度教融为一体，汇成同一座雕像花园。"
+      },
+      {
+        "title": "两座信仰的花园",
+        "text": "此后数年，200 多尊形象以混凝土浇铸而成——佛陀、观音、湿婆、毗湿奴、梵天、罗摩与哈奴曼共享同一片草坪。"
+      },
+      {
+        "title": "今日",
+        "text": "数十年后，公园仍是万象东缘一处松弛而略带超现实感的去处，吸引着从泰国廊开渡河而来的旅行者。"
+      },
+      {
+        "title": "河对岸的姊妹园",
+        "text": "1975 年，老挝政权更迭，本勒亚·苏里拉渡湄公河前往泰国，于廊开建造了 Sala Keoku（ศาลาแก้วกู่）——一座同源信仰的姊妹雕塑公园。一河两岸，由同一双手塑造出两座公园。"
+      }
+    ],
+    "legend": {
+      "title": "为何叫香昆寺？",
+      "text": "当地人称之为 Wat Xieng Khouane（ວັດຊຽງຄູນ）。'Buddha Park' 是游客使用的英文名称；此地又名 Xieng Khuan——'精灵之城'。"
+    },
+    "didYouKnow": {
+      "title": "你知道吗？",
+      "text": "巨型南瓜塔是一个三层球体：底层是地狱，中间是人间，顶层是天堂。你要从一张恶魔之口进入。"
+    },
+    "folklore": {
+      "title": "精灵之地",
+      "tale": "在老挝民间信仰中，湄公河是精灵（Phi）的居所。水边的小神龛祈求平安与好运——这是长者仍铭记的安静传统。",
+      "shrineTitle": "关于尊重的提醒",
+      "shrine": "若在水边看到小神龛或供品，请远观欣赏，不要扰动。"
+    },
+    "compare": {
+      "caption": "拖动滑块，对比公园的全景与雕像特写",
+      "beforeLabel": "全景",
+      "afterLabel": "特写"
+    }
+  },
+  "food": {
+    "label": "美食与饮品",
+    "heading": "在河边用餐",
+    "lead": "公园很简单——只有几个摊位和一家咖啡馆，而非夜市。",
+    "dishes": [
+      { "tag": "🥤", "name": "椰子水与饮品", "price": "约 10,000 基普", "desc": "摊位上的冷饮——正午炎热时的慰藉。" },
+      { "tag": "🍌", "name": "糯米饭与小吃", "price": "约 15,000 基普", "desc": "门口附近的当地小吃与水果。" },
+      { "tag": "🍜", "name": "米线汤", "price": "约 25,000 基普", "desc": "小咖啡馆里一碗简式的粉/汤面。" },
+      { "tag": "☕", "name": "老挝咖啡", "price": "约 15,000 基普", "desc": "一杯甜冰咖啡为散步收尾。" }
+    ],
+    "quote": {
+      "text": "香昆寺最好的休息，是树荫下的一杯冷饮。",
+      "author": "一位常客"
+    }
+  },
+  "gallery": {
+    "label": "相册",
+    "heading": "公园中的片刻",
+    "intro": "公园里的一天——从雾气缭绕的清晨到柔光中的雕像。",
+    "historicalNote": "图片为公园氛围示意，会随季节与光线而变化。",
+    "credits": "图片为示意与参考，非商业用途。",
+    "alts": [
+      "草坪之上隆起的三头大象",
+      "晨光中 40 米长的卧佛",
+      "树丛之间的巨型南瓜球形塔",
+      "游人从南瓜塔顶爬出",
+      "一排面朝湄公河的坐佛",
+      "以混凝土雕刻的印度教神祇",
+      "倒映雕像的莲花池",
+      "南瓜塔的恶魔之口入口",
+      "河边的遮荫长椅",
+      "水边的小神龛",
+      "静谧草坪上空的飞鸟",
+      "咖啡馆里的老挝咖啡",
+      "静水中大象的倒影",
+      "跨越小池塘的木桥",
+      "夕阳把湄公河染成金色",
+      "雕像在暮色中渐隐"
+    ],
+    "viewLocation": "在 Google 地图上查看"
+  },
+  "reviews": {
+    "label": "评价",
+    "heading": "游客怎么说",
+    "intro": "近期游客印象一瞥（摘自公开旅行评价）。",
+    "disclaimer": "基于公开评价 · 非官方背书",
+    "declaration": "评价整理自独立旅行平台，仅供参考",
+    "featured": [
+      { "text": "一座超现实而宁静的花园，任何攻略里都找不到——雕像、河流与好光线", "source": "★ 5.0 · 旅客评价" },
+      { "text": "日落时分攀爬巨型南瓜塔，是我们万象之行的亮点", "source": "★ 5.0 · 游客留言" }
+    ],
+    "items": [
+      { "text": "[必看：南瓜塔] 奇异又迷人——爬上去看顶层风景", "rating": "5", "name": "Ana", "date": "2026 年 3 月" },
+      { "text": "[卧佛] 巨大而安宁——轻松待上一个小时", "rating": "5", "name": "Tom", "date": "2026 年 2 月" },
+      { "text": "[清晨游] 旅行团到来前凉爽又安静", "rating": "4", "name": "Lina", "date": "2026 年 1 月" },
+      { "text": "[亲子] 路面平坦，孩子们喜欢大象", "rating": "4", "name": "Wei", "date": "2026 年 2 月" },
+      { "text": "[摄影] 雕像上的柔和晨光值得早起", "rating": "5", "name": "Ken", "date": "2025 年 12 月" },
+      { "text": "[河畔] 感觉很地道，比城里寺庙人少", "rating": "4", "name": "Sora", "date": "2026 年 1 月" },
+      { "text": "[美食] 饮料小吃便宜，请备现金", "rating": "4", "name": "Pim", "date": "2026 年 3 月" },
+      { "text": "[人流] 节假日很挤，工作日更安静", "rating": "4", "name": "Dan", "date": "2026 年 2 月" }
+    ],
+    "viewLocation": "在 Google 地图上查看"
+  },
+  "sources": {
+    "label": "来源",
+    "heading": "我们的参考",
+    "intro": "这份非营利的指南整合公开信息，帮助游客负责任地规划行程。",
+    "photoTitle": "图片来源",
+    "photoItems": [
+      { "text": "所示场景为香昆寺氛围示意", "linkLabel": "查看位置", "url": "https://maps.app.goo.gl/MdKTSwWw5H6PmDGJ7" }
+    ],
+    "factTitle": "事实与数据",
+    "factText": "评分、开放时间与坐标整理自公开来源，可能变动——出行前请在现场核实。",
+    "correctionTitle": "发现错误？",
+    "correctionText": "我们是一个小型非营利团队。若有任何错误或过时信息，请告知，我们会修正。",
+    "correctionMailto": "mailto:n20186005@gmail.com",
+    "correctionCta": "给我们发邮件",
+    "copyright": "香昆寺指南 · 非营利游览资源"
+  },
+  "mapSection": {
+    "label": "位置与地图",
+    "heading": "找到香昆寺",
+    "lead": "位于万象东缘、湄公河畔的德阿村（Deua, Thanon Tha），邻近老泰友谊大桥。",
+    "stats": [
+      { "tag": "评分", "value": "4.3 ★", "sub": "来自 5,400 条评价" },
+      { "tag": "开园", "value": "08:00", "sub": "每日" },
+      { "tag": "区域", "value": "德阿", "sub": "万象，老挝" }
+    ],
+    "address": "Deua, Thanon Tha District, Vientiane, Laos（老挝万象塔纳区德阿村）",
+    "plusCode": "Plus Code WQ67+WW 万象",
+    "coords": "17.9124°N, 102.7622°E",
+    "iframeTitle": "Google Maps：香昆寺（Wat Xieng Khouane Luang），万象，老挝"
+  },
+  "footer": {
+    "brand": {
+      "name": "香昆寺",
+      "tagline": "Buddha Park · 万象"
+    },
+    "about": "一份免费、非营利的香昆寺游览指南——历史、雕像，以及如何负责任地游玩。",
+    "navTitle": "探索",
+    "navItems": [
+      { "label": "关于", "href": "#about" },
+      { "label": "历史", "href": "#history" },
+      { "label": "游览指南", "href": "#guide" },
+      { "label": "附近美食", "href": "#food" },
+      { "label": "相册", "href": "#gallery" },
+      { "label": "评价", "href": "#reviews" },
+      { "label": "地图", "href": "#map" }
+    ],
+    "noteTitle": "须知",
+    "note": "我们与园内任何摊贩无关联。信息可能变动——请在现场核实。",
+    "mapsLabel": "Google Maps →",
+    "sourcesTitle": "参考",
+    "sourcesNote": "本指南链接公开来源以供核实。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "cookies": "Cookie 设置",
+    "disclaimerLead": "香昆寺指南是独立的非营利资源——并非任何机构或商家的官方网站。",
+    "unofficial": "非官方 · 社区制作的游览指南",
+    "dataSource": "数据来自公开旅行评价",
+    "copyright": "© 2026 香昆寺指南 · 非营利"
+  },
+  "legal": {
+    "privacy": {
+      "title": "隐私政策",
+      "updated": "最后更新：2026 年 7 月",
+      "sections": [
+        { "title": "1. 我们是谁", "text": "这是一份关于香昆寺的非营利游览指南。我们不售卖商品或服务，也不经营公园。" },
+        { "title": "2. 我们收集什么", "text": "我们可能使用注重隐私的分析来了解总体流量。我们不收集姓名、邮箱或支付信息。" },
+        { "title": "3. Cookie", "text": "我们使用极简的 Cookie 横幅，让你可以选择存储内容。你可随时通过 Cookie 设置更改。" },
+        { "title": "4. 联系", "text": "隐私相关问题请发邮件至 n20186005@gmail.com。" }
+      ]
+    },
+    "terms": {
+      "title": "服务条款",
+      "updated": "最后更新：2026 年 7 月",
+      "sections": [
+        { "title": "1. 使用本指南", "text": "本指南免费、按原样提供，用于行程规划。它并非任何运营方的官方建议。" },
+        { "title": "2. 准确性", "text": "开放时间、费用与细节可能变动。出行前请在现场核实。" },
+        { "title": "3. 责任", "text": "对于因使用本指南造成的任何损失或不便，我们不承担责任。" }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie 设置",
+      "updated": "最后更新：2026 年 7 月",
+      "intro": "管理这份非营利指南存储的 Cookie。你可随时更改。",
+      "necessary": { "label": "绝对必要", "desc": "网站运行所需，始终开启。" },
+      "analytics": { "label": "注重隐私的分析", "desc": "帮助我们了解总体流量，且不识别你的身份。" },
+      "save": "保存偏好",
+      "saved": "偏好已保存。",
+      "consent": "我们使用极简的 Cookie 横幅，让你可以选择存储内容。你可随时通过 Cookie 设置更改。",
+      "categories": [
+        { "h": "绝对必要", "status": "始终开启", "p": "网站运行所需，例如记住你的 Cookie 选择。", "sub": "无法关闭", "subStatus": "始终" },
+        { "h": "注重隐私的分析", "status": "可选", "p": "帮助我们了解总体流量，且不识别你的身份。", "sub": "默认关闭", "subStatus": "可选" }
+      ]
+    }
+  },
+  "guide": {
+    "label": "游览指南",
+    "heading": "出发前需要知道的一切",
+    "lead": "为在香昆寺轻松度过半天而准备的实用建议。",
+    "twoZone": {
+      "title": "两种游玩方式",
+      "intro": "选择你的节奏——慢走或攀爬南瓜塔。",
+      "difficultyLabel": "节奏：",
+      "items": [
+        { "name": "漫步草坪", "difficulty": "轻松", "note": "平坦步道", "suits": "家庭、摄影者", "desc": "在雕像间散步，在树荫下歇息，远眺湄公河。" },
+        { "name": "攀爬南瓜塔", "difficulty": "轻松", "note": "三层", "suits": "初次到访、好奇者", "desc": "从恶魔之口进入，从地狱爬向天堂，俯瞰顶层风景。" }
+      ]
+    },
+    "scamTip": {
+      "tag": "⚠️ 实话实说",
+      "text": "门票价格贴在门口——在售票亭付款，并备好零钱支付相机费与饮品。"
+    },
+    "hours": {
+      "tag": "🕒 最佳时段",
+      "time": "08:00 – 17:00（每日）",
+      "items": [
+        { "label": "开园", "value": "08:00" },
+        { "label": "光线最佳", "value": "08:00 – 10:00" },
+        { "label": "最清静", "value": "清晨" },
+        { "label": "闭园", "value": "17:00" }
+      ]
+    },
+    "fees": {
+      "tag": "💸 花费",
+      "title": "费用",
+      "items": [
+        { "title": "门票", "desc": "外国游客约 15,000 基普" },
+        { "title": "相机费", "desc": "若携带相机，约 5,000 基普" },
+        { "title": "餐饮", "desc": "小摊位出售饮水与小吃" }
+      ]
+    },
+    "transport": {
+      "tag": "🚌 如何到达",
+      "title": "前往香昆寺",
+      "items": [
+        { "title": "从万象市区", "desc": "距市中心约 25 公里，向东前往老泰友谊大桥方向，乘嘟嘟车或巴士。" },
+        { "title": "本地巴士", "desc": "从首都汽车站有公交开往德阿／友谊大桥路。" },
+        { "title": "从泰国廊开", "desc": "经友谊大桥过河，再于老挝一侧前往公园。" }
+      ]
+    },
+    "photography": {
+      "title": "摄影指南",
+      "intro": "柔和晨光下的公园最上镜。",
+      "timesTitle": "最佳光线",
+      "times": [
+        { "period": "黄金时刻", "desc": "约 08:00–09:30——雕像与河面上的暖光" },
+        { "period": "蓝调时刻", "desc": "约 18:00–18:40——闭园前的柔天空" },
+        { "period": "清晨", "desc": "07:30–08:30——薄雾与人少" }
+      ],
+      "spotsTitle": "拍摄点",
+      "spots": [
+        { "name": "南瓜塔顶", "view": "俯瞰公园与湄公河", "tip": "在人群前登顶" },
+        { "name": "卧佛", "view": "40 米长剪影", "tip": "从侧低角度拍摄" },
+        { "name": "三头大象", "view": "公园标志", "tip": "使用广角" }
+      ],
+      "settingsTitle": "相机设置",
+      "settings": [
+        { "style": "黄金时刻", "camera": "f/8, ISO 100, 1/250s", "phone": "点按以对天空曝光，开启 HDR" },
+        { "style": "蓝调时刻", "camera": "f/5.6, ISO 400, 1/60s", "phone": "夜景模式，持稳 2–3 秒" },
+        { "style": "倒影", "camera": "偏振镜，低三脚架", "phone": "贴近水边" }
+      ],
+      "tipsTitle": "小提示",
+      "tips": [
+        "开园后 30 分钟到达",
+        "朝开阔的河面拍摄",
+        "有雾时擦拭镜头",
+        "尊重神龛的宁静"
+      ]
+    },
+    "bestTime": {
+      "title": "最佳游览时间",
+      "intro": "万象有三个季节，会改变公园的氛围。",
+      "seasons": [
+        { "tag": "❄️", "months": "11 月 – 2 月", "name": "凉季", "desc": "清晨宜人、光线最通透——散步最舒适的季节。" },
+        { "tag": "🔥", "months": "3 月 – 4 月", "name": "热季", "desc": "非常炎热；在清晨头几个小时前来避暑。" },
+        { "tag": "🌧️", "months": "5 月 – 10 月", "name": "雨季", "desc": "草坪翠绿、游人稀少，但午后降雨可能缩短行程。" }
+      ]
+    },
+    "safety": {
+      "title": "安全",
+      "items": [
+        { "title": "靠近雕像", "desc": "有些混凝土已显老旧；不要攀爬脆弱的塑像。" },
+        { "title": "南瓜塔楼梯", "desc": "内部台阶狭窄；扶好栏杆，注意头部。" },
+        { "title": "个人物品", "desc": "在拥挤的门口区域看管好包袋。" }
+      ]
+    },
+    "hazeSeason": {
+      "tag": "🌫️ 炎热与烟霾月份",
+      "text": "3–4 月可能非常炎热且烟霾；对高温敏感者可优先选择 12–1 月。"
+    },
+    "emergency": {
+      "title": "紧急电话",
+      "intro": "在老挝需要紧急救助时：",
+      "items": [
+        { "title": "旅游警察", "value": "1198" },
+        { "title": "救护车", "value": "195" },
+        { "title": "综合紧急", "value": "191" }
+      ]
+    },
+    "accessibility": {
+      "title": "人人可达",
+      "intro": "主要草坪平坦，台阶很少。",
+      "items": [
+        { "title": "轮椅与婴儿车", "desc": "草坪大部分为平坦步道。" },
+        { "title": "休息", "desc": "遮荫长椅与一家小咖啡馆。" },
+        { "title": "洗手间", "desc": "入口附近有公共设施的。" }
+      ]
+    },
+    "faqTitle": "常见问题",
+    "faqs": [
+      { "q": "香昆寺的开放时间是？", "a": "公园每日约 08:00–17:00 开放。清晨最凉爽也最安静。" },
+      { "q": "需要门票吗？", "a": "需要——外国游客约 15,000 基普，若携带相机再加约 5,000 基普。" },
+      { "q": "从万象怎么去？", "a": "距市中心约 25 公里，向东乘嘟嘟车或公交前往友谊大桥方向。" },
+      { "q": "巨型南瓜塔值得爬吗？", "a": "值得——三层球体从地狱攀升至天堂，顶层可俯瞰湄公河。" },
+      { "q": "适合家庭吗？", "a": "非常适合——平坦草坪、河畔步道与趣味雕像，但看管好孩子在狭窄的南瓜塔楼梯上。" }
+    ],
+    "nearby": {
+      "title": "附近去处",
+      "items": [
+        { "name": "Sala Keoku（廊开）", "desc": "河对岸泰国的姊妹雕塑公园。", "url": "https://maps.google.com/?q=Sala+Keoku+Nong+Khai" },
+        { "name": "友谊大桥", "desc": "通往廊开的湄公河大桥，距公园不远。", "url": "https://maps.google.com/?q=First+Thai-Lao+Friendship+Bridge" },
+        { "name": "万象市区", "desc": "南普喷泉（Nam Phu）、塔銮（That Luang）与河畔寺庙。", "url": "https://maps.google.com/?q=Vientiane+City" }
+      ],
+      "cta": "规划行程 →"
+    }
+  }
+}
