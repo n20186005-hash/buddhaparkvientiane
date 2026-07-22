@@ -17,7 +17,8 @@
     "eyebrow": "Vientiane · Laos",
     "titleMain": "Buddha Park (Wat Xieng Khouane Luang)",
     "titleAccent": "Wat Xieng Khouane Luang",
-    "subtitle": "A riverside park of more than 200 surreal concrete statues — sleeping Buddhas, Hindu gods, and the giant pumpkin that climbs from Hell to Heaven.",
+    "subtitle": "Discover Vientiane, Laos's most surreal garden — over 200 giant sculptures blending Buddhism and Hinduism, on the Mekong's south bank.",
+    "slogan": "When concrete gives shape to the gods, and the Mekong banks hum a rhapsody.",
     "cta1": "Plan your visit",
     "cta2": "Getting there",
     "rating": "4.3",
@@ -61,7 +62,7 @@
       { "value": "08:00", "label": "Opens" }
     ],
     "highlights": [
-      { "tag": "🎃", "title": "The giant pumpkin", "desc": "Climb from Hell through Earth to Heaven inside a 3-storey sphere." },
+      { "tag": "🎃", "title": "The Three Realms Tower (Pumpkin)", "desc": "Enter the demon's mouth, climb narrow stone steps in the dark through Hell and the human world, and finally reach the light at the top, overlooking the whole spirit-city by the Mekong." },
       { "tag": "🛕", "title": "Reclining Buddha", "desc": "A 40-metre sleeping Buddha, among the largest in Laos." },
       { "tag": "🐘", "title": "Three-headed elephant", "desc": "The park's emblem — Erawan rising above the earth." }
     ],
@@ -136,7 +137,7 @@
     "blocks": [
       {
         "title": "Luang Pu Bunleua Sulilat",
-        "text": "In 1958 the mystic priest Luang Pu Bunleua Sulilat founded the park, blending his study of Buddhist and Hindu teaching into a single garden of statues."
+        "text": "In 1958 the mystic figure Luang Pu Bunleua Sulilat founded the park. No ordinary monk, he was a shamanic recluse who blended Hinduism and Buddhism — legend says that as a young man he fell into a cave and was tutored by a Hindu hermit, setting him on a spiritual path outside orthodox religion, fusing the two faiths into one riverside garden."
       },
       {
         "title": "A garden of two faiths",
@@ -148,17 +149,17 @@
       },
       {
         "title": "A sister park across the river",
-        "text": "In 1975, as Laos came under communist rule, Bunleua Sulilat crossed the Mekong to Thailand. In Nong Khai he built Sala Keoku (ศาลาแก้วกู่) — a sibling sculpture park born of the same vision. One river, two banks, two parks shaped by the same hand."
+        "text": "In 1975, as Laos came under communist rule, Bunleua Sulilat crossed the Mekong to Thailand. In Nong Khai he built Sala Keoku — a sibling sculpture park born of the same vision. One river, two banks, two parks shaped by the same hand."
       }
     ],
-    "legend": {
-      "title": "Why is it called Buddha Park?",
-      "text": "Locals call it Wat Xieng Khouane (ວັດຊຽງຄູນ). 'Buddha Park' is the English name visitors use; the site is also known as Xieng Khuan — 'Spirit City'."
-    },
-    "didYouKnow": {
-      "title": "Did you know?",
-      "text": "The giant pumpkin is a three-storey sphere: the ground floor is Hell, the middle is Earth, and the top is Heaven. You enter through a demon's mouth."
-    },
+      "legend": {
+        "title": "The meaning of 'Xieng Khouane'",
+        "text": "Locals call it Wat Xieng Khouane. In Lao, Xieng means 'sacred city / city' and Khouane means 'soul / spirit', so the full name translates as 'City of Spirits'. It marks the park's identity as a 'city of statues' while hinting at the animist folk beliefs woven through it."
+      },
+      "didYouKnow": {
+        "title": "Did you know?",
+        "text": "The giant Pumpkin Tower (also the 'Three Realms Tower') is a three-storey sphere that mirrors the Buddhist cosmology of the 'Three Realms (Traiphum)': enter through a demon's mouth, climb narrow steps in the dark through Hell and the human world, and finally emerge into light at the top — overlooking the whole spirit-city by the Mekong, a symbol of transcending the cycle of rebirth."
+      },
     "folklore": {
       "title": "A place of spirits",
       "tale": "In Lao folk belief the Mekong is home to spirits (Phi). Small shrines near the water ask for safety and luck — a quiet tradition elders still remember.",
@@ -169,6 +170,14 @@
       "caption": "Drag the slider to compare the park's wide view and a statue up close",
       "beforeLabel": "Wide view",
       "afterLabel": "Up close"
+    },
+    "concrete": {
+      "title": "Concrete Brutalist Aesthetics",
+      "text": "These colossal figures were not finely carved in marble but cast on-site in industrial reinforced concrete. The raw textures and exaggerated proportions express a mid-20th-century Lao folk-art brutalism that is rough yet full of vitality — giving Buddha Park its one-of-a-kind surreal landscape."
+    },
+    "sisterQuote": {
+      "title": "A mystic fate across one river",
+      "text": "In 1975 Luang Pu crossed the Mekong to Nong Khai, Thailand, and built the sister park Sala Keoku. One master, two parks, facing each other across the river."
     }
   },
   "guide": {
@@ -205,7 +214,8 @@
         { "title": "Entry", "desc": "About 15,000 LAK for foreign visitors" },
         { "title": "Camera fee", "desc": "Around 5,000 LAK if you bring a camera" },
         { "title": "Food & drinks", "desc": "Small stalls sell water and snacks" }
-      ]
+      ],
+      "note": "Ticket prices may be adjusted slightly by local policy; we recommend carrying some Thai baht (THB) or Lao kip (LAK) cash."
     },
     "transport": {
       "tag": "🚌 Getting there",
@@ -213,7 +223,9 @@
       "items": [
         { "title": "From Vientiane", "desc": "About 25 km east of the centre; tuk-tuk or bus toward the Thai–Lao Friendship Bridge." },
         { "title": "Local bus", "desc": "Public buses run from the capital's bus stations to the Deua / Friendship Bridge road." },
-        { "title": "From Nong Khai, Thailand", "desc": "Cross the river by the Friendship Bridge, then continue to the park on the Lao side." }
+        { "title": "From Nong Khai, Thailand", "desc": "Cross the river by the Friendship Bridge, then continue to the park on the Lao side." },
+        { "title": "Bus No. 14", "desc": "From Talat Sao Bus Terminal in Vientiane, take Bus No. 14 — its final stop is Buddha Park. Fare is about 6,000 LAK, the cheapest and most classic public transport for backpackers." },
+        { "title": "From Wattay International Airport (VTE)", "desc": "Wattay International Airport is about 30 km from the park. Take an airport taxi or a ride-hailing app to the city or the park (around 40–60 min), or save money by heading to Talat Sao first and catching Bus No. 14." }
       ]
     },
     "photography": {

@@ -44,6 +44,13 @@ const prefix = siteConfig.galleryPrefix;
       </div>
     </div>
 
+    {history.concrete && (
+      <div class="mt-6 rounded-2xl bg-teak/50 border border-gold/20 p-6 md:p-8">
+        <h3 class="font-display text-xl text-goldBright mb-2">{history.concrete.title}</h3>
+        <p class="text-sm text-ivory/80 leading-relaxed">{history.concrete.text}</p>
+      </div>
+    )}
+
     {history.folklore && (
       <div class="mt-6 grid md:grid-cols-2 gap-6 items-stretch">
         <div class="rounded-2xl bg-gradient-to-br from-gold/15 to-teak/40 border border-gold/30 p-6 md:p-8">
@@ -55,6 +62,13 @@ const prefix = siteConfig.galleryPrefix;
           <p class="text-sm md:text-base text-ivory/80 leading-relaxed">{history.folklore.shrine}</p>
         </div>
       </div>
+    )}
+
+    {history.sisterQuote && (
+      <figure class="mt-8 rounded-2xl border-l-4 border-gold bg-gradient-to-r from-gold/10 to-transparent p-6 md:p-8">
+        <p class="font-hand text-gold text-lg mb-2">{history.sisterQuote.title}</p>
+        <blockquote class="font-display text-xl md:text-2xl text-ivory leading-snug">{history.sisterQuote.text}</blockquote>
+      </figure>
     )}
   </div>
 </section>

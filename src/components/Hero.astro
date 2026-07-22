@@ -56,6 +56,9 @@ const weatherMap = Object.fromEntries(
       <h1 class="font-display font-semibold leading-[1.05] text-5xl md:text-7xl lg:text-8xl text-ivory">
         {parts[0]}<span class="gold-text-bright">{accent}</span>{parts[1] ?? ''}
       </h1>
+      {hero.slogan && (
+        <p class="mt-4 max-w-xl font-hand text-gold text-lg md:text-xl">{hero.slogan}</p>
+      )}
       <p class="mt-6 max-w-xl text-ivory/85 text-lg md:text-xl">{hero.subtitle}</p>
 
       <div class="mt-7 flex flex-wrap items-center gap-3">

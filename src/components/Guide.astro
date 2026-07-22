@@ -81,6 +81,9 @@ const guideImgs = [
             </li>
           ))}
         </ul>
+        {guide.fees.note && (
+          <p class="mt-3 text-xs text-ink/55 leading-relaxed">{guide.fees.note}</p>
+        )}
       </div>
 
       <!-- transport -->
