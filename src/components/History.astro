@@ -15,7 +15,10 @@ const prefix = siteConfig.galleryPrefix;
 <section id="history" class="py-20 bg-teakDeep text-ivory">
   <div class="max-w-7xl mx-auto px-5">
     <p class="font-hand text-gold text-xl md:text-2xl">{history.label}</p>
-    <h2 class="font-display font-semibold text-3xl md:text-5xl text-ivory mt-2">{history.heading}</h2>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl text-ivory mt-2">{history.entityHeading}</h2>
+    {history.heading && (
+      <p class="mt-2 font-display text-lg md:text-xl text-gold/90">{history.heading}</p>
+    )}
     <p class="mt-4 max-w-2xl text-ivory/80">{history.intro}</p>
 
     <div class="mt-12 mb-16 grid lg:grid-cols-2 gap-12 items-center">

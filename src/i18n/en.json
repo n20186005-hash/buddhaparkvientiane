@@ -1,13 +1,26 @@
 {
   "meta": {
-    "title": "Buddha Park (Wat Xieng Khouane Luang) — sculpture garden by the Mekong, Vientiane, Laos",
-    "description": "An independent, non-commercial visitor guide to Buddha Park (Wat Xieng Khouane Luang): 200+ concrete Buddha and Hindu statues, the giant pumpkin, the reclining Buddha and the three-headed elephant — hours, how to get there, and the best time to visit."
+    "title": "Buddha Park Vientiane (Wat Xieng Khouane Luang): Tickets & Guide",
+    "description": "Planning a trip to Buddha Park (Wat Xieng Khouane Luang) in Vientiane? Find 2026 entrance fees, opening hours, Bus 14 directions, photos & visitor tips."
+  },
+  "cookieBanner": {
+    "message": "We use Google Analytics (GA4) to understand how this guide is used. Analytics cookies load only after you accept.",
+    "accept": "Accept analytics",
+    "decline": "Decline",
+    "settings": "Cookie settings"
   },
   "header": {
     "home": "Home",
     "about": "About",
     "history": "History",
+    "stories": "Stories",
     "guide": "Visitor guide",
+    "sculptures": "Sculptures",
+    "transport": "Getting there",
+    "itinerary": "Itineraries",
+    "weather": "Weather",
+    "routes": "Routes",
+    "facilities": "Facilities",
     "food": "Nearby food",
     "gallery": "Gallery",
     "reviews": "Reviews",
@@ -22,7 +35,9 @@
     "cta1": "Plan your visit",
     "cta2": "Getting there",
     "rating": "4.3",
-    "reviewCount": "5,400",
+    "reviewCount": "5,456",
+    "ratingSource": "Rating and review count synced from Google Maps user reviews · September 2026 · View all Google Maps reviews ↗",
+    "imgAlt": "Buddha Park (Wat Xieng Khouane Luang) — main view in Vientiane, Laos",
     "viewLocation": "View on Google Maps",
     "boardCategory": "Vientiane attractions",
     "boardTitle": "Buddha Park",
@@ -44,13 +59,23 @@
     "defaultSunset": "18:25",
     "defaultBlue": "18:45 – 19:15",
     "defaultTip": "Quietest in the morning",
-    "lightCaption": "Live data from Open-Meteo at the park's coordinates",
+    "lightCaption": "Live conditions measured at the park's own coordinates",
     "weatherError": "Could not load weather",
     "goldenChanceLabel": "Golden-light chance"
   },
   "about": {
     "label": "About the park",
+    "entityHeading": "About Buddha Park (Wat Xieng Khouane Luang)",
     "heading": "Where the Mekong meets 200 statues",
+    "entityLead": "Welcome to Buddha Park (Wat Xieng Khouane Luang), widely recognized as the Buddha Park of Vientiane. Located in Deua, Vientiane, Vientiane Capital, Laos, this riverside sculpture garden serves as one of the primary landmarks for travellers visiting the capital region.",
+    "breadcrumb": {
+      "home": "Home",
+      "country": "Laos",
+      "province": "Vientiane Capital",
+      "city": "Vientiane",
+      "current": "Buddha Park (Wat Xieng Khouane Luang)"
+    },
+    "nearbyCluster": "When visiting Buddha Park (Wat Xieng Khouane Luang), visitors can easily explore surrounding historical landmarks and points of interest, including Pha That Luang and Patuxai.",
     "lead": "Buddha Park (Wat Xieng Khouane Luang) is a sculptural garden on the eastern bank of the Mekong, just outside Vientiane — a quiet, otherworldly place where Buddhism and Hinduism share the same lawn.",
     "paragraph1": "The park was founded in 1958 by Luang Pu Bunleua Sulilat, a mystic priest who studied both Buddhist and Hindu teaching. He gathered local craftsmen to mould more than 200 statues in reinforced concrete, blending the two faiths into one riverside garden.",
     "paragraph2": "Today Buddha Park is one of Vientiane's most surreal stops. Wandering between a 40-metre reclining Buddha, a giant pumpkin you climb from Hell to Heaven, and a three-headed elephant is unlike anywhere else in Laos.",
@@ -132,6 +157,7 @@
   },
   "history": {
     "label": "History",
+    "entityHeading": "History & Significance of Buddha Park (Wat Xieng Khouane Luang)",
     "heading": "From a monk's vision to a riverside park",
     "intro": "The story of Buddha Park is the story of one man's unusual faith — built in concrete on the banks of the Mekong.",
     "blocks": [
@@ -182,6 +208,7 @@
   },
   "guide": {
     "label": "Visitor guide",
+    "entityHeading": "Location & How to Visit Buddha Park in Vientiane",
     "heading": "Everything you need before you go",
     "lead": "Straightforward, useful advice for a relaxed half-day at Buddha Park.",
     "twoZone": {
@@ -299,13 +326,16 @@
     "faqTitle": "Frequently asked questions",
     "faqs": [
       { "q": "What are the opening hours of Buddha Park?", "a": "The park is open daily about 08:00–17:00. Mornings are coolest and quietest." },
-      { "q": "Is there an entry fee?", "a": "Yes — about 15,000 LAK for foreign visitors, plus around 5,000 LAK if you bring a camera." },
-      { "q": "How do I get there from Vientiane?", "a": "It's about 25 km east of the centre; take a tuk-tuk or public bus toward the Friendship Bridge." },
+      { "q": "How much is the entrance fee for Buddha Park Vientiane?", "a": "Yes — about 15,000 LAK for foreign visitors, plus around 5,000 LAK if you bring a camera." },
+      { "q": "How do I get to Buddha Park from central Vientiane?", "a": "It's about 25 km east of the centre; take a tuk-tuk or public bus toward the Friendship Bridge." },
       { "q": "Is the giant pumpkin worth climbing?", "a": "Yes — the three-storey sphere climbs from Hell to Heaven, with a rooftop view over the Mekong." },
-      { "q": "Is it good for families?", "a": "Very — flat lawns, a riverside walk and the playful statues, but watch children on the narrow pumpkin stairs." }
+      { "q": "Is it good for families?", "a": "Very — flat lawns, a riverside walk and the playful statues, but watch children on the narrow pumpkin stairs." },
+      { "q": "Where is Buddha Park located?", "a": "Buddha Park (Wat Xieng Khouane Luang) is located in Deua, Thanon Tha District, Vientiane, Vientiane Capital, Laos — about 25 km east of the city centre on the Mekong's south bank. Plus Code: WQ67+WW." },
+      { "q": "How long does a visit to Buddha Park take?", "a": "Most visitors spend 1–2 hours. Walking the lawns and climbing the three-storey pumpkin tower fits comfortably into a half-day trip from Vientiane." },
+      { "q": "What should I wear when visiting Buddha Park?", "a": "It is an active religious site: cover shoulders and knees, remove shoes where asked, and bring a hat, sunscreen and water — the concrete lawns get very hot at midday." }
     ],
     "nearby": {
-      "title": "Nearby places",
+      "title": "Landmarks & Attractions Around Buddha Park",
       "items": [
         { "name": "Sala Keoku (Nong Khai)", "desc": "A sister sculpture park just across the river in Thailand.", "url": "https://maps.google.com/?q=Sala+Keoku+Nong+Khai" },
         { "name": "Friendship Bridge", "desc": "The Mekong crossing to Nong Khai, a short drive away.", "url": "https://maps.google.com/?q=First+Thai-Lao+Friendship+Bridge" },
@@ -313,6 +343,181 @@
       ],
       "cta": "Plan your visit →"
     }
+  },
+  "sculptures": {
+    "label": "Sculpture guide",
+    "heading": "Six figures you should not miss",
+    "intro": "More than 200 concrete figures share these lawns. These six carry the stories visitors ask about most — with the best angle for photographing each one.",
+    "items": [
+      {
+        "tag": "Landmark",
+        "name": "The Giant Pumpkin",
+        "alt": "Giant pumpkin-shaped tower at Buddha Park Vientiane entered through a demon's mouth",
+        "meta": "Three levels: hell, earth, heaven",
+        "desc": "A bulbous tower you enter through the jaws of a demon. The narrow stair climbs past scenes of hell, through the human realm, and out onto a rooftop terrace standing for heaven.",
+        "photoTip": "Shoot upward at the demon's mouth from the base, then from the rooftop terrace for the only full-park panorama."
+      },
+      {
+        "tag": "Landmark",
+        "name": "The Reclining Buddha",
+        "alt": "Long reclining Buddha statue lying along the lawn at Buddha Park Vientiane",
+        "meta": "Roughly 40 m long",
+        "desc": "A Buddha lying on his right side runs the length of the central lawn, one of the largest reclining figures in Laos. The calm face and long line of the body are the park's signature image.",
+        "photoTip": "Low angle from the feet for depth; late afternoon side-light picks out the robe folds."
+      },
+      {
+        "tag": "Hindu",
+        "name": "Three-headed Elephant (Erawan)",
+        "alt": "Three-headed Erawan elephant statue with Indra at Buddha Park Vientiane",
+        "meta": "Erawan carrying Indra",
+        "desc": "The three-headed mount of Indra, covered in small carved faces. It stands for the meeting of Hindu and Buddhist imagery that defines the whole park.",
+        "photoTip": "Stand slightly below the heads and shoot wide — the scale reads much larger than in a straight-on frame."
+      },
+      {
+        "tag": "Hindu",
+        "name": "Shiva",
+        "alt": "Statue of the Hindu god Shiva at Buddha Park Vientiane",
+        "meta": "The destroyer & transformer",
+        "desc": "Shiva appears with the attributes of destruction and renewal, a reminder that Luang Pu Bunleua Sulilat drew freely on both Hindu and Buddhist sources.",
+        "photoTip": "Frame the upper body against open sky to keep the concrete detail clean."
+      },
+      {
+        "tag": "Hindu",
+        "name": "Vishnu",
+        "alt": "Statue of the Hindu god Vishnu at Buddha Park Vientiane",
+        "meta": "The preserver",
+        "desc": "Vishnu, the preserver, is shown with his traditional emblems. He balances Shiva on the same lawn — the two faiths literally side by side.",
+        "photoTip": "Morning light from the east softens the concrete and avoids harsh shadows."
+      },
+      {
+        "tag": "Epic",
+        "name": "Arjuna",
+        "alt": "Statue of the Mahabharata hero Arjuna at Buddha Park Vientiane",
+        "meta": "Hero of the Mahabharata",
+        "desc": "Arjuna, the archer hero of the Mahabharata, is among the epic figures cast here. Scenes from the Indian epics sit alongside the Buddhist statues without hierarchy.",
+        "photoTip": "Shoot from a low angle with the bow arm leading into the frame."
+      }
+    ],
+    "note": "Statue details and names follow the widely used park descriptions; local guides sometimes give different names for the same figure."
+  },
+  "transport": {
+    "label": "Getting there",
+    "heading": "Bus 14 and every other way in",
+    "intro": "Buddha Park sits about 25 km east of central Vientiane on Thadeua Road, close to the Thai–Lao Friendship Bridge. Here is exactly how to get there.",
+    "bus14": {
+      "tag": "Cheapest",
+      "title": "Bus No. 14 — the classic route",
+      "fare": "Around 6,000 LAK one way",
+      "freq": "Roughly every 15–20 minutes",
+      "duration": "About 45–60 minutes",
+      "steps": [
+        "Start at Talat Sao (Morning Market) bus terminal in central Vientiane",
+        "Board Bus No. 14 heading out on Thadeua Road (Route 13 south)",
+        "The bus runs east past the turn-offs toward the Friendship Bridge",
+        "Ride to the final stop — Buddha Park is right by the road",
+        "Return the same way; the last buses leave in the late afternoon"
+      ],
+      "tip": "Fares and timetables change without notice — confirm at the terminal before you board."
+    },
+    "optionsTitle": "Other ways to reach the park",
+    "options": [
+      { "icon": "🛺", "name": "Tuk-tuk or chartered car", "best": "Small groups, door to door", "detail": "Agree the round-trip price and waiting time in writing before departure; ask the driver to wait or fix a pick-up hour.", "price": "Negotiate — round trip with waiting time" },
+      { "icon": "📱", "name": "Ride-hailing apps (Loca, KokKok Move)", "best": "Clear upfront pricing", "detail": "Coverage is strongest in central Vientiane and thinner near the park. Pin your pick-up at the park gate for the return trip.", "price": "App-quoted fare" },
+      { "icon": "🏍️", "name": "Rented motorbike", "best": "Independent riders", "detail": "Follow Thadeua Road east for about 25 km. Traffic is mixed and the surface changes; wear a helmet and ride in daylight.", "price": "Daily rental plus fuel" },
+      { "icon": "🚐", "name": "Tour or hotel shuttle", "best": "Hassle-free half day", "detail": "Many Vientiane guesthouses run or book a half-day trip that pairs Buddha Park with other eastern sights.", "price": "Varies by operator" }
+    ],
+    "border": {
+      "title": "Coming straight from the Thai–Lao border",
+      "text": "The park is only a short ride from the First Thai–Lao Friendship Bridge, which makes it the natural first stop after crossing from Nong Khai.",
+      "steps": [
+        "Clear Lao immigration and visa-on-arrival at the bridge",
+        "Take a shuttle or taxi to the Vientiane side",
+        "Continue about 10 minutes by road to the park entrance"
+      ],
+      "note": "Check current visa-on-arrival rules and fees with official Lao immigration before you travel."
+    },
+    "note": "Prices and timetables are indicative and change often. Treat them as planning guidance and confirm locally on the day."
+  },
+  "itinerary": {
+    "label": "Itineraries",
+    "heading": "How to fit Buddha Park into your day",
+    "intro": "Three ready-made plans, from a quick half day to a cross-border first stop.",
+    "items": [
+      {
+        "tag": "Half day",
+        "duration": "3 – 4 hours",
+        "title": "Buddha Park and the riverbank",
+        "desc": "The classic plan: take Bus 14 out in the morning, see the park, and be back in town for lunch.",
+        "steps": [
+          "Bus 14 from Talat Sao in the morning",
+          "Walk the main lawn and the six key sculptures",
+          "Climb the giant pumpkin to the rooftop terrace",
+          "Cold drink by the Mekong before the return bus"
+        ]
+      },
+      {
+        "tag": "Full day",
+        "duration": "6 – 8 hours",
+        "title": "Buddha Park plus eastern Vientiane",
+        "desc": "Add the Friendship Bridge area and a riverside lunch to make a full day of the eastern side of the capital.",
+        "steps": [
+          "Early start for cooler light and thinner crowds",
+          "Long unhurried walk through the sculpture lawns",
+          "Lunch at a riverside restaurant near the park",
+          "Continue toward the Friendship Bridge before returning"
+        ]
+      },
+      {
+        "tag": "Cross-border",
+        "duration": "First stop on arrival",
+        "title": "Straight from Nong Khai",
+        "desc": "Cross the Mekong from Thailand and visit the park on your way into Vientiane — no backtracking.",
+        "steps": [
+          "Cross the First Thai–Lao Friendship Bridge",
+          "Complete Lao entry formalities",
+          "Short road transfer to the park",
+          "Continue into central Vientiane afterwards"
+        ]
+      }
+    ],
+    "note": "Build in extra time on public holidays, when both the border and the park are busiest."
+  },
+  "parkmap": {
+    "label": "Park map",
+    "heading": "Where everything sits",
+    "intro": "A simple orientation sketch — the park is compact, and you can walk the whole loop in well under an hour.",
+    "legend": [
+      "Park entrance & ticket gate",
+      "Giant Pumpkin (climb to the rooftop)",
+      "Reclining Buddha",
+      "Three-headed elephant (Erawan)",
+      "Riverside restaurant & shade",
+      "Restrooms",
+      "Bus 14 stop on Thadeua Road"
+    ],
+    "note": "Sketch is a simplified orientation guide and is not drawn to scale."
+  },
+  "currency": {
+    "label": "Currency",
+    "heading": "LAK converter",
+    "intro": "Lao kip moves against other currencies, and park fees are quoted in kip. Convert before you go.",
+    "amountLabel": "Amount in LAK",
+    "resultLabel": "Converted",
+    "unitLabels": ["LAK", "USD", "THB", "CNY"],
+    "tip": "Carry small kip notes for the entrance fee, bus fare and market snacks.",
+    "loading": "Loading rates…",
+    "error": "Rates are unavailable right now — showing reference values.",
+    "updated": "Rates refreshed",
+    "fallbackNote": "Reference rate used when offline.",
+    "presets": ["Entrance fee", "Bus 14 fare", "Bottle of water"]
+  },
+  "extraFaq": {
+    "items": [
+      { "q": "Can I fly a drone at Buddha Park?", "a": "Drone rules in Laos require permission from the authorities, and parks near the Mekong and the Friendship Bridge are sensitive areas. Assume you need written permission before flying, and ask at the entrance if you are unsure." },
+      { "q": "Is Buddha Park wheelchair accessible?", "a": "The main lawns are flat and mostly firm, so wheelchairs and prams can reach many of the large statues. The giant pumpkin's inner stair is narrow, dark and steep, so the upper levels are not accessible." },
+      { "q": "How is Buddha Park different from Sala Keoku in Nong Khai?", "a": "Both were created by the same mystic, Luang Pu Bunleua Sulilat, and both mix Hindu and Buddhist figures in concrete. Buddha Park came first in 1958 on the Lao bank; Sala Keoku followed after 1975 on the Thai bank, with taller and more elaborate structures. Many visitors see both on one cross-border trip." },
+      { "q": "Who built Buddha Park and why?", "a": "Luang Pu Bunleua Sulilat, a shamanic recluse who blended Buddhist and Hindu ideas, began the park in 1958 as a way to express his vision in concrete rather than words." }
+    ]
   },
   "food": {
     "label": "Food & drinks",
@@ -353,14 +558,15 @@
       "The sun turning the Mekong gold",
       "Statues fading into the evening"
     ],
+    "altSuffix": "Buddha Park (Wat Xieng Khouane Luang), Vientiane, Laos",
     "viewLocation": "View on Google Maps"
   },
   "reviews": {
     "label": "Reviews",
     "heading": "What visitors say",
-    "intro": "A snapshot of recent visitor impressions (summarised from public travel reviews).",
-    "disclaimer": "Based on public reviews · not endorsed",
-    "declaration": "Reviews summarised from independent travel platforms for reference",
+    "intro": "A snapshot of Google Maps user reviews for Buddha Park (Wat Xieng Khouane Luang) in Vientiane, Laos — kept on this page only and not submitted as structured data.",
+    "disclaimer": "Based on Google Maps user reviews · not endorsed by Google",
+    "declaration": "Synced from Google Maps user reviews, last synced September 2026; copyright belongs to the original authors and Google Maps.",
     "featured": [
       { "text": "A surreal, peaceful garden you won't find in any guidebook — statues, river and good light", "source": "★ 5.0 · traveller review" },
       { "text": "Climbing the giant pumpkin at sunset was the highlight of our Vientiane trip", "source": "★ 5.0 · visitor note" }
@@ -375,7 +581,305 @@
       { "text": "[Food] Cheap drinks and snacks, bring cash", "rating": "4", "name": "Pim", "date": "Mar 2026" },
       { "text": "[Crowds] Busy on holidays, weekdays are calmer", "rating": "4", "name": "Dan", "date": "Feb 2026" }
     ],
-    "viewLocation": "View on Google Maps"
+    "sourceNote": "Synced from Google Maps user reviews, last synced September 2026; copyright belongs to the original authors and Google Maps.",
+    "viewLocation": "View all reviews on Google Maps"
+  },
+  "weather": {
+    "label": "Weather",
+    "heading": "Weather & when to go",
+    "intro": "Live conditions at the park's coordinates, with a seven-day outlook, so you know what to pack.",
+    "currentLabel": "Right now",
+    "todayLabel": "Today",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "precipProb": "Rain chance",
+    "todayHigh": "High",
+    "todayLow": "Low",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "forecastTitle": "7-day outlook",
+    "todayShort": "Today",
+    "adviceTitle": "What to bring",
+    "tipNote": "Sun and shower times are calculated for the park's own coordinates.",
+    "tipUmbrella": "Rain is likely — pack a compact umbrella or a light rain jacket.",
+    "tipHeat": "It will be hot: hat, sunscreen and a refillable water bottle.",
+    "tipCool": "Mornings are cool — bring a light layer you can shed.",
+    "tipStorm": "Thunderstorms are possible; keep the visit short and stay under cover.",
+    "tipSun": "Strong sun expected — sunglasses and sun protection.",
+    "tipFog": "Low visibility likely; river views may be hazy in the early morning.",
+    "tipDefault": "Comfortable conditions — light clothing and some water are enough.",
+    "errorText": "Weather details are temporarily unavailable. Please check again later.",
+    "uvIndex": "UV index",
+    "windUnit": "Bft",
+    "uvLow": "Low",
+    "uvModerate": "Moderate",
+    "uvHigh": "High",
+    "uvVeryHigh": "Very high",
+    "uvExtreme": "Extreme",
+    "windLevels": ["Calm", "Light air", "Light breeze", "Gentle breeze", "Moderate breeze", "Fresh breeze", "Strong breeze", "Near gale", "Gale", "Strong gale", "Storm", "Violent storm", "Hurricane"],
+    "advice": {
+      "riskLabel": "Weather alert",
+      "dressLabel": "What to wear",
+      "planLabel": "How to plan",
+      "gearLabel": "What to bring",
+      "noRisk": "No weather alerts right now — the park is fine to visit as planned.",
+      "alert": "A {event} warning has been issued for this area. Consider changing your plans and keep an eye on official updates.",
+      "rThunder": "Thunderstorms are forecast. Stay off open ground, tall isolated trees and the exposed riverbank — and skip the metal stair inside the pumpkin tower.",
+      "rHeavy": "Heavy rain expected. The lawns and the tower stair turn slippery and the riverbank path can flood — watch your step.",
+      "rGale": "Strong winds expected. Keep clear of large trees and loose roofing along the riverbank, and hold on to hats and loose clothing.",
+      "rFog": "Poor visibility this morning — the river view and any long-distance photos will be washed out.",
+      "rHeat": "Extreme heat. The concrete lawns radiate hard at midday — keep the visit short and rest in the shade.",
+      "dSnow": "Unseasonably cold — wear a warm jacket and closed shoes.",
+      "dRainWind": "Wind and rain are likely — a light waterproof jacket works better than an umbrella on these open lawns.",
+      "dRainLight": "Showers are passing through — quick-drying clothes and shoes with grip are the practical choice.",
+      "dHot": "Hot day with little day-to-night change — light, breathable clothing is the most comfortable choice.",
+      "dCold": "Cool day — bring a warm layer and long trousers.",
+      "dLayers": "Big swing between day and night — wear layers you can shed as it warms up.",
+      "dDefault": "Comfortable conditions — light, breathable clothing is enough.",
+      "pAlert": "Put safety first: keep the visit short, stay back from the riverbank, and follow any instructions from park staff.",
+      "pThunder": "Storms usually build in the afternoon — come early and be ready to cut the visit short. The tower rooftop is no place to be in a storm.",
+      "pHeavy": "Not a day for lingering outdoors. Do a short loop of the ground-level statues and save the tower climb for a dry day.",
+      "pLight": "Passing showers — still worth going, but the inner tower stair and the riverbank path get slick. Take them slowly.",
+      "pChance": "Rain is likely later in the day, so aim for the morning and do the tower climb early.",
+      "pSnow": "Very cold — keep the visit short and stay on the flat paths.",
+      "pHot": "Arrive at opening or after 16:00 and use the shaded benches — the concrete lawns are punishing at midday.",
+      "pOvercast": "Soft, even light with no harsh shadows: the best conditions of the year for photographing the statues.",
+      "pClear": "Ideal for a full walk of the lawns, the tower climb and late-afternoon light over the Mekong.",
+      "pDefault": "Conditions are settled — a normal visit works well at whatever pace suits you.",
+      "gRaincoat": "Raincoat (a long umbrella is useless in wind)",
+      "gUmbrella": "Folding umbrella",
+      "gSunscreen": "Sunscreen, sunglasses and a hat",
+      "gWater": "Plenty of drinking water",
+      "gWarm": "A light layer for the evening",
+      "gMask": "A mask if the haze bothers you",
+      "gNone": "Nothing special — just your usual day-out kit"
+    },
+    "dayNames": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "codes": {
+      "clear": "Clear sky",
+      "mainlyClear": "Mainly clear",
+      "partlyCloudy": "Partly cloudy",
+      "overcast": "Overcast",
+      "fog": "Fog",
+      "drizzle": "Light drizzle",
+      "rain": "Rain",
+      "showers": "Showers",
+      "snow": "Snow",
+      "thunder": "Thunderstorm"
+    }
+  },
+  "stories": {
+    "label": "Stories & legends",
+    "heading": "The tales behind the statues",
+    "intro": "Part history, part folklore — the stories that locals and long-time guides still tell about this riverside garden.",
+    "note": "Legends are labelled as such; they are shared as cultural tradition rather than documented fact.",
+    "kindFact": "Documented",
+    "kindLegend": "Legend",
+    "kindSymbol": "Symbolism",
+    "items": [
+      {
+        "kind": "Documented",
+        "title": "The man who built a city of spirits",
+        "text": "Bunleua Sulilat was not an ordinary monk. A mystic and shamanic healer, he had studied under a hermit and spent years travelling before settling on this bend of the Mekong in 1958. With a handful of untrained local workers he began pouring reinforced concrete into moulds, and kept going for years."
+      },
+      {
+        "kind": "Legend",
+        "title": "The cave and the hermit",
+        "text": "The best-known story says that as a young man Bunleua fell into a cave and met a Hindu hermit who taught him scripture and meditation. That encounter, the tale goes, is why the park mixes Buddhist and Hindu figures so freely — a claim repeated by guides, though no source confirms the details."
+      },
+      {
+        "kind": "Documented",
+        "title": "One river, two parks",
+        "text": "After 1975 Bunleua crossed the Mekong to Nong Khai in Thailand and began again, creating Sala Keoku. The two gardens face each other across the water, built by the same hand and the same vision — a rare case of one artist's work straddling two countries."
+      },
+      {
+        "kind": "Symbolism",
+        "title": "Hell, earth and heaven in one sphere",
+        "text": "The giant pumpkin is a textbook image of the Buddhist 'three realms'. You enter through a demon's mouth, grope up narrow dark stairs past scenes of hell and the human world, and surface at the top into daylight — a walk-through metaphor for leaving the cycle of rebirth."
+      },
+      {
+        "kind": "Legend",
+        "title": "Spirits of the Mekong",
+        "text": "In Lao folk belief the river is inhabited by phi, spirits who must be treated with courtesy. Small shrines and offerings near the water ask for safe passage and good fortune — a quiet practice that long predates the sculptures."
+      },
+      {
+        "kind": "Documented",
+        "title": "Concrete, not marble",
+        "text": "Nothing here was carved from fine stone. The figures were cast on site in industrial reinforced concrete by workers with no formal training — which is why the surfaces are raw and the proportions wildly exaggerated. What began as thrift became the park's signature look."
+      },
+      {
+        "kind": "Documented",
+        "title": "A name that means 'city of spirits'",
+        "text": "Xieng means city, khouane means spirit or soul. Wat Xieng Khouane — the City of Spirits — describes the place exactly: a settlement of concrete beings standing where the Mekong bends."
+      },
+      {
+        "kind": "Documented",
+        "title": "A garden that keeps changing",
+        "text": "Exposed to monsoon rain and tropical sun, the concrete weathers and cracks. Repair work is continuous, and some figures have been re-cast over the decades. What you see is not a finished monument but a garden still being looked after."
+      }
+    ]
+  },
+  "seasons": {
+    "label": "Seasonal strategy",
+    "heading": "When to visit: a season-by-season plan",
+    "intro": "Vientiane has three clear seasons, and each changes what a morning at the park actually feels like.",
+    "note": "The table reflects the region's long-term climate patterns; individual days can differ.",
+    "headers": ["Season", "Months", "Typical conditions", "Crowds", "How to plan"],
+    "rows": [
+      {
+        "season": "Cool & dry",
+        "months": "Nov – Feb",
+        "weather": "25–31°C, low humidity, mostly clear skies",
+        "crowd": "Busiest",
+        "strategy": "The best all-round window. Arrive at opening for soft light and cool air, stay on for a Mekong sunset, and expect company at the pumpkin staircase."
+      },
+      {
+        "season": "Hot",
+        "months": "Mar – Apr",
+        "weather": "33–38°C, hazy afternoons, burning season",
+        "crowd": "Moderate",
+        "strategy": "Visit before 10:00 or after 16:00. Carry water, rest under the trees, wear a hat — the concrete lawns radiate heat at midday."
+      },
+      {
+        "season": "Rainy",
+        "months": "May – Oct",
+        "weather": "28–33°C, humid, frequent afternoon storms",
+        "crowd": "Quietest",
+        "strategy": "Mornings are usually dry, so go early. The lawns turn green and the river runs high, but count on a downpour after lunch in the wettest months."
+      }
+    ],
+    "monthTitle": "Month by month",
+    "months": [
+      { "month": "Jan", "note": "Cool, dry, clearest light" },
+      { "month": "Feb", "note": "Warm days, still comfortable" },
+      { "month": "Mar", "note": "Heat builds, haze begins" },
+      { "month": "Apr", "note": "Hottest month; go early" },
+      { "month": "May", "note": "First storms, valley turns green" },
+      { "month": "Jun", "note": "Regular rain, very quiet" },
+      { "month": "Jul", "note": "Wettest period, high river" },
+      { "month": "Aug", "note": "Lush and muddy, few visitors" },
+      { "month": "Sep", "note": "Peak river, dramatic skies" },
+      { "month": "Oct", "note": "Rains ease, humidity lingers" },
+      { "month": "Nov", "note": "Cool season begins" },
+      { "month": "Dec", "note": "Pleasant days, busy holidays" }
+    ]
+  },
+  "routes": {
+    "label": "Suggested routes",
+    "heading": "Routes for every kind of visitor",
+    "intro": "Every route starts at the main gate. Choose by how much time you have — and by who you are travelling with.",
+    "generalTitle": "Classic routes",
+    "general": [
+      {
+        "tag": "Half day",
+        "duration": "2 – 3 hours",
+        "desc": "The standard visit: the highlights, a climb, and a cold drink by the river.",
+        "steps": [
+          "Enter and take the main lawn clockwise toward the three-headed elephant",
+          "Climb the giant pumpkin from the demon's mouth up to the rooftop",
+          "Walk the length of the reclining Buddha",
+          "Finish with a drink in the shade near the riverbank"
+        ]
+      },
+      {
+        "tag": "Full day",
+        "duration": "5 – 6 hours",
+        "desc": "A slower read of the park, with time to sit, sketch and watch the light change.",
+        "steps": [
+          "Arrive at opening and walk the lawns in the cool morning air",
+          "Study the Hindu figures — Shiva, Vishnu, Brahma and the Ramayana scenes",
+          "Break for noodles and Lao coffee at the café",
+          "Return to the riverbank for the herons and the water monitors",
+          "Stay for the late-afternoon light on the Mekong before closing"
+        ]
+      }
+    ],
+    "audienceTitle": "Tailored by traveller type",
+    "audiences": [
+      {
+        "icon": "👨‍👩‍👧",
+        "name": "Families with children",
+        "focus": "Flat ground, the animals, and the pumpkin — with shade breaks.",
+        "steps": [
+          "Start on the flat lawns; the ground is even and easy for prams",
+          "Let children spot the animals — elephant, naga, demons and gods",
+          "Take the pumpkin slowly; the inner stair is narrow and dark",
+          "Rest on the shaded benches and keep water handy"
+        ]
+      },
+      {
+        "icon": "📷",
+        "name": "Photography & nature",
+        "focus": "Low sun, mist on the river, and the wildlife along the bank.",
+        "steps": [
+          "Be at the gate at opening for side-lit statues and empty paths",
+          "Work the reclining Buddha from a low angle, then the elephant wide",
+          "Walk the riverbank for herons, kingfishers and water monitors",
+          "Return before closing for warm light across the Mekong"
+        ]
+      },
+      {
+        "icon": "♿",
+        "name": "Low-energy & step-free",
+        "focus": "Everything on the ground level, with plenty of places to sit.",
+        "steps": [
+          "Follow the flat main paths — most of the park is reachable without steps",
+          "Skip the pumpkin tower; the rooftop view needs a narrow stair",
+          "Use the shaded benches between the statue groups",
+          "Plan a short 45–60 minute loop and rest at the café"
+        ]
+      }
+    ]
+  },
+  "facilities": {
+    "label": "Visitor services",
+    "heading": "Facilities & nearby services",
+    "intro": "What to expect in and around the park — listed by type only. We do not recommend or promote any individual business.",
+    "note": "Facilities are run by different operators and may change seasonally; ask at the gate when you arrive.",
+    "items": [
+      { "icon": "🚻", "title": "Restrooms", "desc": "Public toilets are located near the entrance. Carry your own tissue and a little small change." },
+      { "icon": "🅿️", "title": "Parking", "desc": "Open-air parking for cars, tour vans and motorbikes sits by the gate. Shaded spaces fill early on weekends and holidays." },
+      { "icon": "🍜", "title": "Food & drinks", "desc": "A small café and a few stalls serve noodles, snacks, fruit and cold drinks. Prices are modest and cash is easiest." },
+      { "icon": "🏨", "title": "Places to stay", "desc": "There is no accommodation inside the park. Guesthouses and hotels are concentrated in Vientiane centre, about 25 km away." },
+      { "icon": "🛒", "title": "Shops & groceries", "desc": "Small convenience stalls near the entrance sell water and basic sundries. For a full supermarket, stock up in the city first." },
+      { "icon": "⛽", "title": "Fuel & charging", "desc": "Fuel stations and motorbike repair shops line the Friendship Bridge road. Charging points for electric vehicles remain rare — plan your range before driving out." },
+      { "icon": "💊", "title": "Pharmacy & medical", "desc": "Basic medicines are sold in the city; for anything serious, hospitals and clinics are in Vientiane centre." },
+      { "icon": "💵", "title": "Cash & ATMs", "desc": "Bring Lao kip in small notes for tickets, camera fees and snacks. ATMs are in Vientiane and near the Friendship Bridge, not inside the park." },
+      { "icon": "🌳", "title": "Shade & rest", "desc": "Shaded benches and open lawns give you somewhere to sit down out of the midday heat." },
+      { "icon": "📶", "title": "Connectivity", "desc": "Mobile data covers most of the park. Wi-Fi, where offered at the café, can be slow." }
+    ]
+  },
+  "responsibility": {
+    "label": "Understanding & care",
+    "heading": "What this place is — and your part in it",
+    "intro": "Buddha Park is a working religious site as well as an attraction. A little background makes the visit richer, and a little care keeps it standing.",
+    "scienceTitle": "Why the park matters",
+    "science": [
+      { "title": "A record of folk imagination", "desc": "The figures were designed by one mystic and built by workers with no formal art training. That makes the park a rare, unfiltered record of mid-20th-century popular religious imagination in the Mekong valley." },
+      { "title": "Concrete as a medium", "desc": "Industrial reinforced concrete was cheap and available. It allowed enormous forms at speed, but it also means the sculptures weather quickly — which is why the surface you see is partly original, partly repair." },
+      { "title": "Two traditions on one lawn", "desc": "Buddhist and Hindu figures stand side by side, along with animist spirit beliefs older than either. The park is a physical map of the religious layering that characterises Laos." },
+      { "title": "Still a place of worship", "desc": "People come to make offerings, not only to take photographs. Monks and caretakers work here; the shrines are used." }
+    ],
+    "doTitle": "What helps",
+    "dontTitle": "What to avoid",
+    "do": [
+      "Dress modestly — shoulders and knees covered",
+      "Remove shoes where a sign or a local asks you to",
+      "Keep your voice low near shrines and people praying",
+      "Carry your rubbish out if bins are full",
+      "Ask before photographing people, including monks",
+      "Pay the posted fees at the gate — they fund upkeep"
+    ],
+    "dont": [
+      "Climb on the statues or step over the barriers",
+      "Sit on or lean against religious figures for a photo",
+      "Touch or move offerings left at shrines",
+      "Bring drones without written permission",
+      "Let children run uncontrolled on fragile concrete",
+      "Discard anything into the river"
+    ],
+    "closing": "The park has no ticket revenue from this site and receives no commission of any kind. It survives because visitors treat it with care — please help keep it that way."
   },
   "sources": {
     "label": "Sources",
@@ -383,8 +887,13 @@
     "intro": "This non-commercial guide compiles public information to help visitors plan responsibly.",
     "photoTitle": "Image credits",
     "photoItems": [
-      { "text": "Scenes shown are illustrative of Buddha Park", "linkLabel": "View location", "url": "https://maps.app.goo.gl/MdKTSwWw5H6PmDGJ7" }
+      { "text": "Scenes shown are illustrative of Buddha Park", "linkLabel": "View location", "url": "https://maps.app.goo.gl/MdKTSwWw5H6PmDGJ7" },
+      { "text": "All photos displayed on this website remain the property of their original photographers; all image rights and copyright belong to them.", "linkLabel": "", "url": "" }
     ],
+    "photoCredit": "All photos displayed on this website remain the property of their original photographers; all image rights and copyright belong to them.",
+    "reviewTitle": "Reviews · last synced September 2026",
+    "reviewText": "Synced from Google Maps user reviews, last synced September 2026; copyright belongs to the original authors and Google Maps.",
+    "reviewLinkLabel": "View all reviews on Google Maps",
     "factTitle": "Facts & data",
     "factText": "Ratings, hours and coordinates are compiled from public sources and may change — please verify on site before you go.",
     "correctionTitle": "Found a mistake?",
@@ -395,10 +904,14 @@
   },
   "mapSection": {
     "label": "Location & map",
+    "entityHeading": "Location & Map of Buddha Park (Vientiane, Laos)",
     "heading": "Find Buddha Park",
     "lead": "In Deua village, Thanon Tha District, on Vientiane's eastern edge by the Mekong, near the Thai–Lao Friendship Bridge.",
+    "authorityLabel": "Official source",
+    "authorityText": "Laos / Vientiane Capital Official Tourism Portal",
+    "authorityLink": "https://www.tourismlaos.org",
     "stats": [
-      { "tag": "Rating", "value": "4.3 ★", "sub": "from 5,400 reviews" },
+      { "tag": "Rating", "value": "4.3 ★", "sub": "from 5,456 reviews" },
       { "tag": "Opens", "value": "08:00", "sub": "daily" },
       { "tag": "Area", "value": "Deua", "sub": "Vientiane, Laos" }
     ],
@@ -433,7 +946,8 @@
     "cookies": "Cookie settings",
     "disclaimerLead": "The Buddha Park guide is an independent, non-commercial resource — not an official site of any agency or business.",
     "unofficial": "Unofficial · a community-made visitor guide",
-    "dataSource": "Data from public travel reviews",
+    "dataSource": "Rating and reviews synced from Google Maps user reviews · September 2026; copyright belongs to the original authors and Google Maps.",
+    "photoCredit": "All photos displayed on this website remain the property of their original photographers; all image rights and copyright belong to them.",
     "copyright": "© 2026 Buddha Park guide · non-commercial"
   },
   "legal": {

@@ -1,0 +1,89 @@
+---
+interface Props {
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const p = messages.parkmap;
+
+// 简化方位示意图：湄公河在下方，塔德路/14 路公交站沿底边，园区主体在上方
+const pins = [
+  { x: 110, y: 320, n: 1, c: '#b98b2e' },
+  { x: 300, y: 190, n: 2, c: '#8a5a2b' },
+  { x: 470, y: 250, n: 3, c: '#8a5a2b' },
+  { x: 650, y: 170, n: 4, c: '#b98b2e' },
+  { x: 560, y: 350, n: 5, c: '#3a7a6a' },
+  { x: 200, y: 250, n: 6, c: '#3a7a6a' },
+  { x: 90, y: 375, n: 7, c: '#2f5d8a' },
+];
+---
+
+<section id="parkmap" class="py-20 bg-white text-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">{p.label}</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl text-teak mt-2">{p.heading}</h2>
+    <p class="mt-4 max-w-2xl text-ink/80">{p.intro}</p>
+
+    <div class="grid lg:grid-cols-[1.4fr_1fr] gap-8 mt-10 items-start">
+      <div class="rounded-2xl border border-gold/30 bg-ivory/60 p-4">
+        <svg viewBox="0 0 760 420" class="w-full h-auto" role="img" aria-label={p.heading}>
+          <defs>
+            <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#9fc7d8" />
+              <stop offset="100%" stop-color="#5f9bb5" />
+            </linearGradient>
+          </defs>
+
+          <!-- 园区草地 -->
+          <rect x="40" y="40" width="680" height="300" rx="28" fill="#e8e2d0" />
+          <rect x="40" y="40" width="680" height="300" rx="28" fill="none" stroke="#c9b98d" stroke-width="2" />
+
+          <!-- 湄公河 -->
+          <path d="M0 350 C 160 335, 340 365, 760 340 L760 420 L0 420 Z" fill="url(#river)" />
+          <text x="600" y="392" font-size="15" fill="#ffffff" opacity="0.9">Mekong River</text>
+
+          <!-- 主路 -->
+          <path d="M110 330 C 260 300, 420 270, 650 190" fill="none" stroke="#d9cfae" stroke-width="16" stroke-linecap="round" />
+
+          <!-- 塔德路 + 公交站 -->
+          <path d="M20 372 L740 366" stroke="#b0a68a" stroke-width="10" stroke-linecap="round" />
+          <text x="24" y="362" font-size="13" fill="#6b6355">Thadeua Road</text>
+
+          <!-- 定位点 -->
+          {
+            pins.map((pin: { x: number; y: number; n: number; c: string }) => (
+              <g>
+                <circle cx={pin.x} cy={pin.y} r="17" fill="#ffffff" stroke={pin.c} stroke-width="3" />
+                <text
+                  x={pin.x}
+                  y={pin.y + 5}
+                  text-anchor="middle"
+                  font-size="15"
+                  font-weight="700"
+                  fill={pin.c}
+                >
+                  {pin.n}
+                </text>
+              </g>
+            ))
+          }
+        </svg>
+      </div>
+
+      <ol class="space-y-3">
+        {
+          p.legend.map((label: string, i: number) => (
+            <li class="flex items-start gap-3 rounded-xl border border-gold/20 bg-ivory/50 px-4 py-3">
+              <span class="mt-0.5 inline-flex items-center justify-center w-7 h-7 shrink-0 rounded-full bg-white border-2 font-display text-sm font-bold"
+                    style={`color:${pins[i].c};border-color:${pins[i].c}`}>
+                {i + 1}
+              </span>
+              <span class="text-sm text-ink/85 leading-relaxed">{label}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+
+    <p class="mt-6 text-xs text-ink/50 leading-relaxed max-w-3xl">{p.note}</p>
+  </div>
+</section>

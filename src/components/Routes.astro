@@ -1,0 +1,57 @@
+---
+interface Props {
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const r = messages.routes;
+---
+
+<section id="routes" class="py-20 bg-white text-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">{r.label}</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl text-teak mt-2">{r.heading}</h2>
+    <p class="mt-4 max-w-2xl text-ink/80">{r.intro}</p>
+
+    <!-- 通用路线 -->
+    <h3 class="font-display text-2xl text-teak mt-12">{r.generalTitle}</h3>
+    <div class="grid md:grid-cols-2 gap-6 mt-6">
+      {r.general.map((g) => (
+        <div class="rounded-2xl bg-teak text-ivory p-6">
+          <div class="flex items-center justify-between gap-3">
+            <span class="chip border-gold/40 text-goldBright">{g.tag}</span>
+            <span class="text-sm text-ivory/70">{g.duration}</span>
+          </div>
+          <p class="mt-4 text-ivory/90 leading-relaxed">{g.desc}</p>
+          <ol class="mt-5 space-y-3">
+            {g.steps.map((st, i) => (
+              <li class="flex gap-3 text-sm text-ivory/90">
+                <span class="font-display text-goldBright mt-0.5">{i + 1}</span>
+                <span class="leading-relaxed">{st}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ))}
+    </div>
+
+    <!-- 按人群定制 -->
+    <h3 class="font-display text-2xl text-teak mt-14">{r.audienceTitle}</h3>
+    <div class="grid lg:grid-cols-3 gap-6 mt-6">
+      {r.audiences.map((a) => (
+        <div class="rounded-2xl border border-gold/30 bg-ivory/60 p-6 flex flex-col">
+          <span class="text-3xl" aria-hidden="true">{a.icon}</span>
+          <h4 class="font-display text-xl text-teak mt-3">{a.name}</h4>
+          <p class="mt-2 text-sm text-ink/70 leading-relaxed">{a.focus}</p>
+          <ol class="mt-4 space-y-2 border-t border-gold/20 pt-4">
+            {a.steps.map((st) => (
+              <li class="flex gap-2 text-sm text-ink/85">
+                <span class="text-gold mt-0.5" aria-hidden="true">•</span>
+                <span class="leading-relaxed">{st}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

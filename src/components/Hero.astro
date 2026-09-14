@@ -48,7 +48,7 @@ const weatherMap = Object.fromEntries(
 <section id="home" class="relative min-h-screen flex flex-col">
   <!-- Background layers (clipped internally so content can never be cut off) -->
   <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
-    <img src={heroImg} alt={main} class="absolute inset-0 w-full h-full object-cover object-center" />
+    <img src={heroImg} alt={hero.imgAlt || main} class="absolute inset-0 w-full h-full object-cover object-center" fetchpriority="high" />
     <div class="absolute inset-0 bg-gradient-to-t from-teakDeep via-teakDeep/70 to-teak/40"></div>
     <div class="hero-glow absolute inset-0"></div>
   </div>
@@ -111,6 +111,11 @@ const weatherMap = Object.fromEntries(
           <span class="stars text-lg">★ {hero.rating}</span>
           <span>{hero.reviewCount} Google</span>
         </div>
+        {hero.ratingSource && (
+          <p class="mt-2 text-xs text-ivory/60 leading-relaxed">
+            <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="underline decoration-dotted underline-offset-4 hover:text-goldBright">{hero.ratingSource}</a>
+          </p>
+        )}
 
         <!-- wooden park signboard + carousel dots (bottom-left) -->
         <div class="wood-sign mt-8 inline-block max-w-md px-5 py-4">
@@ -124,7 +129,7 @@ const weatherMap = Object.fromEntries(
         </div>
       </div>
 
-      <!-- live weather + sunset planner (static by default; enhanced by API) -->
+      <!-- 实况天气与日落参考（默认静态显示，加载后更新为实时值） -->
       <div class="lg:col-span-5">
         <div class="weather-card rounded-2xl p-5 text-ivory shadow-2xl" lang={lang}>
           <div class="flex items-center justify-between">
@@ -210,7 +215,7 @@ const weatherMap = Object.fromEntries(
     const statusEl = document.getElementById('weather-status');
     const bodyEl = document.getElementById('weather-body');
 
-    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}&current=temperature_2m,weather_code,wind_speed_10m&daily=weather_code,sunrise,sunset&timezone=Asia/Bangkok&wind_speed_unit=kmh`)
+    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}&current=temperature_2m,weather_code,wind_speed_10m&daily=weather_code,sunrise,sunset&timezone=Asia%2FVientiane&wind_speed_unit=kmh`)
       .then((r) => r.json())
       .then((d) => {
         if (!d || !d.current || !d.daily) throw new Error('bad');

@@ -1,0 +1,988 @@
+{
+  "meta": {
+    "title": "Parc de Bouddha Vientiane (Wat Xieng Khouane Luang) : billets et guide",
+    "description": "Vous préparez une visite au Parc de Bouddha (Wat Xieng Khouane Luang) à Vientiane ? Tarifs 2026, horaires, accès en bus 14, photos et conseils pratiques."
+  },
+  "cookieBanner": {
+    "message": "Nous utilisons Google Analytics (GA4) pour comprendre comment ce guide est utilisé. Les cookies d'analyse ne se chargent qu'après votre accord.",
+    "accept": "Accepter les analyses",
+    "decline": "Refuser",
+    "settings": "Paramètres des cookies"
+  },
+  "header": {
+    "home": "Accueil",
+    "about": "À propos",
+    "history": "Histoire",
+    "stories": "Récits",
+    "guide": "Guide de visite",
+    "sculptures": "Sculptures",
+    "transport": "Comment venir",
+    "itinerary": "Itinéraires",
+    "weather": "Météo",
+    "routes": "Parcours",
+    "facilities": "Services",
+    "food": "Restauration",
+    "gallery": "Galerie",
+    "reviews": "Avis",
+    "map": "Carte"
+  },
+  "hero": {
+    "eyebrow": "Vientiane · Laos",
+    "titleMain": "Parc de Bouddha (Wat Xieng Khouane Luang)",
+    "titleAccent": "Wat Xieng Khouane Luang",
+    "subtitle": "Découvrez le jardin le plus surréaliste de Vientiane, au Laos — plus de 200 sculptures géantes mêlant bouddhisme et hindouisme, sur la rive sud du Mékong.",
+    "slogan": "Quand le béton donne forme aux dieux et que les rives du Mékong murmurent une rhapsodie.",
+    "cta1": "Préparer sa visite",
+    "cta2": "Comment venir",
+    "rating": "4.3",
+    "reviewCount": "5,456",
+    "ratingSource": "Note et nombre d'avis synchronisés depuis les avis Google Maps · septembre 2026 · Voir tous les avis Google Maps ↗",
+    "imgAlt": "Parc de Bouddha (Wat Xieng Khouane Luang) — vue principale à Vientiane, Laos",
+    "viewLocation": "Voir sur Google Maps",
+    "boardCategory": "Attractions de Vientiane",
+    "boardTitle": "Parc de Bouddha",
+    "boardEn": "Wat Xieng Khouane Luang · ວັດຊຽງຄູນ",
+    "coordsLabel": "17,9124°N, 102,7622°E · Deua, Vientiane",
+    "plannerTitle": "Planning soleil et ciel",
+    "liveWeather": "En direct",
+    "plannerNote": "Les heures sont des estimations pour l'emplacement du parc",
+    "defaultTemp": "31°",
+    "defaultCond": "Partiellement nuageux",
+    "defaultWind": "8 km/h",
+    "sunsetIndexLabel": "Ciel de ce soir",
+    "sunsetIndexDefault": "Coucher de soleil doux",
+    "goldenHourLabel": "Heure dorée",
+    "sunsetLabel": "Coucher du soleil",
+    "blueHourLabel": "Heure bleue",
+    "crowdWarningLabel": "Affluence",
+    "defaultGolden": "17:35 – 18:05",
+    "defaultSunset": "18:25",
+    "defaultBlue": "18:45 – 19:15",
+    "defaultTip": "Le plus calme le matin",
+    "lightCaption": "Conditions relevées en direct aux coordonnées du parc",
+    "weatherError": "Impossible de charger la météo",
+    "goldenChanceLabel": "Probabilité de lumière dorée"
+  },
+  "about": {
+    "label": "À propos du parc",
+    "entityHeading": "À propos du Parc de Bouddha (Wat Xieng Khouane Luang)",
+    "heading": "Là où le Mékong rencontre 200 statues",
+    "entityLead": "Bienvenue au Parc de Bouddha (Wat Xieng Khouane Luang), universellement reconnu comme le Buddha Park de Vientiane. Situé à Deua, Vientiane, dans la préfecture de Vientiane, au Laos, ce jardin de sculptures au bord du fleuve compte parmi les principaux repères pour les voyageurs visitant la région de la capitale.",
+    "breadcrumb": {
+      "home": "Accueil",
+      "country": "Laos",
+      "province": "Préfecture de Vientiane",
+      "city": "Vientiane",
+      "current": "Parc de Bouddha (Wat Xieng Khouane Luang)"
+    },
+    "nearbyCluster": "En visitant le Parc de Bouddha (Wat Xieng Khouane Luang), les visiteurs peuvent facilement explorer les monuments historiques et points d'intérêt environnants, notamment le Pha That Luang et le Patuxai.",
+    "lead": "Le Parc de Bouddha (Wat Xieng Khouane Luang) est un jardin de sculptures sur la rive est du Mékong, juste à l'extérieur de Vientiane — un lieu paisible et hors du temps où bouddhisme et hindouisme partagent la même pelouse.",
+    "paragraph1": "Le parc a été fondé en 1958 par Luang Pu Bunleua Sulilat, un moine mystique qui étudia les enseignements bouddhistes et hindous. Il réunit des artisans locaux pour mouler plus de 200 statues en béton armé, fondant les deux fois en un seul jardin riverain.",
+    "paragraph2": "Aujourd'hui, le Parc de Bouddha est l'une des étapes les plus surréalistes de Vientiane. Errer entre un bouddha couché de 40 mètres, une citrouille géante que l'on grimpe de l'Enfer au Ciel et un éléphant à trois têtes ne ressemble à rien d'autre au Laos.",
+    "quote": "Marchez lentement — le parc se révèle une statue à la fois.",
+    "quoteAuthor": "un visiteur habitué",
+    "stats": [
+      { "value": "200+", "label": "Statues en béton" },
+      { "value": "1958", "label": "Fondation" },
+      { "value": "08:00", "label": "Ouverture" }
+    ],
+    "highlights": [
+      { "tag": "🎃", "title": "La tour des Trois Mondes (Citrouille)", "desc": "Entrez par la gueule du démon, gravissez d'étroites marches de pierre dans l'obscurité à travers l'Enfer et le monde des humains, et atteignez enfin la lumière au sommet, surplombant toute la cité des esprits au bord du Mékong." },
+      { "tag": "🛕", "title": "Bouddha couché", "desc": "Un bouddha endormi de 40 mètres, l'un des plus grands du Laos." },
+      { "tag": "🐘", "title": "Éléphant à trois têtes", "desc": "L'emblème du parc — Erawan s'élevant au-dessus de la terre." }
+    ],
+    "editorTip": {
+      "tag": "Conseil de la rédaction",
+      "text": "Arrivez vers 08:30 pour devancer la chaleur et les groupes, puis attardez-vous jusqu'à ce que la lumière s'adoucisse.",
+      "ctaLabel": "Voir le guide complet"
+    }
+  },
+  "eco": {
+    "label": "Berge et nature",
+    "heading": "La vie au fil du Mékong",
+    "quote": "Un jardin tranquille au bord d'un fleuve vivant — traitez-le comme vous traiteriez un temple.",
+    "intro": "Le Parc de Bouddha se trouve au bord du Mékong. Le matin, la brume monte de l'eau ; les pelouses et les arbres ombragés abritent oiseaux et lézards entre les statues.",
+    "microTitle": "Météo et fleuve",
+    "micro": [
+      { "title": "Matinées plus fraîches", "desc": "La brise du fleuve rend le parc agréable avant la chaleur de midi." },
+      { "title": "Lotus et arbustes", "desc": "Les bassins et les massifs filtrent l'air et abritent de petites créatures." },
+      { "title": "Eau saisonnière", "desc": "Le Mékong monte en saison des pluies (mai–oct) et baisse en saison sèche." }
+    ],
+    "plantsTitle": "Plantes du parc",
+    "plants": [
+      {
+        "title": "Lotus",
+        "desc": "Sacré dans le bouddhisme, il fleurit à l'aube sur les bassins dormants.",
+        "items": [
+          { "name": "Lotus rose", "desc": "Fréquent autour des bassins calmes du sud" },
+          { "name": "Lotus blanc", "desc": "S'ouvre à midi, se referme avant le crépuscule" }
+        ]
+      },
+      {
+        "title": "Arbres d'ombrage et gazon",
+        "desc": "De grands arbres rafraîchissent les pelouses où les visiteurs se reposent.",
+        "items": [
+          { "name": "Arbre à pluie", "desc": "Large frondaison, ombre recherchée à midi" },
+          { "name": "Bambou", "desc": "Bruit dans la brise du fleuve" }
+        ]
+      }
+    ],
+    "wildlifeTitle": "Animaux que vous pouvez apercevoir",
+    "wildlife": [
+      "Hérons guettant dans les hauts-fonds",
+      "Varans d'eau sur la berge",
+      "Libellules au-dessus des bassins",
+      "Martin-pêcheurs le long du fleuve",
+      "Petites tortues près du bord de l'eau"
+    ],
+    "lntTitle": "Ne laisser aucune trace",
+    "lntIntro": "Aidez à garder le parc propre pour le prochain visiteur et pour la communauté locale.",
+    "lnt": [
+      "Remportez chaque emballage",
+      "Ne grimpez pas sur les statues fragiles",
+      "Utilisez les poubelles pour les restes de nourriture",
+      "Baissez le bruit après la tombée du jour",
+      "Ne jetez rien dans le fleuve ni à proximité"
+    ],
+    "lntCheckHint": "Cochez chaque geste en marchant — de petites attentions préservent la paix d'un parc de 200 statues",
+    "checklist": {
+      "title": "À observer selon la saison",
+      "intro": "Ce que l'on peut voir au fil de l'année",
+      "items": [
+        { "emoji": "🪷", "name": "Floraison du lotus", "best": "Toute l'année, surtout à l'aube", "rare": "Fréquent en eau calme", "rareClass": "" },
+        { "emoji": "🦎", "name": "Varan d'eau", "best": "Matinées fraîches", "rare": "Assez courant", "rareClass": "" },
+        { "emoji": "🐦", "name": "Martin-pêcheur", "best": "Après la pluie, mai–oct", "rare": "Courant en saison humide", "rareClass": "" }
+      ]
+    }
+  },
+  "history": {
+    "label": "Histoire",
+    "entityHeading": "Histoire et signification du Parc de Bouddha (Wat Xieng Khouane Luang)",
+    "heading": "De la vision d'un moine à un parc riverain",
+    "intro": "L'histoire du Parc de Bouddha est celle de la foi singulière d'un seul homme — coulée dans le béton sur les rives du Mékong.",
+    "blocks": [
+      {
+        "title": "Luang Pu Bunleua Sulilat",
+        "text": "En 1958, la figure mystique Luang Pu Bunleua Sulilat fonda le parc. Moine hors norme, c'était un ermite chamanique qui mêlait hindouisme et bouddhisme — la légende dit que, jeune homme, il tomba dans une grotte et fut instruit par un ermite hindou, l'engageant sur une voie spirituelle en marge de la religion orthodoxe, fondant les deux fois en un seul jardin riverain."
+      },
+      {
+        "title": "Un jardin de deux fois",
+        "text": "Au cours des années suivantes, plus de 200 personnages furent coulés dans le béton — bouddhas, Avalokiteshvara, Shiva, Vishnu, Brahma, Rama et Hanuman partageant les mêmes pelouses."
+      },
+      {
+        "title": "Aujourd'hui",
+        "text": "Après des décennies, le parc demeure une étape détendue et légèrement surréaliste à l'est de Vientiane, attirant les voyageurs qui traversent le fleuve depuis Nong Khai, en Thaïlande."
+      },
+      {
+        "title": "Un parc jumeau de l'autre côté du fleuve",
+        "text": "En 1975, alors que le Laos passait sous régime communiste, Bunleua Sulilat traversa le Mékong vers la Thaïlande. À Nong Khai, il édifia Sala Keoku — un parc de sculptures frère, né de la même vision. Un fleuve, deux rives, deux parcs façonnés par la même main."
+      }
+    ],
+    "legend": {
+      "title": "Le sens de « Xieng Khouane »",
+      "text": "Les habitants l'appellent Wat Xieng Khouane. En laotien, Xieng signifie « cité sacrée / cité » et Khouane « âme / esprit » : le nom complet se traduit donc par « Cité des esprits ». Il marque l'identité du parc comme « cité de statues » tout en laissant deviner les croyances animistes qui le traversent."
+    },
+    "didYouKnow": {
+      "title": "Le saviez-vous ?",
+      "text": "La tour Citrouille géante (aussi appelée « tour des Trois Mondes ») est une sphère de trois niveaux qui reflète la cosmologie bouddhique des « Trois Mondes (Traiphum) » : on entre par la gueule d'un démon, on gravit à tâtons d'étroites marches sombres à travers l'Enfer et le monde des humains, puis on émerge à la lumière au sommet — surplombant toute la cité des esprits au bord du Mékong, symbole du dépassement du cycle des renaissances."
+    },
+    "folklore": {
+      "title": "Un lieu d'esprits",
+      "tale": "Dans la croyance populaire laotienne, le Mékong abrite des esprits (Phi). De petits autels près de l'eau demandent protection et chance — une tradition discrète dont les anciens se souviennent encore.",
+      "shrineTitle": "Une note sur le respect",
+      "shrine": "Si vous voyez un petit autel ou des offrandes au bord de l'eau, admirez-les à distance et ne les dérangez pas."
+    },
+    "compare": {
+      "caption": "Faites glisser le curseur pour comparer la vue d'ensemble du parc et une statue de près",
+      "beforeLabel": "Vue d'ensemble",
+      "afterLabel": "De près"
+    },
+    "concrete": {
+      "title": "Esthétique brutaliste du béton",
+      "text": "Ces figures colossales n'ont pas été finement taillées dans le marbre mais coulées sur place en béton armé industriel. Les textures brutes et les proportions exagérées expriment un brutalisme de l'art populaire laotien du milieu du XXe siècle, rude mais plein de vitalité — ce qui donne au Parc de Bouddha son paysage surréaliste unique."
+    },
+    "sisterQuote": {
+      "title": "Un destin mystique de part et d'autre d'un fleuve",
+      "text": "En 1975, Luang Pu traversa le Mékong vers Nong Khai, en Thaïlande, et édifia le parc jumeau Sala Keoku. Un seul maître, deux parcs, face à face de part et d'autre du fleuve."
+    }
+  },
+  "guide": {
+    "label": "Guide de visite",
+    "entityHeading": "Situation et visite du Parc de Bouddha à Vientiane",
+    "heading": "Tout ce qu'il faut savoir avant de partir",
+    "lead": "Des conseils clairs et utiles pour une demi-journée détendue au Parc de Bouddha.",
+    "twoZone": {
+      "title": "Deux façons d'en profiter",
+      "intro": "Choisissez votre rythme — flâner lentement ou grimper la citrouille.",
+      "difficultyLabel": "Rythme :",
+      "items": [
+        { "name": "Parcourir les pelouses", "difficulty": "Facile", "note": "Chemins plats", "suits": "Familles, photographes", "desc": "Déambulez entre les statues, reposez-vous à l'ombre, regardez le Mékong." },
+        { "name": "Grimper la citrouille", "difficulty": "Facile", "note": "Trois niveaux", "suits": "Première visite, curieux", "desc": "Entrez par la gueule du démon et gravissez de l'Enfer au Ciel pour la vue depuis le toit." }
+      ]
+    },
+    "scamTip": {
+      "tag": "⚠️ Franc-parler",
+      "text": "Les tarifs sont affichés à l'entrée — payez au guichet et gardez de la monnaie pour le droit photo et les boissons."
+    },
+    "hours": {
+      "tag": "🕒 Meilleur moment",
+      "time": "08:00 – 17:00 (tous les jours)",
+      "items": [
+        { "label": "Ouverture", "value": "08:00" },
+        { "label": "Meilleure lumière", "value": "08:00 – 10:00" },
+        { "label": "Le plus calme", "value": "Le matin" },
+        { "label": "Fermeture", "value": "17:00" }
+      ]
+    },
+    "fees": {
+      "tag": "💸 Coûts",
+      "title": "Coûts",
+      "items": [
+        { "title": "Entrée", "desc": "Environ 15 000 LAK pour les visiteurs étrangers" },
+        { "title": "Droit photo", "desc": "Environ 5 000 LAK si vous apportez un appareil" },
+        { "title": "Nourriture et boissons", "desc": "De petits stands vendent eau et en-cas" }
+      ],
+      "note": "Les tarifs peuvent être légèrement ajustés par la politique locale ; nous recommandons d'avoir des espèces en bahts thaïlandais (THB) ou en kip laotien (LAK)."
+    },
+    "transport": {
+      "tag": "🚌 Comment venir",
+      "title": "Comment rejoindre le Parc de Bouddha",
+      "items": [
+        { "title": "Depuis Vientiane", "desc": "À environ 25 km à l'est du centre ; tuk-tuk ou bus en direction du pont de l'Amitié thaï-lao." },
+        { "title": "Bus local", "desc": "Des bus publics relient les gares routières de la capitale à la route de Deua / du pont de l'Amitié." },
+        { "title": "Depuis Nong Khai, Thaïlande", "desc": "Traversez le fleuve par le pont de l'Amitié, puis continuez vers le parc côté laotien." },
+        { "title": "Bus n° 14", "desc": "Depuis la gare routière de Talat Sao à Vientiane, prenez le bus n° 14 — son terminus est le Parc de Bouddha. Le billet coûte environ 6 000 LAK : le transport public le moins cher et le plus classique pour les routards." },
+        { "title": "Depuis l'aéroport international de Wattay (VTE)", "desc": "L'aéroport international de Wattay se trouve à environ 30 km du parc. Prenez un taxi d'aéroport ou une application de VTC vers la ville ou le parc (40–60 min environ), ou économisez en rejoignant d'abord Talat Sao puis le bus n° 14." }
+      ]
+    },
+    "photography": {
+      "title": "Guide photo",
+      "intro": "Le parc est le plus photogénique à la douce lumière du matin.",
+      "timesTitle": "Meilleure lumière",
+      "times": [
+        { "period": "Heure dorée", "desc": "~08:00–09:30 — lumière chaude sur les statues et le fleuve" },
+        { "period": "Heure bleue", "desc": "~18:00–18:40 — ciel doux avant la fermeture" },
+        { "period": "Tôt le matin", "desc": "07:30–08:30 — brume et peu de monde" }
+      ],
+      "spotsTitle": "Points de vue",
+      "spots": [
+        { "name": "Le sommet de la citrouille géante", "view": "Vue depuis le toit sur le parc et le Mékong", "tip": "Grimpez avant la foule" },
+        { "name": "Bouddha couché", "view": "Silhouette de 40 mètres", "tip": "Photographiez bas, de côté" },
+        { "name": "Éléphant à trois têtes", "view": "L'emblème du parc", "tip": "Utilisez un grand angle" }
+      ],
+      "settingsTitle": "Réglages",
+      "settings": [
+        { "style": "Heure dorée", "camera": "f/8, ISO 100, 1/250 s", "phone": "Touchez pour exposer le ciel, activez le HDR" },
+        { "style": "Heure bleue", "camera": "f/5.6, ISO 400, 1/60 s", "phone": "Mode nuit, tenez stable 2–3 s" },
+        { "style": "Reflets", "camera": "Filtre polarisant, trépied bas", "phone": "Approchez-vous du bord de l'eau" }
+      ],
+      "tipsTitle": "Conseils rapides",
+      "tips": [
+        "Arrivez 30 min après l'ouverture",
+        "Cadrez vers le fleuve dégagé",
+        "Essuyez l'objectif s'il y a de la brume",
+        "Respectez le silence des autels"
+      ]
+    },
+    "bestTime": {
+      "title": "Quand visiter",
+      "intro": "Vientiane a trois saisons qui changent l'ambiance du parc.",
+      "seasons": [
+        { "tag": "❄️", "months": "Nov – Fév", "name": "Saison fraîche", "desc": "Matinées agréables et lumière la plus claire — le moment le plus confortable pour marcher." },
+        { "tag": "🔥", "months": "Mars – Avr", "name": "Saison chaude", "desc": "Très chaud ; venez dès les premières heures pour éviter la fournaise." },
+        { "tag": "🌧️", "months": "Mai – Oct", "name": "Saison des pluies", "desc": "Pelouses vertes et peu de visiteurs, mais les averses de l'après-midi peuvent écourter la visite." }
+      ]
+    },
+    "safety": {
+      "title": "Sécurité",
+      "items": [
+        { "title": "Près des statues", "desc": "Certains bétons sont anciens ; ne grimpez pas sur les figures fragiles." },
+        { "title": "L'escalier de la citrouille", "desc": "Les marches sont étroites à l'intérieur ; tenez la rampe et attention à la tête." },
+        { "title": "Effets personnels", "desc": "Gardez vos sacs près de vous dans la zone animée de l'entrée." }
+      ]
+    },
+    "hazeSeason": {
+      "tag": "🌫️ Mois chauds et enfumés",
+      "text": "Mars–avril peuvent être très chauds et brumeux ; les voyageurs sensibles à la chaleur préféreront décembre–janvier."
+    },
+    "emergency": {
+      "title": "Numéros d'urgence",
+      "intro": "Pour une aide urgente au Laos :",
+      "items": [
+        { "title": "Police touristique", "value": "1198" },
+        { "title": "Ambulance", "value": "195" },
+        { "title": "Urgence générale", "value": "191" }
+      ]
+    },
+    "accessibility": {
+      "title": "Accessible à tous",
+      "intro": "Les pelouses principales sont plates, avec peu de marches.",
+      "items": [
+        { "title": "Fauteuils et poussettes", "desc": "Chemins plats autour de la majeure partie de la pelouse." },
+        { "title": "Se reposer", "desc": "Bancs ombragés et un petit café." },
+        { "title": "Toilettes", "desc": "Installations publiques près de l'entrée." }
+      ]
+    },
+    "faqTitle": "Questions fréquentes",
+    "faqs": [
+      { "q": "Quels sont les horaires d'ouverture du Parc de Bouddha ?", "a": "Le parc est ouvert tous les jours d'environ 08:00 à 17:00. Les matinées sont les plus fraîches et les plus calmes." },
+      { "q": "Quel est le prix d'entrée du Parc de Bouddha à Vientiane ?", "a": "Oui — environ 15 000 LAK pour les visiteurs étrangers, plus environ 5 000 LAK si vous apportez un appareil photo." },
+      { "q": "Comment rejoindre le Parc de Bouddha depuis le centre de Vientiane ?", "a": "Il se trouve à environ 25 km à l'est du centre ; prenez un tuk-tuk ou un bus public en direction du pont de l'Amitié." },
+      { "q": "Vaut-il la peine de grimper la citrouille géante ?", "a": "Oui — la sphère de trois niveaux monte de l'Enfer au Ciel, avec une vue depuis le toit sur le Mékong." },
+      { "q": "Est-ce adapté aux familles ?", "a": "Tout à fait — pelouses plates, promenade au bord du fleuve et statues ludiques, mais surveillez les enfants dans l'escalier étroit de la citrouille." },
+      { "q": "Où se trouve le Parc de Bouddha ?", "a": "Le Parc de Bouddha (Wat Xieng Khouane Luang) se trouve à Deua, district de Thanon Tha, Vientiane, préfecture de Vientiane, au Laos — à environ 25 km à l'est du centre-ville, sur la rive sud du Mékong. Code Plus : WQ67+WW." },
+      { "q": "Combien de temps dure la visite du Parc de Bouddha ?", "a": "La plupart des visiteurs y passent 1 à 2 heures. Parcourir les pelouses et grimper la tour Citrouille de trois niveaux tient aisément dans une demi-journée depuis Vientiane." },
+      { "q": "Que porter pour visiter le Parc de Bouddha ?", "a": "C'est un site religieux actif : couvrez épaules et genoux, déchaussez-vous là où on vous le demande, et prévoyez chapeau, crème solaire et eau — les pelouses en béton deviennent brûlantes à midi." }
+    ],
+    "nearby": {
+      "title": "Monuments et attractions autour du Parc de Bouddha",
+      "items": [
+        { "name": "Sala Keoku (Nong Khai)", "desc": "Un parc de sculptures jumeau juste de l'autre côté du fleuve, en Thaïlande.", "url": "https://maps.google.com/?q=Sala+Keoku+Nong+Khai" },
+        { "name": "Pont de l'Amitié", "desc": "La traversée du Mékong vers Nong Khai, à quelques minutes de route.", "url": "https://maps.google.com/?q=First+Thai-Lao+Friendship+Bridge" },
+        { "name": "Centre de Vientiane", "desc": "Fontaine Nam Phu, That Luang et temples riverains.", "url": "https://maps.google.com/?q=Vientiane+City" }
+      ],
+      "cta": "Préparer sa visite →"
+    }
+  },
+  "sculptures": {
+    "label": "Guide des sculptures",
+    "heading": "Six figures à ne pas manquer",
+    "intro": "Plus de 200 personnages de béton se partagent ces pelouses. Ces six-là portent les histoires les plus demandées — avec le meilleur angle pour chacune.",
+    "items": [
+      {
+        "tag": "Incontournable",
+        "name": "La Citrouille géante",
+        "alt": "Tour en forme de citrouille géante au Parc de Bouddha de Vientiane, entrée par la gueule d'un démon",
+        "meta": "Trois niveaux : enfer, terre, ciel",
+        "desc": "Une tour bulbeuse où l'on entre par la gueule d'un démon. L'étroit escalier grimpe à travers des scènes d'enfer, puis le monde des humains, jusqu'à une terrasse sur le toit qui figure le ciel.",
+        "photoTip": "Photographiez la gueule du démon en contre-plongée depuis la base, puis depuis la terrasse pour le seul panorama complet du parc."
+      },
+      {
+        "tag": "Incontournable",
+        "name": "Le Bouddha couché",
+        "alt": "Longue statue de bouddha couché allongée sur la pelouse du Parc de Bouddha de Vientiane",
+        "meta": "Environ 40 m de long",
+        "desc": "Un bouddha allongé sur le côté droit parcourt toute la pelouse centrale : l'une des plus grandes figures couchées du Laos. Le visage serein et la ligne du corps sont l'image emblématique du parc.",
+        "photoTip": "Angle bas depuis les pieds pour la profondeur ; la lumière rasante de fin d'après-midi révèle les plis de la robe."
+      },
+      {
+        "tag": "Hindou",
+        "name": "Éléphant à trois têtes (Erawan)",
+        "alt": "Statue de l'éléphant Erawan à trois têtes avec Indra au Parc de Bouddha de Vientiane",
+        "meta": "Erawan portant Indra",
+        "desc": "La monture à trois têtes d'Indra, couverte de petits visages sculptés. Elle incarne la rencontre des imageries hindoue et bouddhique qui définit tout le parc.",
+        "photoTip": "Placez-vous légèrement en dessous des têtes et cadrez large — l'échelle paraît bien plus grande qu'en cadrage frontal."
+      },
+      {
+        "tag": "Hindou",
+        "name": "Shiva",
+        "alt": "Statue du dieu hindou Shiva au Parc de Bouddha de Vientiane",
+        "meta": "Le destructeur et transformateur",
+        "desc": "Shiva apparaît avec les attributs de la destruction et du renouveau, rappelant que Luang Pu Bunleua Sulilat puisait librement aux sources hindoues et bouddhiques.",
+        "photoTip": "Cadrez le buste sur ciel dégagé pour garder nets les détails du béton."
+      },
+      {
+        "tag": "Hindou",
+        "name": "Vishnu",
+        "alt": "Statue du dieu hindou Vishnu au Parc de Bouddha de Vientiane",
+        "meta": "Le préservateur",
+        "desc": "Vishnu, le préservateur, est représenté avec ses emblèmes traditionnels. Il fait pendant à Shiva sur la même pelouse — les deux fois littéralement côte à côte.",
+        "photoTip": "La lumière du matin, à l'est, adoucit le béton et évite les ombres dures."
+      },
+      {
+        "tag": "Épopée",
+        "name": "Arjuna",
+        "alt": "Statue d'Arjuna, héros du Mahabharata, au Parc de Bouddha de Vientiane",
+        "meta": "Héros du Mahabharata",
+        "desc": "Arjuna, le héros archer du Mahabharata, figure parmi les personnages épiques coulés ici. Les scènes des épopées indiennes voisinent avec les statues bouddhiques, sans hiérarchie.",
+        "photoTip": "Photographiez en contre-plongée, le bras tenant l'arc ouvrant le cadre."
+      }
+    ],
+    "note": "Les détails et les noms suivent les descriptions largement utilisées du parc ; les guides locaux donnent parfois des noms différents pour une même figure."
+  },
+  "transport": {
+    "label": "Comment venir",
+    "heading": "Le bus 14 et toutes les autres façons d'arriver",
+    "intro": "Le Parc de Bouddha se trouve à environ 25 km à l'est du centre de Vientiane, sur Thadeua Road, près du pont de l'Amitié thaï-lao. Voici exactement comment y aller.",
+    "bus14": {
+      "tag": "Le moins cher",
+      "title": "Bus n° 14 — l'itinéraire classique",
+      "fare": "Environ 6 000 LAK l'aller",
+      "freq": "À peu près toutes les 15–20 minutes",
+      "duration": "Environ 45–60 minutes",
+      "steps": [
+        "Départ de la gare routière de Talat Sao (marché du matin), dans le centre de Vientiane",
+        "Prenez le bus n° 14 qui sort par Thadeua Road (route 13 sud)",
+        "Le bus roule vers l'est en dépassant les embranchements vers le pont de l'Amitié",
+        "Descendez au terminus — le Parc de Bouddha est juste au bord de la route",
+        "Retour par le même itinéraire ; les derniers bus partent en fin d'après-midi"
+      ],
+      "tip": "Tarifs et horaires changent sans préavis — vérifiez à la gare routière avant de monter."
+    },
+    "optionsTitle": "Autres façons de rejoindre le parc",
+    "options": [
+      { "icon": "🛺", "name": "Tuk-tuk ou voiture affrétée", "best": "Petits groupes, porte à porte", "detail": "Convenez par écrit du prix aller-retour et du temps d'attente avant le départ ; demandez au chauffeur d'attendre ou fixez une heure de reprise.", "price": "À négocier — aller-retour avec temps d'attente" },
+      { "icon": "📱", "name": "Applications de VTC (Loca, KokKok Move)", "best": "Tarif clair à l'avance", "detail": "La couverture est bonne dans le centre de Vientiane et plus faible près du parc. Placez le point de reprise à l'entrée du parc pour le retour.", "price": "Tarif affiché dans l'application" },
+      { "icon": "🏍️", "name": "Moto de location", "best": "Voyageurs indépendants", "detail": "Suivez Thadeua Road vers l'est sur environ 25 km. La circulation est mixte et le revêtement change ; portez un casque et roulez de jour.", "price": "Location à la journée plus carburant" },
+      { "icon": "🚐", "name": "Excursion ou navette d'hôtel", "best": "Une demi-journée sans souci", "detail": "De nombreuses maisons d'hôtes de Vientiane organisent ou réservent une demi-journée associant le Parc de Bouddha à d'autres sites de l'est.", "price": "Selon l'opérateur" }
+    ],
+    "border": {
+      "title": "Venir directement de la frontière thaï-lao",
+      "text": "Le parc n'est qu'à quelques minutes du premier pont de l'Amitié thaï-lao, ce qui en fait la première étape naturelle après la traversée depuis Nong Khai.",
+      "steps": [
+        "Accomplissez les formalités d'immigration et le visa à l'arrivée au pont",
+        "Prenez une navette ou un taxi côté Vientiane",
+        "Continuez environ 10 minutes par la route jusqu'à l'entrée du parc"
+      ],
+      "note": "Vérifiez les règles et frais actuels du visa à l'arrivée auprès de l'immigration laotienne avant de voyager."
+    },
+    "note": "Les prix et horaires sont indicatifs et changent souvent. Considérez-les comme une aide à la planification et confirmez sur place le jour même."
+  },
+  "itinerary": {
+    "label": "Itinéraires",
+    "heading": "Comment caser le Parc de Bouddha dans votre journée",
+    "intro": "Trois plans prêts à l'emploi, d'une demi-journée rapide à la première étape transfrontalière.",
+    "items": [
+      {
+        "tag": "Demi-journée",
+        "duration": "3 – 4 heures",
+        "title": "Le Parc de Bouddha et la berge",
+        "desc": "Le plan classique : prenez le bus 14 le matin, visitez le parc et soyez rentré en ville pour le déjeuner.",
+        "steps": [
+          "Bus 14 depuis Talat Sao le matin",
+          "Parcourez la pelouse principale et les six sculptures clés",
+          "Grimpez la citrouille géante jusqu'à la terrasse",
+          "Boisson fraîche au bord du Mékong avant le bus du retour"
+        ]
+      },
+      {
+        "tag": "Journée complète",
+        "duration": "6 – 8 heures",
+        "title": "Le Parc de Bouddha et l'est de Vientiane",
+        "desc": "Ajoutez le secteur du pont de l'Amitié et un déjeuner au bord du fleuve pour faire une journée complète de l'est de la capitale.",
+        "steps": [
+          "Départ tôt pour la lumière douce et moins de monde",
+          "Longue promenade sans hâte parmi les pelouses de sculptures",
+          "Déjeuner dans un restaurant riverain près du parc",
+          "Poursuivez vers le pont de l'Amitié avant de rentrer"
+        ]
+      },
+      {
+        "tag": "Transfrontalier",
+        "duration": "Première étape à l'arrivée",
+        "title": "Directement depuis Nong Khai",
+        "desc": "Traversez le Mékong depuis la Thaïlande et visitez le parc en route vers Vientiane — sans détour.",
+        "steps": [
+          "Franchissez le premier pont de l'Amitié thaï-lao",
+          "Accomplissez les formalités d'entrée au Laos",
+          "Court transfert routier jusqu'au parc",
+          "Continuez ensuite vers le centre de Vientiane"
+        ]
+      }
+    ],
+    "note": "Prévoyez du temps supplémentaire les jours fériés, quand la frontière et le parc sont tous deux bondés."
+  },
+  "parkmap": {
+    "label": "Plan du parc",
+    "heading": "Où se trouve chaque chose",
+    "intro": "Un schéma d'orientation simple — le parc est compact et l'on en fait le tour en bien moins d'une heure.",
+    "legend": [
+      "Entrée du parc et billetterie",
+      "Citrouille géante (accès à la terrasse)",
+      "Bouddha couché",
+      "Éléphant à trois têtes (Erawan)",
+      "Restaurant riverain et zone ombragée",
+      "Toilettes",
+      "Arrêt du bus 14 sur Thadeua Road"
+    ],
+    "note": "Ce schéma est une aide à l'orientation simplifiée et n'est pas à l'échelle."
+  },
+  "currency": {
+    "label": "Devise",
+    "heading": "Convertisseur LAK",
+    "intro": "Le kip laotien varie face aux autres monnaies, et les tarifs du parc sont en kip. Convertissez avant de partir.",
+    "amountLabel": "Montant en LAK",
+    "resultLabel": "Converti",
+    "unitLabels": ["LAK", "USD", "THB", "CNY"],
+    "tip": "Ayez de petits billets en kip pour l'entrée, le bus et les en-cas.",
+    "loading": "Chargement des taux…",
+    "error": "Les taux sont indisponibles pour le moment — valeurs de référence affichées.",
+    "updated": "Taux actualisés",
+    "fallbackNote": "Taux de référence utilisé hors ligne.",
+    "presets": ["Droit d'entrée", "Bus 14", "Bouteille d'eau"]
+  },
+  "extraFaq": {
+    "items": [
+      { "q": "Peut-on faire voler un drone au Parc de Bouddha ?", "a": "La réglementation laotienne exige une autorisation des autorités pour les drones, et les abords du Mékong et du pont de l'Amitié sont des zones sensibles. Partez du principe qu'une autorisation écrite est nécessaire avant de voler et renseignez-vous à l'entrée en cas de doute." },
+      { "q": "Le Parc de Bouddha est-il accessible en fauteuil roulant ?", "a": "Les pelouses principales sont plates et généralement fermes : fauteuils et poussettes atteignent la plupart des grandes statues. En revanche, l'escalier intérieur de la citrouille est étroit, sombre et raide, donc les niveaux supérieurs ne sont pas accessibles." },
+      { "q": "En quoi le Parc de Bouddha diffère-t-il de Sala Keoku à Nong Khai ?", "a": "Les deux ont été créés par le même mystique, Luang Pu Bunleua Sulilat, et mêlent figures hindoues et bouddhiques en béton. Le Parc de Bouddha est né le premier, en 1958, sur la rive laotienne ; Sala Keoku a suivi après 1975 sur la rive thaïlandaise, avec des structures plus hautes et plus élaborées. Beaucoup de visiteurs découvrent les deux en un seul voyage transfrontalier." },
+      { "q": "Qui a construit le Parc de Bouddha et pourquoi ?", "a": "Luang Pu Bunleua Sulilat, un ermite chamanique qui mêlait idées bouddhiques et hindoues, commença le parc en 1958 pour exprimer sa vision dans le béton plutôt que par des mots." }
+    ]
+  },
+  "food": {
+    "label": "Nourriture et boissons",
+    "heading": "Manger au bord du fleuve",
+    "lead": "Le parc reste simple — quelques stands et un café plutôt qu'un marché de nuit.",
+    "dishes": [
+      { "tag": "🥤", "name": "Eau de coco et boissons", "price": "~10 000 LAK", "desc": "Boissons fraîches aux stands — bienvenues à la chaleur de midi." },
+      { "tag": "🍌", "name": "Riz gluant et en-cas", "price": "~15 000 LAK", "desc": "Snacks locaux et fruits près de l'entrée." },
+      { "tag": "🍜", "name": "Soupe de nouilles", "price": "~25 000 LAK", "desc": "Un bol simple, façon pho, au petit café." },
+      { "tag": "☕", "name": "Café laotien", "price": "~15 000 LAK", "desc": "Café glacé sucré pour finir la balade." }
+    ],
+    "quote": {
+      "text": "La meilleure pause au Parc de Bouddha, c'est une boisson fraîche sous les arbres.",
+      "author": "un visiteur habitué"
+    }
+  },
+  "gallery": {
+    "label": "Galerie",
+    "heading": "Instants dans le parc",
+    "intro": "Le parc au fil du jour — du matin brumeux aux statues sous la lumière douce.",
+    "historicalNote": "Les images illustrent l'atmosphère du parc et peuvent varier selon la saison et la lumière.",
+    "credits": "Images illustratives et documentaires, non commerciales.",
+    "alts": [
+      "L'éléphant à trois têtes dominant la pelouse",
+      "Un bouddha couché de 40 mètres à la lumière du matin",
+      "La sphère Citrouille géante entre les arbres",
+      "Des visiteurs sortant sur le toit de la citrouille",
+      "Une rangée de bouddhas assis face au Mékong",
+      "Dieux hindous sculptés dans le béton",
+      "Bassins de lotus reflétant les statues",
+      "L'entrée en gueule de démon de la citrouille",
+      "Bancs ombragés au bord du fleuve",
+      "Un petit autel près de l'eau",
+      "Oiseaux au-dessus des pelouses tranquilles",
+      "Café laotien au café du parc",
+      "Reflets de l'éléphant dans l'eau calme",
+      "Une passerelle au-dessus d'un petit bassin",
+      "Le soleil dorant le Mékong",
+      "Statues s'estompant dans la soirée"
+    ],
+    "altSuffix": "Parc de Bouddha (Wat Xieng Khouane Luang), Vientiane, Laos",
+    "viewLocation": "Voir sur Google Maps"
+  },
+  "reviews": {
+    "label": "Avis",
+    "heading": "Ce que disent les visiteurs",
+    "intro": "Un aperçu des avis Google Maps pour le Parc de Bouddha (Wat Xieng Khouane Luang) à Vientiane, au Laos — conservés sur cette page uniquement et non transmis en données structurées.",
+    "disclaimer": "D'après les avis Google Maps · non approuvé par Google",
+    "declaration": "Synchronisé depuis les avis Google Maps, dernière synchronisation septembre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
+    "featured": [
+      { "text": "Un jardin surréaliste et paisible qu'on ne trouve dans aucun guide — statues, fleuve et belle lumière", "source": "★ 5.0 · avis de voyageur" },
+      { "text": "Grimper la citrouille géante au coucher du soleil a été le moment fort de notre séjour à Vientiane", "source": "★ 5.0 · note de visiteur" }
+    ],
+    "items": [
+      { "text": "[À voir : la citrouille géante] Étrange et merveilleux — grimpez-y pour la vue depuis le toit", "rating": "5", "name": "Ana", "date": "mars 2026" },
+      { "text": "[Bouddha couché] Immense et serein — on y passe une heure sans s'en rendre compte", "rating": "5", "name": "Tom", "date": "févr. 2026" },
+      { "text": "[Visite matinale] Frais et calme avant les bus de tourisme", "rating": "4", "name": "Lina", "date": "janv. 2026" },
+      { "text": "[En famille] Chemins plats, les enfants ont adoré l'éléphant", "rating": "4", "name": "Wei", "date": "févr. 2026" },
+      { "text": "[Photo] La lumière douce du matin sur les statues valait ce lever tôt", "rating": "5", "name": "Ken", "date": "déc. 2025" },
+      { "text": "[Bord du fleuve] Authentique, moins de monde que dans les temples de la ville", "rating": "4", "name": "Sora", "date": "janv. 2026" },
+      { "text": "[Restauration] Boissons et en-cas bon marché, prévoyez du liquide", "rating": "4", "name": "Pim", "date": "mars 2026" },
+      { "text": "[Affluence] Bondé les jours fériés, plus calme en semaine", "rating": "4", "name": "Dan", "date": "févr. 2026" }
+    ],
+    "sourceNote": "Synchronisé depuis les avis Google Maps, dernière synchronisation septembre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
+    "viewLocation": "Voir tous les avis sur Google Maps"
+  },
+  "weather": {
+    "label": "Météo",
+    "heading": "Météo et quand partir",
+    "intro": "Conditions en direct aux coordonnées du parc, avec des prévisions sur sept jours, pour savoir quoi emporter.",
+    "currentLabel": "En ce moment",
+    "todayLabel": "Aujourd'hui",
+    "feelsLike": "Ressenti",
+    "humidity": "Humidité",
+    "wind": "Vent",
+    "precipProb": "Risque de pluie",
+    "todayHigh": "Maximale",
+    "todayLow": "Minimale",
+    "sunrise": "Lever du soleil",
+    "sunset": "Coucher du soleil",
+    "forecastTitle": "Prévisions sur 7 jours",
+    "todayShort": "Auj.",
+    "adviceTitle": "Quoi emporter",
+    "tipNote": "Les heures de soleil et d'averses sont calculées pour les coordonnées du parc.",
+    "tipUmbrella": "La pluie est probable — prévoyez un parapluie compact ou une veste de pluie légère.",
+    "tipHeat": "Il fera chaud : chapeau, crème solaire et gourde réutilisable.",
+    "tipCool": "Les matinées sont fraîches — prévoyez une petite couche à retirer.",
+    "tipStorm": "Des orages sont possibles ; écourtez la visite et restez à couvert.",
+    "tipSun": "Fort soleil annoncé — lunettes de soleil et protection solaire.",
+    "tipFog": "Visibilité réduite probable ; la vue sur le fleuve peut être brumeuse tôt le matin.",
+    "tipDefault": "Conditions confortables — des vêtements légers et un peu d'eau suffisent.",
+    "errorText": "Les données météo sont temporairement indisponibles. Réessayez plus tard.",
+    "uvIndex": "Indice UV",
+    "windUnit": "Bft",
+    "uvLow": "Faible",
+    "uvModerate": "Modéré",
+    "uvHigh": "Élevé",
+    "uvVeryHigh": "Très élevé",
+    "uvExtreme": "Extrême",
+    "windLevels": ["Calme", "Très légère brise", "Légère brise", "Petite brise", "Jolie brise", "Bonne brise", "Vent frais", "Grand frais", "Coup de vent", "Fort coup de vent", "Tempête", "Violente tempête", "Ouragan"],
+    "advice": {
+      "riskLabel": "Alerte météo",
+      "dressLabel": "Comment s'habiller",
+      "planLabel": "Comment organiser",
+      "gearLabel": "Quoi emporter",
+      "noRisk": "Aucune alerte météo pour le moment — le parc se visite comme prévu.",
+      "alert": "Une alerte {event} a été émise pour cette zone. Envisagez de modifier vos plans et suivez les mises à jour officielles.",
+      "rThunder": "Des orages sont prévus. Évitez les zones dégagées, les grands arbres isolés et la berge exposée — et renoncez à l'escalier métallique de la tour Citrouille.",
+      "rHeavy": "Fortes pluies annoncées. Les pelouses et l'escalier de la tour deviennent glissants et le chemin de berge peut être inondé — attention où vous mettez les pieds.",
+      "rGale": "Vents forts annoncés. Tenez-vous à l'écart des grands arbres et des toitures légères de la berge, et retenez chapeaux et vêtements flottants.",
+      "rFog": "Visibilité réduite ce matin — la vue sur le fleuve et les photos lointaines seront ternes.",
+      "rHeat": "Chaleur extrême. Les pelouses en béton rayonnent fort à midi — écourtez la visite et reposez-vous à l'ombre.",
+      "dSnow": "Froid inhabituel — portez une veste chaude et des chaussures fermées.",
+      "dRainWind": "Vent et pluie probables — une veste imperméable légère vaut mieux qu'un parapluie sur ces pelouses dégagées.",
+      "dRainLight": "Des averses passent — vêtements à séchage rapide et chaussures qui accrochent sont le choix pratique.",
+      "dHot": "Journée chaude avec peu d'écart jour-nuit — des vêtements légers et respirants sont le choix le plus confortable.",
+      "dCold": "Journée fraîche — prévoyez une couche chaude et un pantalon long.",
+      "dLayers": "Fort écart entre le jour et la nuit — habillez-vous en couches à retirer au fil de la chaleur.",
+      "dDefault": "Conditions confortables — des vêtements légers et respirants suffisent.",
+      "pAlert": "La sécurité d'abord : écourtez la visite, éloignez-vous de la berge et suivez les consignes du personnel du parc.",
+      "pThunder": "Les orages se forment généralement l'après-midi — venez tôt et soyez prêt à écourter. Le toit de la tour n'est pas un endroit où rester par orage.",
+      "pHeavy": "Ce n'est pas un jour pour s'attarder dehors. Faites une courte boucle au niveau du sol et réservez la tour à un jour sec.",
+      "pLight": "Averses passagères — cela vaut la peine d'y aller, mais l'escalier intérieur de la tour et le chemin de berge deviennent glissants. Prenez votre temps.",
+      "pChance": "La pluie est probable plus tard dans la journée : visez le matin et grimpez la tour tôt.",
+      "pSnow": "Très froid — écourtez la visite et restez sur les chemins plats.",
+      "pHot": "Arrivez à l'ouverture ou après 16:00 et utilisez les bancs ombragés — les pelouses en béton sont éprouvantes à midi.",
+      "pOvercast": "Lumière douce et homogène, sans ombres dures : les meilleures conditions de l'année pour photographier les statues.",
+      "pClear": "Idéal pour faire le tour complet des pelouses, grimper la tour et profiter de la lumière de fin d'après-midi sur le Mékong.",
+      "pDefault": "Les conditions sont stables — une visite normale convient, au rythme qui vous plaît.",
+      "gRaincoat": "Imperméable (un grand parapluie ne sert à rien par grand vent)",
+      "gUmbrella": "Parapluie pliant",
+      "gSunscreen": "Crème solaire, lunettes de soleil et chapeau",
+      "gWater": "Beaucoup d'eau potable",
+      "gWarm": "Une petite couche pour la soirée",
+      "gMask": "Un masque si la brume vous gêne",
+      "gNone": "Rien de spécial — votre équipement habituel de sortie"
+    },
+    "dayNames": ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
+    "codes": {
+      "clear": "Ciel dégagé",
+      "mainlyClear": "Plutôt dégagé",
+      "partlyCloudy": "Partiellement nuageux",
+      "overcast": "Couvert",
+      "fog": "Brouillard",
+      "drizzle": "Bruine",
+      "rain": "Pluie",
+      "showers": "Averses",
+      "snow": "Neige",
+      "thunder": "Orage"
+    }
+  },
+  "stories": {
+    "label": "Récits et légendes",
+    "heading": "Les histoires derrière les statues",
+    "intro": "À mi-chemin entre histoire et folklore — les récits que les habitants et les guides chevronnés racontent encore sur ce jardin riverain.",
+    "note": "Les légendes sont signalées comme telles ; elles sont partagées comme tradition culturelle et non comme fait documenté.",
+    "kindFact": "Documenté",
+    "kindLegend": "Légende",
+    "kindSymbol": "Symbolisme",
+    "items": [
+      {
+        "kind": "Documenté",
+        "title": "L'homme qui bâtit une cité d'esprits",
+        "text": "Bunleua Sulilat n'était pas un moine ordinaire. Mystique et guérisseur chamanique, il avait étudié auprès d'un ermite et voyagé des années avant de s'établir sur ce méandre du Mékong en 1958. Avec une poignée d'ouvriers locaux non formés, il commença à couler du béton armé dans des moules, et continua pendant des années."
+      },
+      {
+        "kind": "Légende",
+        "title": "La grotte et l'ermite",
+        "text": "L'histoire la plus connue raconte que, jeune homme, Bunleua tomba dans une grotte et rencontra un ermite hindou qui lui enseigna les écritures et la méditation. Cette rencontre, dit-on, explique pourquoi le parc mêle si librement figures bouddhiques et hindoues — une affirmation répétée par les guides, qu'aucune source ne confirme dans le détail."
+      },
+      {
+        "kind": "Documenté",
+        "title": "Un fleuve, deux parcs",
+        "text": "Après 1975, Bunleua traversa le Mékong vers Nong Khai, en Thaïlande, et reprit depuis le début, créant Sala Keoku. Les deux jardins se font face de part et d'autre de l'eau, bâtis par la même main et la même vision — cas rare d'une œuvre d'un seul artiste à cheval sur deux pays."
+      },
+      {
+        "kind": "Symbolisme",
+        "title": "Enfer, terre et ciel en une sphère",
+        "text": "La citrouille géante est une image d'école des « trois mondes » bouddhiques. On entre par la gueule d'un démon, on monte à tâtons d'étroites marches sombres à travers l'Enfer et le monde humain, et l'on émerge au sommet à la lumière du jour — une métaphore incarnée de la sortie du cycle des renaissances."
+      },
+      {
+        "kind": "Légende",
+        "title": "Les esprits du Mékong",
+        "text": "Dans la croyance populaire laotienne, le fleuve est habité par des phi, des esprits qu'il faut traiter avec courtoisie. De petits autels et des offrandes près de l'eau demandent passage sûr et bonne fortune — une pratique discrète bien antérieure aux sculptures."
+      },
+      {
+        "kind": "Documenté",
+        "title": "Du béton, pas du marbre",
+        "text": "Rien ici n'a été taillé dans une pierre fine. Les figures ont été coulées sur place en béton armé industriel par des ouvriers sans formation artistique — d'où des surfaces brutes et des proportions follement exagérées. Ce qui commença comme une économie est devenu la signature du parc."
+      },
+      {
+        "kind": "Documenté",
+        "title": "Un nom qui signifie « cité des esprits »",
+        "text": "Xieng signifie cité, khouane esprit ou âme. Wat Xieng Khouane — la Cité des esprits — décrit le lieu exactement : un peuplement d'êtres de béton dressés là où le Mékong forme un coude."
+      },
+      {
+        "kind": "Documenté",
+        "title": "Un jardin qui ne cesse de changer",
+        "text": "Exposé à la mousson et au soleil tropical, le béton s'altère et se fissure. Les réparations sont continues et certaines figures ont été re-coulées au fil des décennies. Ce que vous voyez n'est pas un monument achevé mais un jardin que l'on entretient encore."
+      }
+    ]
+  },
+  "seasons": {
+    "label": "Stratégie saisonnière",
+    "heading": "Quand visiter : un plan saison par saison",
+    "intro": "Vientiane a trois saisons nettes, et chacune change ce que l'on ressent réellement un matin au parc.",
+    "note": "Le tableau reflète les tendances climatiques de long terme de la région ; certaines journées peuvent différer.",
+    "headers": ["Saison", "Mois", "Conditions typiques", "Affluence", "Comment organiser"],
+    "rows": [
+      {
+        "season": "Fraîche et sèche",
+        "months": "Nov – Fév",
+        "weather": "25–31 °C, humidité faible, ciel le plus souvent dégagé",
+        "crowd": "La plus forte",
+        "strategy": "La meilleure période tous critères confondus. Arrivez à l'ouverture pour la lumière douce et l'air frais, restez pour le coucher de soleil sur le Mékong, et attendez-vous à de la compagnie dans l'escalier de la citrouille."
+      },
+      {
+        "season": "Chaude",
+        "months": "Mars – Avr",
+        "weather": "33–38 °C, après-midi brumeux, saison des brûlis",
+        "crowd": "Modérée",
+        "strategy": "Visitez avant 10:00 ou après 16:00. Emportez de l'eau, reposez-vous sous les arbres, portez un chapeau — les pelouses en béton rayonnent à midi."
+      },
+      {
+        "season": "Des pluies",
+        "months": "Mai – Oct",
+        "weather": "28–33 °C, humide, orages fréquents l'après-midi",
+        "crowd": "La plus calme",
+        "strategy": "Les matinées sont généralement sèches : partez tôt. Les pelouses verdissent et le fleuve coule haut, mais comptez sur une averse après le déjeuner durant les mois les plus humides."
+      }
+    ],
+    "monthTitle": "Mois par mois",
+    "months": [
+      { "month": "Janv.", "note": "Frais, sec, lumière la plus claire" },
+      { "month": "Févr.", "note": "Journées chaudes, encore supportables" },
+      { "month": "Mars", "note": "La chaleur monte, brume commence" },
+      { "month": "Avr.", "note": "Mois le plus chaud ; partez tôt" },
+      { "month": "Mai", "note": "Premiers orages, la vallée verdit" },
+      { "month": "Juin", "note": "Pluies régulières, très calme" },
+      { "month": "Juil.", "note": "Période la plus humide, fleuve haut" },
+      { "month": "Août", "note": "Luxuriant et boueux, peu de visiteurs" },
+      { "month": "Sept.", "note": "Fleuve au plus haut, ciels spectaculaires" },
+      { "month": "Oct.", "note": "Les pluies faiblissent, humidité persistante" },
+      { "month": "Nov.", "note": "Début de la saison fraîche" },
+      { "month": "Déc.", "note": "Journées agréables, fêtes animées" }
+    ]
+  },
+  "routes": {
+    "label": "Parcours conseillés",
+    "heading": "Des parcours pour chaque visiteur",
+    "intro": "Tous les parcours partent de l'entrée principale. Choisissez selon le temps dont vous disposez — et selon qui vous accompagne.",
+    "generalTitle": "Parcours classiques",
+    "general": [
+      {
+        "tag": "Demi-journée",
+        "duration": "2 – 3 heures",
+        "desc": "La visite standard : les incontournables, une ascension et une boisson fraîche au bord du fleuve.",
+        "steps": [
+          "Entrez et longez la pelouse principale dans le sens des aiguilles d'une montre vers l'éléphant à trois têtes",
+          "Grimpez la citrouille géante depuis la gueule du démon jusqu'au toit",
+          "Parcourez toute la longueur du bouddha couché",
+          "Terminez par une boisson à l'ombre, près de la berge"
+        ]
+      },
+      {
+        "tag": "Journée complète",
+        "duration": "5 – 6 heures",
+        "desc": "Une lecture plus lente du parc, avec le temps de s'asseoir, de dessiner et de voir la lumière changer.",
+        "steps": [
+          "Arrivez à l'ouverture et parcourez les pelouses dans l'air frais du matin",
+          "Étudiez les figures hindoues — Shiva, Vishnu, Brahma et les scènes du Ramayana",
+          "Pause nouilles et café laotien au café du parc",
+          "Revenez sur la berge pour les hérons et les varans d'eau",
+          "Restez pour la lumière de fin d'après-midi sur le Mékong avant la fermeture"
+        ]
+      }
+    ],
+    "audienceTitle": "Adapté au type de voyageur",
+    "audiences": [
+      {
+        "icon": "👨‍👩‍👧",
+        "name": "Familles avec enfants",
+        "focus": "Terrain plat, les animaux et la citrouille — avec des pauses à l'ombre.",
+        "steps": [
+          "Commencez par les pelouses plates ; le sol est régulier et facile en poussette",
+          "Laissez les enfants repérer les animaux — éléphant, naga, démons et dieux",
+          "Prenez la citrouille doucement ; l'escalier intérieur est étroit et sombre",
+          "Reposez-vous sur les bancs ombragés et gardez de l'eau à portée"
+        ]
+      },
+      {
+        "icon": "📷",
+        "name": "Photo et nature",
+        "focus": "Soleil bas, brume sur le fleuve et faune de la berge.",
+        "steps": [
+          "Soyez à l'entrée à l'ouverture pour des statues éclairées de côté et des allées vides",
+          "Travaillez le bouddha couché en contre-plongée, puis l'éléphant au grand angle",
+          "Parcourez la berge pour les hérons, martins-pêcheurs et varans d'eau",
+          "Revenez avant la fermeture pour la lumière chaude sur le Mékong"
+        ]
+      },
+      {
+        "icon": "♿",
+        "name": "Sans effort et sans marches",
+        "focus": "Tout au niveau du sol, avec de nombreux endroits où s'asseoir.",
+        "steps": [
+          "Suivez les allées principales plates — la majeure partie du parc est accessible sans marches",
+          "Laissez la tour Citrouille ; la vue du toit demande un escalier étroit",
+          "Utilisez les bancs ombragés entre les groupes de statues",
+          "Prévoyez une courte boucle de 45 à 60 minutes et une pause au café"
+        ]
+      }
+    ]
+  },
+  "facilities": {
+    "label": "Services aux visiteurs",
+    "heading": "Équipements et services à proximité",
+    "intro": "Ce à quoi vous attendre dans le parc et autour — listé par type uniquement. Nous ne recommandons ni ne promouvons aucune entreprise en particulier.",
+    "note": "Les installations dépendent de différents exploitants et peuvent varier selon la saison ; renseignez-vous à l'entrée en arrivant.",
+    "items": [
+      { "icon": "🚻", "title": "Toilettes", "desc": "Des toilettes publiques se trouvent près de l'entrée. Apportez votre papier et un peu de monnaie." },
+      { "icon": "🅿️", "title": "Stationnement", "desc": "Un parking en plein air pour voitures, minibus et motos jouxte l'entrée. Les places ombragées se remplissent tôt le week-end et les jours fériés." },
+      { "icon": "🍜", "title": "Nourriture et boissons", "desc": "Un petit café et quelques stands servent nouilles, en-cas, fruits et boissons fraîches. Les prix sont modestes et l'espèce est le plus simple." },
+      { "icon": "🏨", "title": "Où dormir", "desc": "Il n'y a pas d'hébergement dans le parc. Maisons d'hôtes et hôtels se concentrent dans le centre de Vientiane, à environ 25 km." },
+      { "icon": "🛒", "title": "Boutiques et courses", "desc": "De petites échoppes près de l'entrée vendent eau et produits de base. Pour un vrai supermarché, faites vos courses en ville d'abord." },
+      { "icon": "⛽", "title": "Carburant et recharge", "desc": "Stations-service et réparateurs de motos jalonnent la route du pont de l'Amitié. Les points de recharge pour véhicules électriques restent rares — calculez votre autonomie avant de partir." },
+      { "icon": "💊", "title": "Pharmacie et santé", "desc": "Les médicaments de base se vendent en ville ; pour tout problème sérieux, hôpitaux et cliniques sont dans le centre de Vientiane." },
+      { "icon": "💵", "title": "Espèces et distributeurs", "desc": "Apportez des kips en petites coupures pour les billets, le droit photo et les en-cas. Les distributeurs sont à Vientiane et près du pont de l'Amitié, pas dans le parc." },
+      { "icon": "🌳", "title": "Ombre et repos", "desc": "Bancs ombragés et pelouses ouvertes offrent de quoi s'asseoir à l'abri de la chaleur de midi." },
+      { "icon": "📶", "title": "Connectivité", "desc": "Les données mobiles couvrent l'essentiel du parc. Le Wi-Fi, quand le café en propose, peut être lent." }
+    ]
+  },
+  "responsibility": {
+    "label": "Comprendre et préserver",
+    "heading": "Ce qu'est ce lieu — et votre part",
+    "intro": "Le Parc de Bouddha est un site religieux vivant autant qu'une attraction. Un peu de contexte rend la visite plus riche, et un peu d'attention le maintient debout.",
+    "scienceTitle": "Pourquoi le parc compte",
+    "science": [
+      { "title": "Un témoignage de l'imaginaire populaire", "desc": "Les figures ont été conçues par un seul mystique et bâties par des ouvriers sans formation artistique. Le parc est donc un témoignage rare et sans filtre de l'imaginaire religieux populaire de la vallée du Mékong au milieu du XXe siècle." },
+      { "title": "Le béton comme matériau", "desc": "Le béton armé industriel était bon marché et disponible. Il a permis des formes énormes à grande vitesse, mais signifie aussi que les sculptures s'altèrent vite — la surface que vous voyez est en partie d'origine, en partie réparée." },
+      { "title": "Deux traditions sur une pelouse", "desc": "Figures bouddhiques et hindoues se côtoient, avec des croyances animistes plus anciennes que les deux. Le parc est une carte physique de la stratification religieuse qui caractérise le Laos." },
+      { "title": "Encore un lieu de culte", "desc": "On vient y faire des offrandes, pas seulement prendre des photos. Moines et gardiens y travaillent ; les autels sont utilisés." }
+    ],
+    "doTitle": "Ce qui aide",
+    "dontTitle": "Ce qu'il faut éviter",
+    "do": [
+      "Habillez-vous modestement — épaules et genoux couverts",
+      "Déchaussez-vous là où un panneau ou un habitant vous le demande",
+      "Parlez bas près des autels et des personnes en prière",
+      "Emportez vos déchets si les poubelles sont pleines",
+      "Demandez avant de photographier des personnes, y compris les moines",
+      "Payez les tarifs affichés à l'entrée — ils financent l'entretien"
+    ],
+    "dont": [
+      "Grimper sur les statues ou franchir les barrières",
+      "S'asseoir sur les figures religieuses ou s'y appuyer pour une photo",
+      "Toucher ou déplacer les offrandes déposées aux autels",
+      "Apporter un drone sans autorisation écrite",
+      "Laisser les enfants courir sans contrôle sur du béton fragile",
+      "Jeter quoi que ce soit dans le fleuve"
+    ],
+    "closing": "Le parc ne tire aucun revenu de ce site et ne verse aucune commission. Il survit parce que les visiteurs le respectent — aidez à ce que cela continue."
+  },
+  "sources": {
+    "label": "Sources",
+    "heading": "Nos références",
+    "intro": "Ce guide non commercial compile des informations publiques pour aider à planifier une visite responsable.",
+    "photoTitle": "Crédits photo",
+    "photoItems": [
+      { "text": "Les scènes présentées illustrent le Parc de Bouddha", "linkLabel": "Voir l'emplacement", "url": "https://maps.app.goo.gl/MdKTSwWw5H6PmDGJ7" },
+      { "text": "Toutes les photos affichées sur ce site restent la propriété de leurs photographes d'origine ; tous les droits d'image et copyright leur appartiennent.", "linkLabel": "", "url": "" }
+    ],
+    "photoCredit": "Toutes les photos affichées sur ce site restent la propriété de leurs photographes d'origine ; tous les droits d'image et copyright leur appartiennent.",
+    "reviewTitle": "Avis · dernière synchronisation septembre 2026",
+    "reviewText": "Synchronisé depuis les avis Google Maps, dernière synchronisation septembre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
+    "reviewLinkLabel": "Voir tous les avis sur Google Maps",
+    "factTitle": "Faits et données",
+    "factText": "Les notes, horaires et coordonnées proviennent de sources publiques et peuvent évoluer — vérifiez sur place avant de partir.",
+    "correctionTitle": "Une erreur ?",
+    "correctionText": "Nous sommes une petite équipe non commerciale. Si quelque chose est faux ou obsolète, dites-le-nous et nous corrigerons.",
+    "correctionMailto": "mailto:n20186005@gmail.com",
+    "correctionCta": "Nous écrire",
+    "copyright": "Guide du Parc de Bouddha · ressource non commerciale pour visiteurs"
+  },
+  "mapSection": {
+    "label": "Situation et carte",
+    "entityHeading": "Situation et carte du Parc de Bouddha (Vientiane, Laos)",
+    "heading": "Trouver le Parc de Bouddha",
+    "lead": "Dans le village de Deua, district de Thanon Tha, à l'est de Vientiane, au bord du Mékong, près du pont de l'Amitié thaï-lao.",
+    "authorityLabel": "Source officielle",
+    "authorityText": "Portail officiel du tourisme du Laos / préfecture de Vientiane",
+    "authorityLink": "https://www.tourismlaos.org",
+    "stats": [
+      { "tag": "Note", "value": "4.3 ★", "sub": "sur 5 456 avis" },
+      { "tag": "Ouverture", "value": "08:00", "sub": "tous les jours" },
+      { "tag": "Secteur", "value": "Deua", "sub": "Vientiane, Laos" }
+    ],
+    "address": "Deua, district de Thanon Tha, Vientiane, Laos",
+    "plusCode": "Code Plus WQ67+WW Vientiane",
+    "coords": "17,9124°N, 102,7622°E",
+    "iframeTitle": "Google Maps : Parc de Bouddha (Wat Xieng Khouane Luang), Vientiane, Laos"
+  },
+  "footer": {
+    "brand": {
+      "name": "Parc de Bouddha",
+      "tagline": "Wat Xieng Khouane Luang · Vientiane"
+    },
+    "about": "Un guide de visite gratuit et non commercial du Parc de Bouddha — histoire, statues et comment en profiter avec respect.",
+    "navTitle": "Explorer",
+    "navItems": [
+      { "label": "À propos", "href": "#about" },
+      { "label": "Histoire", "href": "#history" },
+      { "label": "Guide de visite", "href": "#guide" },
+      { "label": "Restauration", "href": "#food" },
+      { "label": "Galerie", "href": "#gallery" },
+      { "label": "Avis", "href": "#reviews" },
+      { "label": "Carte", "href": "#map" }
+    ],
+    "noteTitle": "Bon à savoir",
+    "note": "Nous ne sommes affiliés à aucun vendeur du parc. Les informations peuvent changer — vérifiez sur place.",
+    "mapsLabel": "Google Maps →",
+    "sourcesTitle": "Références",
+    "sourcesNote": "Ce guide renvoie vers des sources publiques pour vérification.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Paramètres des cookies",
+    "disclaimerLead": "Le guide du Parc de Bouddha est une ressource indépendante et non commerciale — ce n'est pas un site officiel d'une agence ni d'une entreprise.",
+    "unofficial": "Non officiel · un guide réalisé par la communauté",
+    "dataSource": "Notes et avis synchronisés depuis les avis Google Maps · septembre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
+    "photoCredit": "Toutes les photos affichées sur ce site restent la propriété de leurs photographes d'origine ; tous les droits d'image et copyright leur appartiennent.",
+    "copyright": "© 2026 Guide du Parc de Bouddha · non commercial"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "updated": "Dernière mise à jour : juillet 2026",
+      "sections": [
+        { "title": "1. Qui nous sommes", "text": "Ceci est un guide de visite non commercial du Parc de Bouddha. Nous ne vendons ni produits ni services et n'exploitons pas le parc." },
+        { "title": "2. Ce que nous collectons", "text": "Nous pouvons utiliser des outils d'analyse respectueux de la vie privée pour comprendre le trafic global. Nous ne collectons ni noms, ni e-mails, ni données de paiement." },
+        { "title": "3. Cookies", "text": "Nous utilisons une bannière de cookies minimale pour vous permettre de choisir ce qui est stocké. Vous pouvez modifier cela à tout moment via les paramètres des cookies." },
+        { "title": "4. Contact", "text": "Pour toute question relative à la vie privée, écrivez à n20186005@gmail.com." }
+      ]
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "updated": "Dernière mise à jour : juillet 2026",
+      "sections": [
+        { "title": "1. Utilisation de ce guide", "text": "Ce guide est fourni gratuitement, en l'état, pour préparer un voyage. Il ne constitue pas un avis officiel d'un exploitant." },
+        { "title": "2. Exactitude", "text": "Les horaires, tarifs et détails peuvent changer. Vérifiez toujours sur place avant de voyager." },
+        { "title": "3. Responsabilité", "text": "Nous ne sommes pas responsables des pertes ou désagréments liés à l'utilisation de ce guide." }
+      ]
+    },
+    "cookies": {
+      "title": "Paramètres des cookies",
+      "updated": "Dernière mise à jour : juillet 2026",
+      "intro": "Gérez les cookies que ce guide non commercial stocke. Vous pouvez modifier cela à tout moment.",
+      "necessary": { "label": "Strictement nécessaires", "desc": "Requis pour le fonctionnement du site. Toujours actifs." },
+      "analytics": { "label": "Analyses respectueuses de la vie privée", "desc": "Nous aident à voir le trafic global sans vous identifier." },
+      "save": "Enregistrer les préférences",
+      "saved": "Préférences enregistrées.",
+      "consent": "Nous utilisons une bannière de cookies minimale pour vous permettre de choisir ce qui est stocké. Vous pouvez modifier cela à tout moment via les paramètres des cookies.",
+      "categories": [
+        { "h": "Strictement nécessaires", "status": "Toujours actifs", "p": "Requis pour le fonctionnement du site, comme la mémorisation de votre choix en matière de cookies.", "sub": "Ne peuvent pas être désactivés", "subStatus": "always" },
+        { "h": "Analyses respectueuses de la vie privée", "status": "Optionnel", "p": "Nous aident à voir le trafic global sans vous identifier.", "sub": "Désactivé par défaut", "subStatus": "optional" }
+      ]
+    }
+  }
+}

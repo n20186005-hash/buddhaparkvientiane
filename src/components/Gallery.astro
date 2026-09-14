@@ -9,6 +9,7 @@ const gallery = messages.gallery;
 const alts: string[] = gallery.alts;
 const count = alts.length;
 const mapsUrl = siteConfig.mapsUrl;
+const altSuffix: string = gallery.altSuffix || '';
 ---
 
 <section id="gallery" class="py-20 bg-ivory text-ink">
@@ -26,8 +27,9 @@ const mapsUrl = siteConfig.mapsUrl;
           <div class={`photo-frame rounded-xl ${big ? 'col-span-2 row-span-2' : ''}`}>
             <img
               src={`/gallery/${siteConfig.galleryPrefix}${i + 1}.jpg`}
-              alt={alts[i]}
-              loading="lazy"
+              alt={altSuffix ? `${alts[i]} — ${altSuffix}` : alts[i]}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              decoding="async"
             />
           </div>
         );
@@ -35,7 +37,7 @@ const mapsUrl = siteConfig.mapsUrl;
     </div>
 
     <div class="mt-10 text-center">
-      <a href={mapsUrl} target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-teak border border-gold/50 px-6 py-3 rounded-full hover:bg-gold hover:text-teak transition-colors">
+      <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-teak border border-gold/50 px-6 py-3 rounded-full hover:bg-gold hover:text-teak transition-colors">
         {gallery.viewLocation}
       </a>
     </div>

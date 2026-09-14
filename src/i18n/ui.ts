@@ -1,24 +1,34 @@
 import th from './th.json';
 import en from './en.json';
 import zh from './zh.json';
+import fr from './fr.json';
+import ko from './ko.json';
+import ja from './ja.json';
+// 老挝语（lo.json）翻译尚未完成，暂不启用路由；完成后在此处 import 并加入 languagesList 即可上线
 
 export const defaultLang = 'th';
-export const languagesList = ['th', 'en', 'zh'] as const;
+export const languagesList = ['th', 'en', 'zh', 'fr', 'ko', 'ja'] as const;
 export type Lang = (typeof languagesList)[number];
 
 export const languages: Record<Lang, string> = {
   th: 'ไทย',
   en: 'English',
   zh: '中文',
+  fr: 'Français',
+  ko: '한국어',
+  ja: '日本語',
 };
 
-const messagesMap: Record<Lang, any> = { th, en, zh };
+const messagesMap: Record<Lang, any> = { th, en, zh, fr, ko, ja };
 
 // mapping for <html lang> / hreflang
 export const htmlLang: Record<Lang, string> = {
   th: 'th',
   en: 'en',
   zh: 'zh-CN',
+  fr: 'fr',
+  ko: 'ko',
+  ja: 'ja',
 };
 
 const lookup = (obj: Record<string, unknown>, key: string): string => {

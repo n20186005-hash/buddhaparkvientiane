@@ -1,0 +1,70 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  messages: Record<string, any>;
+}
+const { lang, messages } = Astro.props;
+const cb = messages.cookieBanner;
+---
+
+<div
+  id="cookie-consent"
+  hidden
+  class="fixed inset-x-0 bottom-0 z-[9999] border-t border-gold/30 bg-teakDeep/97 backdrop-blur px-5 py-4 text-ivory shadow-[0_-10px_30px_rgba(0,0,0,0.35)]"
+>
+  <div class="mx-auto flex max-w-6xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <p class="text-sm text-ivory/85 leading-relaxed">{cb.message}</p>
+    <div class="flex flex-wrap items-center gap-2">
+      <a
+        href={`/${lang}/cookie-settings`}
+        class="text-xs text-ivory/70 underline underline-offset-4 hover:text-goldBright"
+      >{cb.settings}</a>
+      <button
+        type="button"
+        id="cookie-decline"
+        class="rounded-full border border-ivory/30 px-5 py-2 text-sm font-medium text-ivory/85 hover:border-gold hover:text-gold transition-colors"
+      >{cb.decline}</button>
+      <button
+        type="button"
+        id="cookie-accept"
+        class="rounded-full bg-gold px-5 py-2 text-sm font-semibold text-teak hover:bg-goldBright transition-colors"
+      >{cb.accept}</button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var KEY = 'cookiePrefs';
+    var el = document.getElementById('cookie-consent');
+    function read() {
+      try {
+        return JSON.parse(localStorage.getItem(KEY) || 'null');
+      } catch (e) {
+        return null;
+      }
+    }
+    function save(prefs) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(prefs));
+      } catch (e) {}
+      window.dispatchEvent(new Event('consent-updated'));
+    }
+    if (!read() && el) el.hidden = false;
+
+    var acc = document.getElementById('cookie-accept');
+    var dec = document.getElementById('cookie-decline');
+    if (acc)
+      acc.addEventListener('click', function () {
+        save({ necessary: true, analytics: true });
+        if (el) el.hidden = true;
+      });
+    if (dec)
+      dec.addEventListener('click', function () {
+        save({ necessary: true, analytics: false });
+        if (el) el.hidden = true;
+      });
+  })();
+</script>

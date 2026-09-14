@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Buddha Park">
+  <rect width="512" height="512" rx="96" fill="#3a6b63" />
+  <circle cx="256" cy="256" r="212" fill="none" stroke="#d4af37" stroke-width="18" />
+  <path d="M256 96 L268 150 L244 150 Z" fill="#d4af37" />
+  <path d="M244 150 L268 150 L280 282 L232 282 Z" fill="#d4af37" />
+  <ellipse cx="256" cy="322" rx="52" ry="42" fill="#d4af37" />
+  <rect x="212" y="366" width="88" height="16" rx="6" fill="#f4eee2" />
+  <rect x="196" y="392" width="120" height="20" rx="8" fill="#d4af37" />
+</svg>

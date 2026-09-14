@@ -1,0 +1,77 @@
+---
+interface Props {
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const s = messages.seasons;
+---
+
+<section id="seasons" class="py-20 bg-ivory text-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">{s.label}</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl text-teak mt-2">{s.heading}</h2>
+    <p class="mt-4 max-w-2xl text-ink/80">{s.intro}</p>
+
+    <!-- 桌面表格 -->
+    <div class="mt-10 hidden md:block overflow-x-auto">
+      <table class="w-full text-left border-collapse rounded-2xl overflow-hidden">
+        <thead>
+          <tr class="bg-teak text-ivory text-sm">
+            {s.headers.map((h) => (
+              <th class="px-5 py-4 font-semibold">{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {s.rows.map((r) => (
+            <tr class="border-b border-gold/20 bg-white/60 align-top">
+              <td class="px-5 py-5 font-display text-lg text-teak whitespace-nowrap">{r.season}</td>
+              <td class="px-5 py-5 text-teak font-medium whitespace-nowrap">{r.months}</td>
+              <td class="px-5 py-5 text-ink/80">{r.weather}</td>
+              <td class="px-5 py-5">
+                <span class="chip border-gold/40 text-teak whitespace-nowrap">{r.crowd}</span>
+              </td>
+              <td class="px-5 py-5 text-ink/80 leading-relaxed">{r.strategy}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 移动端卡片 -->
+    <div class="mt-8 md:hidden space-y-4">
+      {s.rows.map((r) => (
+        <div class="rounded-2xl border border-gold/30 bg-white/70 p-5">
+          <div class="font-display text-xl text-teak">{r.season}</div>
+          <div class="text-sm text-teak/80 mt-1">{r.months}</div>
+          <dl class="mt-4 space-y-2 text-sm">
+            <div class="flex gap-2">
+              <dt class="text-ink/55 min-w-[4.5rem]">{s.headers[2]}</dt>
+              <dd class="text-ink/85">{r.weather}</dd>
+            </div>
+            <div class="flex gap-2">
+              <dt class="text-ink/55 min-w-[4.5rem]">{s.headers[3]}</dt>
+              <dd><span class="chip border-gold/40 text-teak">{r.crowd}</span></dd>
+            </div>
+            <div class="flex gap-2">
+              <dt class="text-ink/55 min-w-[4.5rem]">{s.headers[4]}</dt>
+              <dd class="text-ink/85">{r.strategy}</dd>
+            </div>
+          </dl>
+        </div>
+      ))}
+    </div>
+
+    <h3 class="font-display text-xl text-teak mt-10">{s.monthTitle}</h3>
+    <ul class="mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+      {s.months.map((m) => (
+        <li class="rounded-xl border border-gold/20 bg-white/60 p-3">
+          <div class="font-display text-teak">{m.month}</div>
+          <div class="text-xs text-ink/70 mt-1 leading-snug">{m.note}</div>
+        </li>
+      ))}
+    </ul>
+
+    <p class="mt-6 text-xs text-ink/50 leading-relaxed">{s.note}</p>
+  </div>
+</section>

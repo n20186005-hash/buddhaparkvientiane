@@ -3,6 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import th from '../../i18n/th.json';
 import en from '../../i18n/en.json';
 import zh from '../../i18n/zh.json';
+import fr from '../../i18n/fr.json';
+import ko from '../../i18n/ko.json';
+import ja from '../../i18n/ja.json';
 import { languagesList } from '../../i18n/ui';
 
 export function getStaticPaths() {
@@ -10,11 +13,11 @@ export function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-const m = { th, en, zh }[lang];
+const m = { th, en, zh, fr, ko, ja }[lang];
 const legal = m.legal.cookies;
 const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: legal.title };
 ---
-<BaseLayout lang={lang} title={meta.title} description={meta.description} messages={m}>
+<BaseLayout lang={lang} title={meta.title} description={meta.description} messages={m} robots="noindex, follow">
   <main class="mx-auto max-w-3xl px-4 py-24">
     <a href={`/${lang}/`} class="text-amber-600 hover:underline">← {m.header.home}</a>
     <h1 class="mt-4 text-3xl font-bold text-stone-800">{legal.title}</h1>
@@ -33,5 +36,44 @@ const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: 
       ))}
     </div>
     <p class="mt-6 text-sm text-stone-500">{legal.consent}</p>
+
+    <div class="mt-8 rounded-xl border border-stone-200 p-5">
+      <h2 class="text-lg font-semibold text-stone-800">{m.cookieBanner.settings}</h2>
+      <p class="mt-2 text-sm text-stone-600">{m.cookieBanner.message}</p>
+      <label class="mt-4 flex items-center gap-3 text-sm text-stone-700">
+        <input id="analytics-toggle" type="checkbox" class="h-4 w-4" />
+        <span>{m.cookieBanner.accept}</span>
+      </label>
+      <button
+        id="cookie-save"
+        type="button"
+        class="mt-4 rounded-full bg-amber-600 px-5 py-2 text-sm font-semibold text-white hover:bg-amber-700 transition-colors"
+      >{m.cookieBanner.accept}</button>
+      <p id="cookie-saved" class="mt-2 hidden text-sm text-emerald-700">✓ {m.cookieBanner.settings}</p>
+    </div>
   </main>
+
+  <script is:inline>
+    (function () {
+      var KEY = 'cookiePrefs';
+      var box = document.getElementById('analytics-toggle');
+      var btn = document.getElementById('cookie-save');
+      var msg = document.getElementById('cookie-saved');
+      try {
+        var p = JSON.parse(localStorage.getItem(KEY) || 'null');
+        if (box && p) box.checked = !!p.analytics;
+      } catch (e) {}
+      if (btn)
+        btn.addEventListener('click', function () {
+          try {
+            localStorage.setItem(
+              KEY,
+              JSON.stringify({ necessary: true, analytics: !!(box && box.checked) })
+            );
+          } catch (e) {}
+          window.dispatchEvent(new Event('consent-updated'));
+          if (msg) msg.classList.remove('hidden');
+        });
+    })();
+  </script>
 </BaseLayout>

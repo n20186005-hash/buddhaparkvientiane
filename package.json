@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/gen-sitemap.mjs && astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "pwa:icons": "node scripts/make-pwa-icons.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",

@@ -8,55 +8,153 @@ interface Props {
   title: string;
   description: string;
   messages: Record<string, any>;
+  includeFaq?: boolean;
+  /** 抓取预算控制：法律/工具页传 noindex, follow */
+  robots?: string;
 }
-const { lang, title, description, messages } = Astro.props;
+const { lang, title, description, messages, includeFaq = false, robots = 'index, follow' } = Astro.props;
 const canonical = `${siteConfig.domain}/${lang}/`;
 
-const faqs = (messages && messages.guide && messages.guide.faqs) ? messages.guide.faqs : [];
+// FAQ 合并：guide.faqs（基础）+ extraFaq.items（深度补充，含无人机 / 无障碍 / 姊妹公园）
+const faqs = includeFaq && messages?.guide?.faqs
+  ? [...messages.guide.faqs, ...(messages.extraFaq?.items ?? [])]
+  : [];
 
-const jsonLd = [
+// ── 实体绑定数据（唯一数据源：src/config.ts + i18n）
+const entity = siteConfig.entity;
+const fullName = entity.fullName[lang];
+const shortName = entity.shortName[lang];
+const city = entity.city[lang];
+const province = entity.province[lang];
+const country = entity.country[lang];
+const heroImage = `${siteConfig.domain}/gallery/${siteConfig.galleryPrefix}1.jpg`;
+const ogImageAlt = messages?.hero?.imgAlt || `${fullName} — ${city}, ${country}`;
+
+const bc = messages?.about?.breadcrumb;
+const breadcrumbItems = bc
+  ? [
+      { name: bc.home, url: canonical },
+      { name: bc.country },
+      { name: bc.province },
+      { name: bc.city },
+      { name: bc.current },
+    ]
+  : [];
+
+// ── JSON-LD @graph（注意：按合规要求评分/评价不写入结构化数据）
+const attraction = {
+  '@type': ['TouristAttraction', 'LandmarksOrHistoricalBuildings'],
+  '@id': `${siteConfig.domain}/#attraction`,
+  name: fullName,
+  alternateName: [
+    shortName,
+    'Buddha Park Vientiane',
+    'Xieng Khuan',
+    'Xieng Khouane',
+    '万象香昆寺',
+    '万佛公园',
+    entity.localName,
+    `${city} ${fullName}`,
+  ],
+  description,
+  url: canonical,
+  image: [heroImage],
+  isAccessibleForFree: false,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: siteConfig.streetAddress,
+    addressLocality: city,
+    addressRegion: province,
+    postalCode: entity.postalCode,
+    addressCountry: entity.countryCode,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: siteConfig.coords.lat,
+    longitude: siteConfig.coords.lng,
+  },
+  hasMap: siteConfig.mapsUrl,
+  sameAs: siteConfig.sameAs,
+  touristType: ['Sculpture Park', 'Religious Site'],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '08:00',
+      closes: '17:00',
+    },
+  ],
+  // 评分与页面可见的 Reviews 区块一致，来源为 Google 商家资料（mapsUrl）
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: siteConfig.rating,
+    reviewCount: Number(String(siteConfig.reviewCount).replace(/[^\d]/g, '')),
+    bestRating: 5,
+    worstRating: 1,
+  },
+};
+
+const graph: Record<string, any>[] = [
   {
-    '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
-    name: siteConfig.name[lang],
-    description,
-    image: `${siteConfig.domain}/gallery/${siteConfig.galleryPrefix}1.jpg`,
-    url: canonical,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address,
-      addressCountry: 'LA',
+    '@type': 'Organization',
+    '@id': `${siteConfig.domain}/#organization`,
+    name: `${shortName} Visitor Guide`,
+    url: siteConfig.domain,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${siteConfig.domain}/icons/icon-512.png`,
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: siteConfig.coords.lat,
-      longitude: siteConfig.coords.lng,
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: siteConfig.rating,
-      reviewCount: siteConfig.reviewCount.replace(/,/g, ''),
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '08:00',
-    closes: '17:00',
-      },
-    ],
-    sameAs: siteConfig.sameAs,
   },
   {
-    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteConfig.domain}/#website`,
+    url: siteConfig.domain,
+    name: `${fullName} — ${city}`,
+    inLanguage: htmlLang[lang],
+    publisher: { '@id': `${siteConfig.domain}/#organization` },
+  },
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical}#webpage`,
+    url: canonical,
+    name: title,
+    description,
+    isPartOf: { '@id': `${siteConfig.domain}/#website` },
+    about: { '@id': `${siteConfig.domain}/#attraction` },
+    primaryImageOfPage: { '@type': 'ImageObject', url: heroImage },
+    datePublished: '2026-01-15',
+    dateModified: siteConfig.lastUpdated,
+    inLanguage: htmlLang[lang],
+  },
+  attraction,
+];
+
+if (breadcrumbItems.length) {
+  graph.push({
+    '@type': 'BreadcrumbList',
+    '@id': `${canonical}#breadcrumb`,
+    itemListElement: breadcrumbItems.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      ...(it.url ? { item: it.url } : {}),
+    })),
+  });
+}
+
+if (faqs.length) {
+  graph.push({
     '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
+    '@id': `${canonical}#faq`,
+    mainEntity: faqs.map((f: any) => ({
       '@type': 'Question',
       name: f.q,
       acceptedAnswer: { '@type': 'Answer', text: f.a },
     })),
-  },
-];
+  });
+}
+
+const jsonLd = { '@context': 'https://schema.org', '@graph': graph };
 ---
 
 <!doctype html>
@@ -65,27 +163,70 @@ const jsonLd = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXM22WWPKP"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-HXM22WWPKP');
+    <!-- GA4：G-HXM22WWPKP（同意门控：仅在用户同意后加载） -->
+    <script is:inline>
+      (function () {
+        var GA_ID = 'G-HXM22WWPKP';
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+          window.dataLayer.push(arguments);
+        };
+        function hasConsent() {
+          try {
+            var raw = localStorage.getItem('cookiePrefs');
+            if (!raw) return false;
+            var p = JSON.parse(raw);
+            return !!(p && p.analytics);
+          } catch (e) {
+            return false;
+          }
+        }
+        function loadGA() {
+          if (window.__gaLoaded) return;
+          window.__gaLoaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+          document.head.appendChild(s);
+          window.gtag('js', new Date());
+          window.gtag('config', GA_ID, { anonymize_ip: true });
+        }
+        if (hasConsent()) loadGA();
+        window.addEventListener('consent-updated', function () {
+          if (hasConsent()) loadGA();
+        });
+      })();
     </script>
 
-    <link rel="icon" type="image/jpeg" href={`/gallery/${siteConfig.galleryPrefix}1.jpg`} />
+    <!-- PWA -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#3a6b63" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content={shortName} />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
     <link rel="canonical" href={canonical} />
+
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={`${fullName} — ${city}`} />
     <meta property="og:locale" content={htmlLang[lang]} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={`${siteConfig.domain}/gallery/${siteConfig.galleryPrefix}1.jpg`} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={heroImage} />
+    <meta property="og:image:alt" content={ogImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={heroImage} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
+
     {languagesList.map((l) => (
       <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
     ))}
@@ -101,5 +242,12 @@ const jsonLd = [
   </head>
   <body class="grain">
     <slot />
+    <script is:inline>
+      if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js').catch(function () {});
+        });
+      }
+    </script>
   </body>
 </html>

@@ -5,7 +5,18 @@ import Header from '../../components/Header.astro';
 import Hero from '../../components/Hero.astro';
 import About from '../../components/About.astro';
 import Ecosystem from '../../components/Ecosystem.astro';
+import Sculptures from '../../components/Sculptures.astro';
+import Transport from '../../components/Transport.astro';
+import ParkMap from '../../components/ParkMap.astro';
+import Currency from '../../components/Currency.astro';
+import Itinerary from '../../components/Itinerary.astro';
 import History from '../../components/History.astro';
+import Stories from '../../components/Stories.astro';
+import Weather from '../../components/Weather.astro';
+import Seasons from '../../components/Seasons.astro';
+import Routes from '../../components/Routes.astro';
+import Facilities from '../../components/Facilities.astro';
+import Responsibility from '../../components/Responsibility.astro';
   import Guide from '../../components/Guide.astro';
   import Sources from '../../components/Sources.astro';
   import Food from '../../components/Food.astro';
@@ -13,6 +24,7 @@ import Gallery from '../../components/Gallery.astro';
 import Reviews from '../../components/Reviews.astro';
 import MapSection from '../../components/MapSection.astro';
 import Footer from '../../components/Footer.astro';
+import CookieConsent from '../../components/CookieConsent.astro';
 import { getI18n } from '../../i18n/ui';
 
 export async function getStaticPaths() {
@@ -22,19 +34,34 @@ export async function getStaticPaths() {
 const { lang, messages } = await getI18n(Astro.url);
 ---
 
-<BaseLayout lang={lang} title={messages.meta.title} description={messages.meta.description} messages={messages}>
+<BaseLayout lang={lang} title={messages.meta.title} description={messages.meta.description} messages={messages} includeFaq>
   <Header lang={lang} messages={messages} />
   <main>
     <Hero lang={lang} messages={messages} />
-    <About messages={messages} />
+    <About lang={lang} messages={messages} />
+    {/* 实用参观信息（门票/时间/交通/FAQ）紧跟首屏，匹配搜索意图并提升移动端转化 */}
     <Guide messages={messages} />
+    {/* 主题权威：单尊雕塑深度解析 → 交通全攻略 → 园区方位 → 汇率工具 */}
+    <Sculptures messages={messages} />
+    <Transport messages={messages} />
+    <ParkMap messages={messages} />
+    <Currency messages={messages} />
+    <Weather lang={lang} messages={messages} />
     <History messages={messages} />
+    <Stories messages={messages} />
+    <Seasons messages={messages} />
+    <Routes messages={messages} />
+    {/* 主题集群：半日 / 全日 / 跨境联游，承接 day trips from Vientiane 类查询 */}
+    <Itinerary messages={messages} />
     <Ecosystem messages={messages} />
     <Food messages={messages} />
+    <Facilities messages={messages} />
     <Gallery messages={messages} />
     <Reviews messages={messages} />
+    <Responsibility messages={messages} />
     <Sources messages={messages} />
     <MapSection lang={lang} messages={messages} />
   </main>
   <Footer lang={lang} messages={messages} />
+  <CookieConsent lang={lang} messages={messages} />
 </BaseLayout>
