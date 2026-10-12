@@ -28,15 +28,15 @@
   },
   "hero": {
     "eyebrow": "Vientiane · Laos",
-    "titleMain": "Parc de Bouddha (Wat Xieng Khouane Luang)",
-    "titleAccent": "Wat Xieng Khouane Luang",
+    "titleMain": "Parc de Bouddha Vientiane – guide du visiteur (Xieng Khuan)",
+    "titleAccent": "Xieng Khuan",
     "subtitle": "Découvrez le jardin le plus surréaliste de Vientiane, au Laos — plus de 200 sculptures géantes mêlant bouddhisme et hindouisme, sur la rive sud du Mékong.",
     "slogan": "Quand le béton donne forme aux dieux et que les rives du Mékong murmurent une rhapsodie.",
     "cta1": "Préparer sa visite",
     "cta2": "Comment venir",
     "rating": "4.3",
-    "reviewCount": "5,456",
-    "ratingSource": "Note et nombre d'avis synchronisés depuis les avis Google Maps · septembre 2026 · Voir tous les avis Google Maps ↗",
+    "reviewCount": "5,491",
+    "ratingSource": "Note et nombre d'avis synchronisés depuis les avis Google Maps · octobre 2026 · Voir tous les avis Google Maps ↗",
     "imgAlt": "Parc de Bouddha (Wat Xieng Khouane Luang) — vue principale à Vientiane, Laos",
     "viewLocation": "Voir sur Google Maps",
     "boardCategory": "Attractions de Vientiane",
@@ -59,7 +59,7 @@
     "defaultSunset": "18:25",
     "defaultBlue": "18:45 – 19:15",
     "defaultTip": "Le plus calme le matin",
-    "lightCaption": "Conditions relevées en direct aux coordonnées du parc",
+    "lightCaption": "Conditions relevées en direct aux coordonnées du parc · Les heures solaires sont astronomiques — le parc ferme à 17:00",
     "weatherError": "Impossible de charger la météo",
     "goldenChanceLabel": "Probabilité de lumière dorée"
   },
@@ -238,11 +238,11 @@
       "tag": "💸 Coûts",
       "title": "Coûts",
       "items": [
-        { "title": "Entrée", "desc": "Environ 15 000 LAK pour les visiteurs étrangers" },
-        { "title": "Droit photo", "desc": "Environ 5 000 LAK si vous apportez un appareil" },
+        { "title": "Entrée", "desc": "Environ 60 000 LAK pour les visiteurs étrangers (tarif signalé en février 2026 — à confirmer sur place)" },
+        { "title": "Droit photo", "desc": "Environ 5 000 LAK si vous apportez un appareil photo (confirmation récente manquante — payez le tarif affiché)" },
         { "title": "Nourriture et boissons", "desc": "De petits stands vendent eau et en-cas" }
       ],
-      "note": "Les tarifs peuvent être légèrement ajustés par la politique locale ; nous recommandons d'avoir des espèces en bahts thaïlandais (THB) ou en kip laotien (LAK)."
+      "note": "Les tarifs changent souvent et varient selon les sources : les chiffres ci-dessus sont des signalements de visiteurs datés, pas des tarifs officiels. Pré voyez des espèces en LAK ou THB et payez le montant affiché à l'entrée."
     },
     "transport": {
       "tag": "🚌 Comment venir",
@@ -251,17 +251,17 @@
         { "title": "Depuis Vientiane", "desc": "À environ 25 km à l'est du centre ; tuk-tuk ou bus en direction du pont de l'Amitié thaï-lao." },
         { "title": "Bus local", "desc": "Des bus publics relient les gares routières de la capitale à la route de Deua / du pont de l'Amitié." },
         { "title": "Depuis Nong Khai, Thaïlande", "desc": "Traversez le fleuve par le pont de l'Amitié, puis continuez vers le parc côté laotien." },
-        { "title": "Bus n° 14", "desc": "Depuis la gare routière de Talat Sao à Vientiane, prenez le bus n° 14 — son terminus est le Parc de Bouddha. Le billet coûte environ 6 000 LAK : le transport public le moins cher et le plus classique pour les routards." },
+        { "title": "Bus n° 14", "desc": "Depuis la gare routière de Talat Sao à Vientiane, prenez le bus n° 14 — son terminus est le Parc de Bouddha. Le billet coûte environ 18 000 LAK (signalé 2025–2026) : le transport public le moins cher et le plus classique pour les routards." },
         { "title": "Depuis l'aéroport international de Wattay (VTE)", "desc": "L'aéroport international de Wattay se trouve à environ 30 km du parc. Prenez un taxi d'aéroport ou une application de VTC vers la ville ou le parc (40–60 min environ), ou économisez en rejoignant d'abord Talat Sao puis le bus n° 14." }
       ]
     },
     "photography": {
       "title": "Guide photo",
-      "intro": "Le parc est le plus photogénique à la douce lumière du matin.",
+      "intro": "Le parc est le plus photogénique à la douce lumière du matin. Les heures de soleil et d'heure bleue ci-dessus sont des valeurs astronomiques — le parc ferme à 17:00 : planifiez vos prises de vue pendant les heures d'ouverture.",
       "timesTitle": "Meilleure lumière",
       "times": [
         { "period": "Heure dorée", "desc": "~08:00–09:30 — lumière chaude sur les statues et le fleuve" },
-        { "period": "Heure bleue", "desc": "~18:00–18:40 — ciel doux avant la fermeture" },
+        { "period": "Fin d'après-midi", "desc": "~16:00–17:00 — lumière rasante avant la fermeture à 17:00" },
         { "period": "Tôt le matin", "desc": "07:30–08:30 — brume et peu de monde" }
       ],
       "spotsTitle": "Points de vue",
@@ -326,7 +326,7 @@
     "faqTitle": "Questions fréquentes",
     "faqs": [
       { "q": "Quels sont les horaires d'ouverture du Parc de Bouddha ?", "a": "Le parc est ouvert tous les jours d'environ 08:00 à 17:00. Les matinées sont les plus fraîches et les plus calmes." },
-      { "q": "Quel est le prix d'entrée du Parc de Bouddha à Vientiane ?", "a": "Oui — environ 15 000 LAK pour les visiteurs étrangers, plus environ 5 000 LAK si vous apportez un appareil photo." },
+      { "q": "Quel est le prix d'entrée du Parc de Bouddha à Vientiane ?", "a": "Des signalements de visiteurs (février 2026) indiquent environ 60 000 LAK pour les visiteurs étrangers, plus environ 5 000 LAK avec un appareil photo. Les tarifs évoluent — confirmez le prix affiché à l'entrée." },
       { "q": "Comment rejoindre le Parc de Bouddha depuis le centre de Vientiane ?", "a": "Il se trouve à environ 25 km à l'est du centre ; prenez un tuk-tuk ou un bus public en direction du pont de l'Amitié." },
       { "q": "Vaut-il la peine de grimper la citrouille géante ?", "a": "Oui — la sphère de trois niveaux monte de l'Enfer au Ciel, avec une vue depuis le toit sur le Mékong." },
       { "q": "Est-ce adapté aux familles ?", "a": "Tout à fait — pelouses plates, promenade au bord du fleuve et statues ludiques, mais surveillez les enfants dans l'escalier étroit de la citrouille." },
@@ -407,7 +407,7 @@
     "bus14": {
       "tag": "Le moins cher",
       "title": "Bus n° 14 — l'itinéraire classique",
-      "fare": "Environ 6 000 LAK l'aller",
+      "fare": "Environ 18 000 LAK l'aller (signalé 2025–2026)",
       "freq": "À peu près toutes les 15–20 minutes",
       "duration": "Environ 45–60 minutes",
       "steps": [
@@ -564,24 +564,15 @@
   "reviews": {
     "label": "Avis",
     "heading": "Ce que disent les visiteurs",
-    "intro": "Un aperçu des avis Google Maps pour le Parc de Bouddha (Wat Xieng Khouane Luang) à Vientiane, au Laos — conservés sur cette page uniquement et non transmis en données structurées.",
+    "intro": "Un instantané agrégé des avis Google Maps pour le Parc de Bouddha (Wat Xieng Khouane Luang) à Vientiane, au Laos. Les avis individuels ne sont pas reproduits — les lignes mises en avant sont de courts résumés. Les données de note restent sur cette page et ne sont pas transmises en données structurées.",
     "disclaimer": "D'après les avis Google Maps · non approuvé par Google",
-    "declaration": "Synchronisé depuis les avis Google Maps, dernière synchronisation septembre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
+    "declaration": "Synchronisé depuis les avis Google Maps, dernière synchronisation octobre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps. Nous ne présentons que l'instantané agrégé et de courts résumés — aucun avis individuel n'est reproduit.",
     "featured": [
-      { "text": "Un jardin surréaliste et paisible qu'on ne trouve dans aucun guide — statues, fleuve et belle lumière", "source": "★ 5.0 · avis de voyageur" },
-      { "text": "Grimper la citrouille géante au coucher du soleil a été le moment fort de notre séjour à Vientiane", "source": "★ 5.0 · note de visiteur" }
+      { "text": "Un jardin surréaliste et paisible qu'on ne trouve dans aucun guide — statues, fleuve et belle lumière", "source": "★ 5.0 · résumé des avis Google Maps" },
+      { "text": "Grimper la citrouille géante au coucher du soleil a été le moment fort de notre séjour à Vientiane", "source": "★ 5.0 · résumé des avis Google Maps" }
     ],
-    "items": [
-      { "text": "[À voir : la citrouille géante] Étrange et merveilleux — grimpez-y pour la vue depuis le toit", "rating": "5", "name": "Ana", "date": "mars 2026" },
-      { "text": "[Bouddha couché] Immense et serein — on y passe une heure sans s'en rendre compte", "rating": "5", "name": "Tom", "date": "févr. 2026" },
-      { "text": "[Visite matinale] Frais et calme avant les bus de tourisme", "rating": "4", "name": "Lina", "date": "janv. 2026" },
-      { "text": "[En famille] Chemins plats, les enfants ont adoré l'éléphant", "rating": "4", "name": "Wei", "date": "févr. 2026" },
-      { "text": "[Photo] La lumière douce du matin sur les statues valait ce lever tôt", "rating": "5", "name": "Ken", "date": "déc. 2025" },
-      { "text": "[Bord du fleuve] Authentique, moins de monde que dans les temples de la ville", "rating": "4", "name": "Sora", "date": "janv. 2026" },
-      { "text": "[Restauration] Boissons et en-cas bon marché, prévoyez du liquide", "rating": "4", "name": "Pim", "date": "mars 2026" },
-      { "text": "[Affluence] Bondé les jours fériés, plus calme en semaine", "rating": "4", "name": "Dan", "date": "févr. 2026" }
-    ],
-    "sourceNote": "Synchronisé depuis les avis Google Maps, dernière synchronisation septembre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
+    "items": [],
+    "sourceNote": "Synchronisé depuis les avis Google Maps, dernière synchronisation octobre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps. Nous ne présentons que l'instantané agrégé et de courts résumés — aucun avis individuel n'est reproduit.",
     "viewLocation": "Voir tous les avis sur Google Maps"
   },
   "weather": {
@@ -891,8 +882,8 @@
       { "text": "Toutes les photos affichées sur ce site restent la propriété de leurs photographes d'origine ; tous les droits d'image et copyright leur appartiennent.", "linkLabel": "", "url": "" }
     ],
     "photoCredit": "Toutes les photos affichées sur ce site restent la propriété de leurs photographes d'origine ; tous les droits d'image et copyright leur appartiennent.",
-    "reviewTitle": "Avis · dernière synchronisation septembre 2026",
-    "reviewText": "Synchronisé depuis les avis Google Maps, dernière synchronisation septembre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
+    "reviewTitle": "Avis · dernière synchronisation octobre 2026",
+    "reviewText": "Synchronisé depuis les avis Google Maps, dernière synchronisation octobre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps. Nous ne présentons que l'instantané agrégé et de courts résumés — aucun avis individuel n'est reproduit.",
     "reviewLinkLabel": "Voir tous les avis sur Google Maps",
     "factTitle": "Faits et données",
     "factText": "Les notes, horaires et coordonnées proviennent de sources publiques et peuvent évoluer — vérifiez sur place avant de partir.",
@@ -911,7 +902,7 @@
     "authorityText": "Portail officiel du tourisme du Laos / préfecture de Vientiane",
     "authorityLink": "https://www.tourismlaos.org",
     "stats": [
-      { "tag": "Note", "value": "4.3 ★", "sub": "sur 5 456 avis" },
+      { "tag": "Note", "value": "4.3 ★", "sub": "sur 5 491 avis" },
       { "tag": "Ouverture", "value": "08:00", "sub": "tous les jours" },
       { "tag": "Secteur", "value": "Deua", "sub": "Vientiane, Laos" }
     ],
@@ -946,7 +937,7 @@
     "cookies": "Paramètres des cookies",
     "disclaimerLead": "Le guide du Parc de Bouddha est une ressource indépendante et non commerciale — ce n'est pas un site officiel d'une agence ni d'une entreprise.",
     "unofficial": "Non officiel · un guide réalisé par la communauté",
-    "dataSource": "Notes et avis synchronisés depuis les avis Google Maps · septembre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
+    "dataSource": "Notes et avis synchronisés depuis les avis Google Maps · octobre 2026 ; les droits appartiennent aux auteurs originaux et à Google Maps.",
     "photoCredit": "Toutes les photos affichées sur ce site restent la propriété de leurs photographes d'origine ; tous les droits d'image et copyright leur appartiennent.",
     "copyright": "© 2026 Guide du Parc de Bouddha · non commercial"
   },

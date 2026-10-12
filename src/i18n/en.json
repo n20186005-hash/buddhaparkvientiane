@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Buddha Park Vientiane (Wat Xieng Khouane Luang): Tickets & Guide",
-    "description": "Planning a trip to Buddha Park (Wat Xieng Khouane Luang) in Vientiane? Find 2026 entrance fees, opening hours, Bus 14 directions, photos & visitor tips."
+    "title": "Buddha Park Vientiane (Xieng Khuan) | Fees, Hours & Bus 14",
+    "description": "Plan your visit to Buddha Park (Xieng Khuan) in Vientiane, Laos. Explore entrance fees, opening hours, Bus 14 directions, famous statues and travel tips."
   },
   "cookieBanner": {
     "message": "We use Google Analytics (GA4) to understand how this guide is used. Analytics cookies load only after you accept.",
@@ -28,15 +28,15 @@
   },
   "hero": {
     "eyebrow": "Vientiane · Laos",
-    "titleMain": "Buddha Park (Wat Xieng Khouane Luang)",
-    "titleAccent": "Wat Xieng Khouane Luang",
-    "subtitle": "Discover Vientiane, Laos's most surreal garden — over 200 giant sculptures blending Buddhism and Hinduism, on the Mekong's south bank.",
+    "titleMain": "Buddha Park Vientiane – Xieng Khuan Visitor Guide",
+    "titleAccent": "Xieng Khuan",
+    "subtitle": "Buddha Park (Wat Xieng Khouane Luang) is Vientiane, Laos's most surreal garden — over 200 giant sculptures blending Buddhism and Hinduism on the Mekong's south bank.",
     "slogan": "When concrete gives shape to the gods, and the Mekong banks hum a rhapsody.",
     "cta1": "Plan your visit",
     "cta2": "Getting there",
     "rating": "4.3",
-    "reviewCount": "5,456",
-    "ratingSource": "Rating and review count synced from Google Maps user reviews · September 2026 · View all Google Maps reviews ↗",
+    "reviewCount": "5,491",
+    "ratingSource": "Rating and review count synced from Google Maps user reviews · October 2026 · View all Google Maps reviews ↗",
     "imgAlt": "Buddha Park (Wat Xieng Khouane Luang) — main view in Vientiane, Laos",
     "viewLocation": "View on Google Maps",
     "boardCategory": "Vientiane attractions",
@@ -59,7 +59,7 @@
     "defaultSunset": "18:25",
     "defaultBlue": "18:45 – 19:15",
     "defaultTip": "Quietest in the morning",
-    "lightCaption": "Live conditions measured at the park's own coordinates",
+    "lightCaption": "Live conditions measured at the park's own coordinates · Sun times are astronomical — the park closes at 17:00",
     "weatherError": "Could not load weather",
     "goldenChanceLabel": "Golden-light chance"
   },
@@ -238,11 +238,11 @@
       "tag": "💸 Costs",
       "title": "Costs",
       "items": [
-        { "title": "Entry", "desc": "About 15,000 LAK for foreign visitors" },
-        { "title": "Camera fee", "desc": "Around 5,000 LAK if you bring a camera" },
+        { "title": "Entry", "desc": "Reported around 60,000 LAK for foreign visitors (visitor report, February 2026 — please confirm at the gate)" },
+        { "title": "Camera fee", "desc": "Around 5,000 LAK if you bring a camera (recent confirmation lacking — pay the posted price)" },
         { "title": "Food & drinks", "desc": "Small stalls sell water and snacks" }
       ],
-      "note": "Ticket prices may be adjusted slightly by local policy; we recommend carrying some Thai baht (THB) or Lao kip (LAK) cash."
+      "note": "Fees change often and differ between sources — the figures above are dated visitor reports, not official quotes. Carry small LAK or THB cash and pay the amount posted at the gate."
     },
     "transport": {
       "tag": "🚌 Getting there",
@@ -251,17 +251,17 @@
         { "title": "From Vientiane", "desc": "About 25 km east of the centre; tuk-tuk or bus toward the Thai–Lao Friendship Bridge." },
         { "title": "Local bus", "desc": "Public buses run from the capital's bus stations to the Deua / Friendship Bridge road." },
         { "title": "From Nong Khai, Thailand", "desc": "Cross the river by the Friendship Bridge, then continue to the park on the Lao side." },
-        { "title": "Bus No. 14", "desc": "From Talat Sao Bus Terminal in Vientiane, take Bus No. 14 — its final stop is Buddha Park. Fare is about 6,000 LAK, the cheapest and most classic public transport for backpackers." },
+        { "title": "Bus No. 14", "desc": "From Talat Sao Bus Terminal in Vientiane, take Bus No. 14 — its final stop is Buddha Park. Fare is about 18,000 LAK (reported 2025–2026), still the cheapest and most classic public transport for backpackers." },
         { "title": "From Wattay International Airport (VTE)", "desc": "Wattay International Airport is about 30 km from the park. Take an airport taxi or a ride-hailing app to the city or the park (around 40–60 min), or save money by heading to Talat Sao first and catching Bus No. 14." }
       ]
     },
     "photography": {
       "title": "Photography guide",
-      "intro": "The park is most photogenic in soft morning light.",
+      "intro": "The park is most photogenic in soft morning light. Sun and blue-hour times in the planner above are astronomical values — the park itself closes at 17:00, so plan in-park shooting within opening hours.",
       "timesTitle": "Best light",
       "times": [
         { "period": "Golden hour", "desc": "~08:00–09:30 — warm light on the statues and river" },
-        { "period": "Blue hour", "desc": "~18:00–18:40 — soft sky before closing" },
+        { "period": "Late afternoon", "desc": "~16:00–17:00 — warm side light before the 17:00 closing" },
         { "period": "Early morning", "desc": "07:30–08:30 — mist and few people" }
       ],
       "spotsTitle": "Photo spots",
@@ -326,7 +326,7 @@
     "faqTitle": "Frequently asked questions",
     "faqs": [
       { "q": "What are the opening hours of Buddha Park?", "a": "The park is open daily about 08:00–17:00. Mornings are coolest and quietest." },
-      { "q": "How much is the entrance fee for Buddha Park Vientiane?", "a": "Yes — about 15,000 LAK for foreign visitors, plus around 5,000 LAK if you bring a camera." },
+      { "q": "How much is the entrance fee for Buddha Park Vientiane?", "a": "Recent visitor reports (February 2026) put the foreign-visitor entry fee at around 60,000 LAK, plus roughly 5,000 LAK if you bring a camera. Fees change — confirm the posted price at the gate." },
       { "q": "How do I get to Buddha Park from central Vientiane?", "a": "It's about 25 km east of the centre; take a tuk-tuk or public bus toward the Friendship Bridge." },
       { "q": "Is the giant pumpkin worth climbing?", "a": "Yes — the three-storey sphere climbs from Hell to Heaven, with a rooftop view over the Mekong." },
       { "q": "Is it good for families?", "a": "Very — flat lawns, a riverside walk and the playful statues, but watch children on the narrow pumpkin stairs." },
@@ -407,7 +407,7 @@
     "bus14": {
       "tag": "Cheapest",
       "title": "Bus No. 14 — the classic route",
-      "fare": "Around 6,000 LAK one way",
+      "fare": "Around 18,000 LAK one way (reported 2025–2026)",
       "freq": "Roughly every 15–20 minutes",
       "duration": "About 45–60 minutes",
       "steps": [
@@ -564,24 +564,15 @@
   "reviews": {
     "label": "Reviews",
     "heading": "What visitors say",
-    "intro": "A snapshot of Google Maps user reviews for Buddha Park (Wat Xieng Khouane Luang) in Vientiane, Laos — kept on this page only and not submitted as structured data.",
+    "intro": "An aggregate snapshot of Google Maps user reviews for Buddha Park (Wat Xieng Khouane Luang) in Vientiane, Laos. Individual reviews are not reproduced here — the highlighted lines are short summaries. Rating data stays on this page and is not submitted as structured data.",
     "disclaimer": "Based on Google Maps user reviews · not endorsed by Google",
-    "declaration": "Synced from Google Maps user reviews, last synced September 2026; copyright belongs to the original authors and Google Maps.",
+    "declaration": "Synced from Google Maps user reviews, last synced October 2026; copyright belongs to the original authors and Google Maps. We show the aggregate snapshot and short summaries only — no individual reviews are reproduced.",
     "featured": [
-      { "text": "A surreal, peaceful garden you won't find in any guidebook — statues, river and good light", "source": "★ 5.0 · traveller review" },
-      { "text": "Climbing the giant pumpkin at sunset was the highlight of our Vientiane trip", "source": "★ 5.0 · visitor note" }
+      { "text": "A surreal, peaceful garden you won't find in any guidebook — statues, river and good light", "source": "★ 5.0 · summary of Google Maps reviews" },
+      { "text": "Climbing the giant pumpkin at sunset was the highlight of our Vientiane trip", "source": "★ 5.0 · summary of Google Maps reviews" }
     ],
-    "items": [
-      { "text": "[Must-see: giant pumpkin] Weird and wonderful — climb it for the rooftop view", "rating": "5", "name": "Ana", "date": "Mar 2026" },
-      { "text": "[Reclining Buddha] Huge and calm — easy to spend an hour here", "rating": "5", "name": "Tom", "date": "Feb 2026" },
-      { "text": "[Morning visit] Cool and quiet before the tour buses", "rating": "4", "name": "Lina", "date": "Jan 2026" },
-      { "text": "[Family] Flat paths, kids loved the elephant", "rating": "4", "name": "Wei", "date": "Feb 2026" },
-      { "text": "[Photography] Soft morning light on the statues was worth the early start", "rating": "5", "name": "Ken", "date": "Dec 2025" },
-      { "text": "[Riverside] Felt authentic, fewer crowds than city temples", "rating": "4", "name": "Sora", "date": "Jan 2026" },
-      { "text": "[Food] Cheap drinks and snacks, bring cash", "rating": "4", "name": "Pim", "date": "Mar 2026" },
-      { "text": "[Crowds] Busy on holidays, weekdays are calmer", "rating": "4", "name": "Dan", "date": "Feb 2026" }
-    ],
-    "sourceNote": "Synced from Google Maps user reviews, last synced September 2026; copyright belongs to the original authors and Google Maps.",
+    "items": [],
+    "sourceNote": "Synced from Google Maps user reviews, last synced October 2026; copyright belongs to the original authors and Google Maps. We show the aggregate snapshot and short summaries only — no individual reviews are reproduced.",
     "viewLocation": "View all reviews on Google Maps"
   },
   "weather": {
@@ -891,8 +882,8 @@
       { "text": "All photos displayed on this website remain the property of their original photographers; all image rights and copyright belong to them.", "linkLabel": "", "url": "" }
     ],
     "photoCredit": "All photos displayed on this website remain the property of their original photographers; all image rights and copyright belong to them.",
-    "reviewTitle": "Reviews · last synced September 2026",
-    "reviewText": "Synced from Google Maps user reviews, last synced September 2026; copyright belongs to the original authors and Google Maps.",
+    "reviewTitle": "Reviews · last synced October 2026",
+    "reviewText": "Synced from Google Maps user reviews, last synced October 2026; copyright belongs to the original authors and Google Maps. We show the aggregate snapshot and short summaries only — no individual reviews are reproduced.",
     "reviewLinkLabel": "View all reviews on Google Maps",
     "factTitle": "Facts & data",
     "factText": "Ratings, hours and coordinates are compiled from public sources and may change — please verify on site before you go.",
@@ -911,7 +902,7 @@
     "authorityText": "Laos / Vientiane Capital Official Tourism Portal",
     "authorityLink": "https://www.tourismlaos.org",
     "stats": [
-      { "tag": "Rating", "value": "4.3 ★", "sub": "from 5,456 reviews" },
+      { "tag": "Rating", "value": "4.3 ★", "sub": "from 5,491 reviews" },
       { "tag": "Opens", "value": "08:00", "sub": "daily" },
       { "tag": "Area", "value": "Deua", "sub": "Vientiane, Laos" }
     ],
@@ -946,7 +937,7 @@
     "cookies": "Cookie settings",
     "disclaimerLead": "The Buddha Park guide is an independent, non-commercial resource — not an official site of any agency or business.",
     "unofficial": "Unofficial · a community-made visitor guide",
-    "dataSource": "Rating and reviews synced from Google Maps user reviews · September 2026; copyright belongs to the original authors and Google Maps.",
+    "dataSource": "Rating and reviews synced from Google Maps user reviews · October 2026; copyright belongs to the original authors and Google Maps.",
     "photoCredit": "All photos displayed on this website remain the property of their original photographers; all image rights and copyright belong to them.",
     "copyright": "© 2026 Buddha Park guide · non-commercial"
   },

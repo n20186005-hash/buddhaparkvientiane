@@ -1,0 +1,127 @@
+---
+import { siteConfig } from '../config';
+import { TOPIC_LINKS_UI, type Topic } from '../data/topics-en';
+
+interface Props {
+  topic: Topic;
+}
+const { topic } = Astro.props;
+const ui = TOPIC_LINKS_UI;
+---
+
+<section class="bg-ivory text-ink">
+  <!-- 面包屑 -->
+  <div class="border-b border-gold/20 bg-teak/5">
+    <div class="max-w-4xl mx-auto px-5 py-3 text-sm text-ink/60">
+      <a href="/en/" class="hover:text-gold">{ui.breadcrumbHome}</a>
+      <span class="mx-2">/</span>
+      <span class="text-teak">{topic.h1}</span>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-5 py-14">
+    <p class="font-hand text-gold text-xl md:text-2xl">Buddha Park · Vientiane, Laos</p>
+    <h1 class="font-display font-semibold text-3xl md:text-5xl text-teak mt-2 leading-tight">{topic.h1}</h1>
+    <p class="mt-5 text-lg text-ink/80 leading-relaxed">{topic.intro}</p>
+    <p class="mt-3 text-xs text-ink/50">{ui.updatedLabel}: {topic.checked}</p>
+
+    <div class="mt-10 space-y-12">
+      {topic.sections.map((s) => (
+        <div>
+          {s.h2 && <h2 class="font-display text-2xl md:text-3xl text-teak mb-4">{s.h2}</h2>}
+          {s.paragraphs?.map((p) => <p class="mt-3 text-ink/80 leading-relaxed">{p}</p>)}
+          {s.bullets && (
+            <ul class="mt-4 space-y-2">
+              {s.bullets.map((b) => (
+                <li class="flex gap-2 text-ink/80">
+                  <span class="text-gold mt-0.5" aria-hidden="true">•</span>
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+          {s.table && (
+            <div class="mt-5 overflow-x-auto">
+              <table class="w-full text-sm border border-gold/25 rounded-xl overflow-hidden">
+                <thead class="bg-teak/10">
+                  <tr>
+                    {s.table.headers.map((h) => (
+                      <th class="text-left font-semibold text-teak px-4 py-3 whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {s.table.rows.map((r) => (
+                    <tr class="border-t border-gold/15">
+                      {r.map((c, i) => (
+                        <td class={`px-4 py-3 align-top ${i === 0 ? 'font-medium text-teak' : 'text-ink/75'}`}>{c}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+
+    <!-- FAQ -->
+    <div class="mt-14">
+      <h2 class="font-display text-2xl md:text-3xl text-teak mb-5">{ui.faqTitle}</h2>
+      <div class="space-y-3">
+        {topic.faqs.map((f) => (
+          <details class="group rounded-xl border border-gold/25 bg-white/60 p-4 open:bg-teak/5">
+            <summary class="cursor-pointer font-medium text-teak flex justify-between items-center">
+              {f.q}
+              <span class="text-gold transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-2 text-sm text-ink/75 leading-relaxed">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+
+    <!-- 地图（交通专题嵌入 Google Maps） -->
+    {topic.slug === 'how-to-get-there' && (
+      <div class="mt-14">
+        <h2 class="font-display text-2xl text-teak mb-4">Buddha Park on the map</h2>
+        <div class="rounded-2xl overflow-hidden border border-gold/25">
+          <iframe
+            src={siteConfig.mapsEmbedSrc}
+            title="Google Maps: Buddha Park (Wat Xieng Khouane Luang), Vientiane, Laos"
+            class="w-full h-80 md:h-96"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="mt-2 text-xs text-ink/50">Plus Code WQ67+WW · 17.9124°N, 102.7622°E</p>
+      </div>
+    )}
+
+    <!-- 相关专题互链 -->
+    <div class="mt-14">
+      <h2 class="font-display text-2xl text-teak mb-5">{ui.relatedTitle}</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        {topic.related.map((r) => (
+          <a
+            href={`/en/${r.slug}/`}
+            class="group rounded-2xl border border-gold/25 bg-white/50 p-5 hover:border-gold hover:shadow-md transition"
+          >
+            <div class="font-display text-teak font-semibold text-lg">{r.title}</div>
+            <p class="mt-1 text-sm text-ink/70">{r.desc}</p>
+            <span class="mt-3 inline-block text-sm text-gold group-hover:text-goldBright">{ui.cta}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-gold/20 pt-6">
+      <a href="/en/" class="text-teak font-medium hover:text-gold">{ui.backHome}</a>
+      <a href={siteConfig.mapsUrl} target="_blank" rel="noopener" class="text-sm text-gold hover:text-goldBright">
+        View Buddha Park on Google Maps ↗
+      </a>
+    </div>
+
+    <p class="mt-6 text-xs text-ink/50 leading-relaxed">{ui.disclaimer}</p>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import TopicPage from '../../components/TopicPage.astro';
+import { getTopicEn } from '../../data/topics-en';
+import { getI18n } from '../../i18n/ui';
+
+const topic = getTopicEn('sculptures')!;
+const { messages } = await getI18n(new URL('https://buddhaparkvientiane.com/en/'));
+---
+
+<BaseLayout
+  lang="en"
+  title={topic.metaTitle}
+  description={topic.metaDescription}
+  messages={messages}
+  path={topic.path}
+  allAlternates={false}
+  faqItems={topic.faqs}
+  breadcrumbItems={[
+    { name: 'Home', url: 'https://buddhaparkvientiane.com/en/' },
+    { name: topic.h1 },
+  ]}
+>
+  <Header lang="en" messages={messages} />
+  <main>
+    <TopicPage topic={topic} />
+  </main>
+  <Footer lang="en" messages={messages} />
+</BaseLayout>

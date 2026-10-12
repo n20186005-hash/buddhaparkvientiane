@@ -4,8 +4,8 @@ interface Props {
 }
 const { messages } = Astro.props;
 const c = messages.currency;
-// 预设金额：门票 / 14 路车费 / 一瓶水（LAK）
-const PRESET_VALUES = [15000, 6000, 10000];
+// 预设金额：门票 / 14 路车费 / 一瓶水（LAK，门票按 2026-02 游客报告 60,000、公交按 2025–2026 报告 18,000）
+const PRESET_VALUES = [60000, 18000, 10000];
 ---
 
 <section id="currency" class="py-20 bg-ivory text-ink">
@@ -22,7 +22,7 @@ const PRESET_VALUES = [15000, 6000, 10000];
           type="number"
           min="0"
           step="1000"
-          value="15000"
+          value="60000"
           class="w-56 rounded-xl border border-gold/40 bg-ivory/60 px-4 py-3 text-lg text-ink focus:outline-none focus:ring-2 focus:ring-gold"
         />
         <span class="text-sm text-ink/60">{c.unitLabels[0]}</span>

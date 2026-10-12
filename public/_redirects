@@ -1,1 +1,13 @@
-/  /th/  302
+# 根路径：按主要受众跳英文站（302 = 语言选择，非 URL 变更）
+/  /en/  302
+
+# 无尾斜杠 → 带尾斜杠（301 统一规范 URL）
+/th  /th/  301
+/en  /en/  301
+/zh  /zh/  301
+/fr  /fr/  301
+/ko  /ko/  301
+/ja  /ja/  301
+/en/entrance-fee  /en/entrance-fee/  301
+/en/how-to-get-there  /en/how-to-get-there/  301
+/en/sculptures  /en/sculptures/  301

@@ -1,5 +1,5 @@
-// 生成 sitemap.xml：只收录各语言主页，法律/隐私/Cookie 页（已 noindex）不进 sitemap，
-// 避免抓取预算浪费与索引污染。
+// 生成 sitemap.xml：收录各语言主页 + 英文长尾专题页；
+// 法律/隐私/Cookie 页（已 noindex）不进 sitemap，避免抓取预算浪费与索引污染。
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -19,6 +19,10 @@ const updatedMatch = configTs.match(/lastUpdated:\s*['"]([^'"]+)['"]/);
 const lastmod = updatedMatch ? updatedMatch[1] : new Date().toISOString().slice(0, 10);
 
 const urls = langs.map((l) => `${domain}/${l}/`);
+
+// 英文长尾专题页（2026-10 新增；仅英文，hreflang en + x-default）
+const TOPIC_PATHS = ['/en/entrance-fee/', '/en/how-to-get-there/', '/en/sculptures/'];
+urls.push(...TOPIC_PATHS.map((p) => `${domain}${p}`));
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

@@ -1,10 +1,12 @@
 ---
 import { siteConfig } from '../config';
+import type { Lang } from '../i18n/ui';
 
 interface Props {
   messages: Record<string, any>;
+  lang?: Lang;
 }
-const { messages } = Astro.props;
+const { messages, lang } = Astro.props;
 const guide = messages.guide;
 const guideImgs = [
   `/gallery/${siteConfig.galleryPrefix}2.jpg`,
@@ -86,6 +88,11 @@ const guideImgs = [
         </ul>
         {guide.fees.note && (
           <p class="mt-3 text-xs text-ink/55 leading-relaxed">{guide.fees.note}</p>
+        )}
+        {lang === 'en' && (
+          <a href="/en/entrance-fee/" class="mt-3 inline-block text-sm font-medium text-gold hover:text-goldBright">
+            Full entrance-fee & tickets guide →
+          </a>
         )}
       </div>
 

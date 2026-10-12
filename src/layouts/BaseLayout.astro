@@ -11,14 +11,33 @@ interface Props {
   includeFaq?: boolean;
   /** 抓取预算控制：法律/工具页传 noindex, follow */
   robots?: string;
+  /** 规范路径（子页用，如 /en/entrance-fee/；默认 /{lang}/） */
+  path?: string;
+  /** 是否输出全语种 hreflang（英文专题页传 false → 仅 en + x-default 指向自身） */
+  allAlternates?: boolean;
+  /** 专题页 FAQ（输出 FAQPage JSON-LD） */
+  faqItems?: { q: string; a: string }[];
+  /** 面包屑覆盖（专题页用） */
+  breadcrumbItems?: { name: string; url?: string }[];
 }
-const { lang, title, description, messages, includeFaq = false, robots = 'index, follow' } = Astro.props;
-const canonical = `${siteConfig.domain}/${lang}/`;
+const {
+  lang,
+  title,
+  description,
+  messages,
+  includeFaq = false,
+  robots = 'index, follow',
+  path,
+  allAlternates = true,
+  faqItems,
+  breadcrumbItems: breadcrumbOverride,
+} = Astro.props;
+const canonical = `${siteConfig.domain}${path ?? `/${lang}/`}`;
 
 // FAQ 合并：guide.faqs（基础）+ extraFaq.items（深度补充，含无人机 / 无障碍 / 姊妹公园）
 const faqs = includeFaq && messages?.guide?.faqs
   ? [...messages.guide.faqs, ...(messages.extraFaq?.items ?? [])]
-  : [];
+  : (faqItems ?? []);
 
 // ── 实体绑定数据（唯一数据源：src/config.ts + i18n）
 const entity = siteConfig.entity;
@@ -31,7 +50,7 @@ const heroImage = `${siteConfig.domain}/gallery/${siteConfig.galleryPrefix}1.jpg
 const ogImageAlt = messages?.hero?.imgAlt || `${fullName} — ${city}, ${country}`;
 
 const bc = messages?.about?.breadcrumb;
-const breadcrumbItems = bc
+const derivedBreadcrumb = bc
   ? [
       { name: bc.home, url: canonical },
       { name: bc.country },
@@ -40,6 +59,7 @@ const breadcrumbItems = bc
       { name: bc.current },
     ]
   : [];
+const breadcrumbItems = breadcrumbOverride ?? derivedBreadcrumb;
 
 // ── JSON-LD @graph（注意：按合规要求评分/评价不写入结构化数据）
 const attraction = {
@@ -49,6 +69,7 @@ const attraction = {
   alternateName: [
     shortName,
     'Buddha Park Vientiane',
+    'Buddha Park Laos',
     'Xieng Khuan',
     'Xieng Khouane',
     '万象香昆寺',
@@ -57,7 +78,8 @@ const attraction = {
     `${city} ${fullName}`,
   ],
   description,
-  url: canonical,
+  // 实体 URL 统一指向英文主页（六语 + 专题页共用同一 @id 实体）
+  url: `${siteConfig.domain}/en/`,
   image: [heroImage],
   isAccessibleForFree: false,
   address: {
@@ -227,10 +249,14 @@ const jsonLd = { '@context': 'https://schema.org', '@graph': graph };
     <meta name="twitter:image" content={heroImage} />
     <meta name="twitter:image:alt" content={ogImageAlt} />
 
-    {languagesList.map((l) => (
-      <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
-    ))}
-    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/th/`} />
+    {allAlternates ? (
+      languagesList.map((l) => (
+        <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
+      ))
+    ) : (
+      <link rel="alternate" hreflang="en" href={canonical} />
+    )}
+    <link rel="alternate" hreflang="x-default" href={allAlternates ? `${siteConfig.domain}/en/` : canonical} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

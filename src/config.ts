@@ -110,11 +110,11 @@ export const siteConfig = {
   phoneDisplay: '',
   streetAddress: 'Deua, Thanon Tha District, Vientiane, Laos',
 
-  // ── 评分与评价数（Google 商家资料 · 同步时间 2026 年 9 月）
+  // ── 评分与评价数（Google 商家资料 · 同步时间 2026 年 10 月）
   // 注意：仅用于页面展示；按合规要求不写入 JSON-LD
   rating: 4.3,
-  reviewCount: '5,456',
-  reviewSyncDate: '2026-09',
+  reviewCount: '5,491',
+  reviewSyncDate: '2026-10',
 
   // 实时天气/日落 API 坐标（Buddha Park, Deua, Vientiane, Laos）
   coords: {
@@ -150,7 +150,7 @@ export const siteConfig = {
   heroImage: `/gallery/buddha-park-wat-xieng-khouane-luang-1.jpg`,
 
   // 内容最后更新日期（E-E-A-T）
-  lastUpdated: '2026-09-14',
+  lastUpdated: '2026-10-12',
 
   // JSON-LD sameAs（权威实体外链）
   sameAs: [

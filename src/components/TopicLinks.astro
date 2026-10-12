@@ -1,0 +1,25 @@
+---
+import { TOPIC_LINKS_UI } from '../data/topics-en';
+const ui = TOPIC_LINKS_UI;
+---
+
+<!-- 英文长尾专题入口（仅 /en/ 渲染） -->
+<section id="topic-guides" class="py-16 bg-ivory text-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">{ui.label}</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl text-teak mt-2">{ui.heading}</h2>
+    <p class="mt-4 max-w-2xl text-ink/80">{ui.intro}</p>
+    <div class="mt-8 grid sm:grid-cols-3 gap-5">
+      {ui.cards.map((c) => (
+        <a
+          href={c.path}
+          class="group rounded-2xl border border-gold/30 bg-white/60 p-6 hover:border-gold hover:shadow-md transition"
+        >
+          <div class="font-display text-teak font-semibold text-xl">{c.title}</div>
+          <p class="mt-2 text-sm text-ink/75 leading-relaxed">{c.desc}</p>
+          <span class="mt-4 inline-block text-sm text-gold group-hover:text-goldBright">{ui.cta}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
