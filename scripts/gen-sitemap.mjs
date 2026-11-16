@@ -21,7 +21,7 @@ const lastmod = updatedMatch ? updatedMatch[1] : new Date().toISOString().slice(
 const urls = langs.map((l) => `${domain}/${l}/`);
 
 // 英文长尾专题页（2026-10 新增；仅英文，hreflang en + x-default）
-const TOPIC_PATHS = ['/en/entrance-fee/', '/en/how-to-get-there/', '/en/sculptures/'];
+const TOPIC_PATHS = ['/en/entrance-fee/', '/en/how-to-get-there/', '/en/sculptures/', '/en/history/', '/en/visit-itinerary/', '/en/photography-guide/', '/en/vientiane-day-trip/'];
 urls.push(...TOPIC_PATHS.map((p) => `${domain}${p}`));
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

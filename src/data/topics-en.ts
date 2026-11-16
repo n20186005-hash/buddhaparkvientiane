@@ -7,6 +7,7 @@ export interface TopicSection {
   paragraphs?: string[];
   bullets?: string[];
   table?: { headers: string[]; rows: string[][] };
+  links?: { label: string; url: string }[];
 }
 
 export interface TopicFaq {
@@ -130,6 +131,7 @@ export const TOPICS_EN: Topic[] = [
     related: [
       { slug: 'how-to-get-there', title: 'How to Get to Buddha Park', desc: 'Bus 14 from Talat Sao, tuk-tuks, ride-hailing, the airport and the Friendship Bridge.' },
       { slug: 'sculptures', title: 'The Sculptures & What They Mean', desc: 'The pumpkin tower, reclining Buddha, three-headed elephant and the Hindu figures.' },
+      { slug: 'visit-itinerary', title: 'Half-Day Visit Plan', desc: 'A practical route through the sculptures and tower.' },
     ],
   },
   {
@@ -385,8 +387,12 @@ export const TOPIC_LINKS_UI = {
   label: 'In-depth guides',
   heading: 'Plan the practical details',
   intro:
-    'Three focused guides that go deeper than the overview below — tickets and fees, every way to get there, and the stories behind the statues.',
-  cards: TOPICS_EN.map((t) => ({ slug: t.slug, path: t.path, ...TOPIC_CARD_COPY[t.slug] })),
+    'Seven focused guides cover tickets, transport, sculpture meanings, history, a half-day route, photography and nearby Vientiane sights. Start with the topic that matters most to your visit.',
+  cards: [...TOPICS_EN.map((t) => ({ slug: t.slug, path: t.path, ...TOPIC_CARD_COPY[t.slug] })),
+    { slug: 'history', path: '/en/history/', title: 'History & Founder', desc: 'The 1958 origins, Bunleua Sulilat and the links with Sala Keoku.' },
+    { slug: 'visit-itinerary', path: '/en/visit-itinerary/', title: 'Half-Day Itinerary', desc: 'A five-stop walking route, transport choices and practical preparation.' },
+    { slug: 'photography-guide', path: '/en/photography-guide/', title: 'Photography & Viewpoints', desc: 'The reclining Buddha, tower, light and respectful photo tips.' },
+    { slug: 'vientiane-day-trip', path: '/en/vientiane-day-trip/', title: 'Nearby Vientiane Sights', desc: 'Combine Buddha Park with Pha That Luang, Patuxai and historic temples.' }],
   cta: 'Read the guide →',
   backHome: '← Back to the full Buddha Park guide',
   faqTitle: 'Frequently asked questions',

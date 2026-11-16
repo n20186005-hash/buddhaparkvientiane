@@ -82,7 +82,11 @@ check('sitemap.xml 存在', fs.existsSync(sm));
 if (fs.existsSync(sm)) {
   const xml = fs.readFileSync(sm, 'utf8');
   const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  check('仅 3 个主页 URL', urls.length === 3, urls.join(', '));
+  const expected = [
+    ...['th', 'en', 'zh', 'fr', 'ko', 'ja'].map((l) => `https://buddhaparkvientiane.com/${l}/`),
+    ...['entrance-fee', 'how-to-get-there', 'sculptures', 'history', 'visit-itinerary', 'photography-guide', 'vientiane-day-trip'].map((slug) => `https://buddhaparkvientiane.com/en/${slug}/`),
+  ];
+  check('六语主页与七篇英文专题均进入 sitemap', urls.length === expected.length && expected.every((u) => urls.includes(u)), urls.join(', '));
   check('无法律页', !urls.some((u) => /privacy|terms|cookie/.test(u)));
 }
 
