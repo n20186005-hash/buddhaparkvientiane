@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../components/Footer.astro';
 import th from '../../i18n/th.json';
 import en from '../../i18n/en.json';
 import zh from '../../i18n/zh.json';
@@ -42,22 +43,25 @@ const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: 
       <p class="mt-2 text-sm text-stone-600">{m.cookieBanner.message}</p>
       <label class="mt-4 flex items-center gap-3 text-sm text-stone-700">
         <input id="analytics-toggle" type="checkbox" class="h-4 w-4" />
-        <span>{m.cookieBanner.accept}</span>
+        <span>{legal.analytics.label}</span>
       </label>
       <button
         id="cookie-save"
         type="button"
         class="mt-4 rounded-full bg-amber-600 px-5 py-2 text-sm font-semibold text-white hover:bg-amber-700 transition-colors"
-      >{m.cookieBanner.accept}</button>
-      <p id="cookie-saved" class="mt-2 hidden text-sm text-emerald-700">✓ {m.cookieBanner.settings}</p>
+      >{legal.save}</button>
+      <button id="cookie-reject" type="button" class="mt-4 ml-2 rounded-full border border-stone-300 px-5 py-2 text-sm text-stone-700 hover:border-amber-600">{m.cookieBanner.decline}</button>
+      <p id="cookie-saved" role="status" class="mt-2 hidden text-sm text-emerald-700">✓ {legal.saved}</p>
     </div>
   </main>
+  <Footer lang={lang} messages={m} />
 
   <script is:inline>
     (function () {
       var KEY = 'cookiePrefs';
       var box = document.getElementById('analytics-toggle');
       var btn = document.getElementById('cookie-save');
+      var reject = document.getElementById('cookie-reject');
       var msg = document.getElementById('cookie-saved');
       try {
         var p = JSON.parse(localStorage.getItem(KEY) || 'null');
@@ -74,6 +78,12 @@ const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: 
           window.dispatchEvent(new Event('consent-updated'));
           if (msg) msg.classList.remove('hidden');
         });
+      if (reject) reject.addEventListener('click', function () {
+        if (box) box.checked = false;
+        try { localStorage.setItem(KEY, JSON.stringify({ necessary: true, analytics: false })); } catch (e) {}
+        window.dispatchEvent(new Event('consent-updated'));
+        if (msg) msg.classList.remove('hidden');
+      });
     })();
   </script>
 </BaseLayout>
