@@ -19,6 +19,7 @@ const updatedMatch = configTs.match(/lastUpdated:\s*['"]([^'"]+)['"]/);
 const lastmod = updatedMatch ? updatedMatch[1] : new Date().toISOString().slice(0, 10);
 
 const urls = langs.map((l) => `${domain}/${l}/`);
+urls.push(...langs.map((l) => `${domain}/${l}/sources/`));
 
 // 英文长尾专题页（2026-10 新增；仅英文，hreflang en + x-default）
 const TOPIC_PATHS = ['/en/entrance-fee/', '/en/how-to-get-there/', '/en/sculptures/'];
