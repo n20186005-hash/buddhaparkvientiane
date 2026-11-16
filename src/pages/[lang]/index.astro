@@ -23,6 +23,7 @@ import Responsibility from '../../components/Responsibility.astro';
 import Gallery from '../../components/Gallery.astro';
 import Reviews from '../../components/Reviews.astro';
 import TopicLinks from '../../components/TopicLinks.astro';
+import NearbyExplore from '../../components/NearbyExplore.astro';
 import MapSection from '../../components/MapSection.astro';
 import Footer from '../../components/Footer.astro';
 import CookieConsent from '../../components/CookieConsent.astro';
@@ -44,6 +45,7 @@ const { lang, messages } = await getI18n(Astro.url);
     <Guide messages={messages} lang={lang} />
     {/* 英文长尾专题入口（承接 entrance fee / how to get there / statues 类查询） */}
     {lang === 'en' && <TopicLinks />}
+    {lang === 'en' && <NearbyExplore />}
     {/* 主题权威：单尊雕塑深度解析 → 交通全攻略 → 园区方位 → 汇率工具 */}
     <Sculptures messages={messages} lang={lang} />
     <Transport messages={messages} lang={lang} />

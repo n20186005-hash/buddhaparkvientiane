@@ -1,0 +1,40 @@
+---
+import type { NearbyPlace } from '../data/nearby-places-en';
+const { place } = Astro.props as { place: NearbyPlace };
+---
+<section class="bg-ivory text-ink">
+  <div class="border-b border-gold/20 bg-teak/5"><nav class="max-w-5xl mx-auto px-5 py-3 text-sm text-ink/65"><a href="/en/" class="hover:text-gold">Buddha Park guide</a><span class="mx-2">/</span><a href="/en/vientiane-day-trip/" class="hover:text-gold">Nearby attractions</a><span class="mx-2">/</span>{place.name}</nav></div>
+  <article class="max-w-5xl mx-auto px-5 py-12">
+    <header>
+      <p class="font-hand text-gold text-xl">Vientiane Capital · Laos</p>
+      <h1 class="font-display font-semibold text-4xl md:text-5xl text-teak mt-2">{place.name}</h1>
+      <p class="text-xl text-ink/75 mt-3">{place.tagline}</p>
+      <div class="mt-5 flex flex-wrap gap-3 text-sm text-ink/80">
+        <span class="border border-gold/25 rounded-xl px-3 py-2">Visitor rating: <a class="underline text-teak" href={place.maps} target="_blank" rel="noopener noreferrer">View current Google Maps reviews ↗</a></span>
+        <span class="border border-gold/25 rounded-xl px-3 py-2">Hours: Check site notices</span>
+        <span class="border border-gold/25 rounded-xl px-3 py-2">{place.address}</span>
+      </div>
+      <a href={place.maps} target="_blank" rel="noopener noreferrer" class="inline-flex mt-5 bg-teak rounded-full px-6 py-3 text-white font-semibold hover:bg-gold">Open {place.name} on Google Maps ↗</a>
+      <figure class="mt-9 rounded-2xl overflow-hidden border border-gold/20 bg-white/65"><img src={place.image} alt={place.imageAlt} width="1200" height="760" loading="eager" class="w-full max-h-[490px] object-cover"/><figcaption class="text-xs text-ink/60 p-3">Actual view of {place.name}. {place.imageSource}.</figcaption></figure>
+    </header>
+    <div class="mt-12 grid md:grid-cols-2 gap-8">
+      <div><h2 class="font-display text-3xl text-teak">Explore {place.name}</h2><p class="mt-3 leading-relaxed text-ink/80">{place.about}</p><h3 class="mt-5 text-xl font-semibold text-teak">Visitor tips</h3><ul class="mt-3 space-y-2 text-ink/80">{place.tips.map(t => <li>• {t}</li>)}</ul></div>
+      <div class="bg-teak/5 rounded-2xl p-6 border border-gold/20"><h3 class="font-display text-2xl text-teak">Highlights</h3><ul class="mt-4 space-y-4 text-ink/80">{place.highlights.map(t => <li>• {t}</li>)}</ul></div>
+    </div>
+    <section class="mt-12 p-7 rounded-2xl bg-white/70 border border-gold/25">
+      <p class="text-sm uppercase tracking-wide text-gold font-semibold">Stewardship and cultural setting</p><h2 class="font-display text-3xl text-teak mt-2">About {place.name}</h2><p class="mt-4 text-ink/80 leading-relaxed">{place.management}</p>
+    </section>
+    <section class="mt-12"><h2 class="font-display text-3xl text-teak">Basic information</h2><div class="overflow-x-auto mt-5"><table class="w-full border border-gold/20 text-sm"><tbody>{[['Name',place.name],['Type',place.type],['Address / district',place.address],['Opening hours',place.hours],['Entrance fee',place.admission],['Visit length','Allow roughly 30–60 minutes as an editorial planning estimate'],['Google Maps','Use the dedicated place link on this page']].map(([label,value]) => <tr class="border-b border-gold/15"><th scope="row" class="p-4 text-left text-teak bg-teak/5 w-44">{label}</th><td class="p-4 text-ink/80">{value}</td></tr>)}</tbody></table></div></section>
+    <div class="mt-12 grid md:grid-cols-2 gap-8"><section><h2 class="font-display text-3xl text-teak">Opening hours</h2><p class="mt-3 leading-relaxed text-ink/80">{place.hours}</p></section><section><h2 class="font-display text-3xl text-teak">Admission & tickets</h2><p class="mt-3 leading-relaxed text-ink/80">{place.admission}</p></section></div>
+    <section class="mt-12"><h2 class="font-display text-3xl text-teak">How to get there</h2><p class="mt-3 text-ink/80 leading-relaxed">{place.transport}</p><a href={place.maps} target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-teak underline">Get directions to {place.name} ↗</a></section>
+    <section class="mt-12"><h2 class="font-display text-3xl text-teak">Discover its character</h2><div class="mt-5 grid md:grid-cols-2 gap-5"><div class="p-5 bg-white/70 border border-gold/20 rounded-xl"><h3 class="font-semibold text-xl text-teak">History</h3><p class="mt-3 text-ink/80 leading-relaxed">{place.history}</p></div><div class="p-5 bg-white/70 border border-gold/20 rounded-xl"><h3 class="font-semibold text-xl text-teak">Architecture</h3><p class="mt-3 text-ink/80 leading-relaxed">{place.architecture}</p></div><div class="p-5 bg-white/70 border border-gold/20 rounded-xl md:col-span-2"><h3 class="font-semibold text-xl text-teak">What to experience</h3><p class="mt-3 text-ink/80 leading-relaxed">{place.experience}</p></div></div></section>
+    <section class="mt-12"><h2 class="font-display text-3xl text-teak">Suggested walking route</h2><ol class="mt-5 space-y-4">{place.route.map((step,i) => <li class="flex gap-4 items-start"><span class="rounded-full bg-teak text-white w-9 h-9 flex shrink-0 items-center justify-center font-semibold">{i+1}</span><p class="pt-1.5 text-ink/80">{step}</p></li>)}</ol></section>
+    <div class="mt-12 grid md:grid-cols-2 gap-8"><section><h2 class="font-display text-3xl text-teak">Visitor notes</h2><ul class="mt-3 space-y-2 text-ink/80">{place.tips.map(t => <li>• {t}</li>)}</ul></section><section><h2 class="font-display text-3xl text-teak">Photography spots</h2><p class="mt-3 text-ink/80 leading-relaxed">{place.photography}</p></section></div>
+    <section class="mt-12"><h2 class="font-display text-3xl text-teak">Where to stay</h2><p class="mt-3 text-ink/80 leading-relaxed">{place.stay}</p></section>
+    <section class="mt-12"><h2 class="font-display text-3xl text-teak">Visitor reviews</h2><p class="mt-3 text-ink/80">For the current rating, review count and original visitor comments, use the destination-specific Google Maps listing. Reviews change over time and are not reproduced here.</p><a href={place.maps} class="mt-4 inline-block text-teak underline" target="_blank" rel="noopener noreferrer">Read current reviews ↗</a></section>
+    <section class="mt-12"><h2 class="font-display text-3xl text-teak">Frequently asked questions</h2><div class="mt-5 space-y-3">{place.faqs.map(f => <details class="p-4 rounded-xl bg-white/65 border border-gold/25"><summary class="cursor-pointer font-semibold text-teak">{f.q}</summary><p class="mt-3 text-ink/80">{f.a}</p></details>)}</div></section>
+    <section class="mt-12"><h2 class="font-display text-3xl text-teak">Location and maps</h2><p class="mt-3 text-ink/80">{place.address}</p><a href={place.maps} class="mt-4 inline-block bg-teak rounded-full px-6 py-3 text-white hover:bg-gold" target="_blank" rel="noopener noreferrer">Navigate to {place.name} ↗</a></section>
+    <section class="mt-12 border-t border-gold/20 pt-8"><h2 class="font-display text-2xl text-teak">Sources</h2><ul class="mt-3 space-y-2 text-sm">{place.sources.map(s => <li><a class="text-teak underline" href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a></li>)}</ul></section>
+    <div class="mt-12 flex flex-wrap gap-4"><a class="text-teak underline" href="/en/vientiane-day-trip/">More Vientiane sights</a><a class="text-teak underline" href="/en/">Buddha Park home</a></div>
+  </article>
+</section>
