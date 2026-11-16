@@ -1,0 +1,19 @@
+---
+const places = [
+  { id: 'pha-that-luang', name: 'Pha That Luang', description: 'A major Buddhist stupa and a symbol of Laos.' },
+  { id: 'patuxai', name: 'Patuxai', description: 'Vientiane’s victory monument and urban landmark.' },
+  { id: 'wat-si-saket', name: 'Wat Si Saket', description: 'A historic Buddhist temple in the capital.' },
+  { id: 'ho-phra-keo', name: 'Ho Phra Keo', description: 'Historic temple architecture and museum area near Wat Si Saket.' },
+];
+---
+<section id="nearby-explore" class="py-16 bg-teak/5 text-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">Beyond the sculpture garden</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl text-teak mt-2">Explore nearby Vientiane</h2>
+    <p class="mt-4 max-w-3xl text-ink/80">Build a culture-focused day around Buddha Park. These landmarks are in central Vientiane, so plan road transport between the park and the city. Each stop has its own map link in the full guide.</p>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {places.map((place) => <a href={`/en/vientiane-day-trip/#${place.id}`} class="group rounded-2xl border border-gold/30 bg-white/70 p-6 hover:shadow-md hover:border-gold transition"><h3 class="font-display text-xl font-semibold text-teak">{place.name}</h3><p class="mt-2 text-sm text-ink/75">{place.description}</p><span class="mt-4 inline-block text-sm text-gold group-hover:text-goldBright">View details and map →</span></a>)}
+    </div>
+    <a href="/en/vientiane-day-trip/" class="inline-flex mt-7 rounded-full bg-teak px-5 py-2.5 text-sm text-white font-semibold hover:bg-gold">Plan a Buddha Park & Vientiane day trip →</a>
+  </div>
+</section>

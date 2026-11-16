@@ -1,12 +1,15 @@
 ---
 import { siteConfig } from '../config';
 import { TOPIC_LINKS_UI, type Topic } from '../data/topics-en';
+import { TOPIC_DETAILS_EN } from '../data/topic-details-en';
 
 interface Props {
   topic: Topic;
 }
 const { topic } = Astro.props;
 const ui = TOPIC_LINKS_UI;
+const detail = TOPIC_DETAILS_EN[topic.slug];
+const photoSrc = (number: number) => `/gallery/${siteConfig.galleryPrefix}${number}.jpg`;
 ---
 
 <section class="bg-ivory text-ink">
@@ -24,6 +27,46 @@ const ui = TOPIC_LINKS_UI;
     <h1 class="font-display font-semibold text-3xl md:text-5xl text-teak mt-2 leading-tight">{topic.h1}</h1>
     <p class="mt-5 text-lg text-ink/80 leading-relaxed">{topic.intro}</p>
     <p class="mt-3 text-xs text-ink/50">{ui.updatedLabel}: {topic.checked}</p>
+
+    <div class="mt-5 flex flex-wrap gap-3">
+      <a href={siteConfig.mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full bg-teak text-white px-5 py-2.5 text-sm font-semibold hover:bg-gold">View Buddha Park on Google Maps ↗</a>
+      <a href="/en/how-to-get-there/" class="inline-flex rounded-full border border-teak/30 px-5 py-2.5 text-sm font-semibold text-teak hover:bg-teak/5">Plan transport</a>
+    </div>
+
+    {detail && (
+      <>
+        <div class="mt-10">
+          <figure class="overflow-hidden rounded-2xl border border-gold/20 bg-white/50">
+            <img src={photoSrc(detail.photos[0].number)} alt={detail.photos[0].alt} width="1200" height="800" loading="eager" class="w-full max-h-[480px] object-cover" />
+            <figcaption class="px-4 py-3 text-xs text-ink/65">{detail.photos[0].caption}</figcaption>
+          </figure>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-8">
+          <div>
+            <h2 class="font-display text-2xl md:text-3xl text-teak">Explore the attraction</h2>
+            <p class="mt-3 text-ink/80">{detail.tagline}</p>
+            <h3 class="font-semibold text-lg text-teak mt-6">Visitor tips</h3>
+            <ul class="mt-3 space-y-2 text-sm text-ink/80">{detail.visitTips.map((tip) => <li>• {tip}</li>)}</ul>
+          </div>
+          <div class="rounded-2xl bg-teak/5 border border-gold/20 p-6">
+            <h3 class="font-display text-xl text-teak">What makes it special</h3>
+            <ul class="mt-4 space-y-3 text-sm text-ink/80">{detail.features.map((feature) => <li>• {feature}</li>)}</ul>
+          </div>
+        </div>
+
+        <section class="mt-12 rounded-2xl bg-white/65 border border-gold/25 p-6 md:p-8" aria-labelledby="park-management">
+          <p class="text-sm text-gold font-semibold uppercase tracking-wider">Stewardship and heritage</p>
+          <h2 id="park-management" class="font-display text-2xl md:text-3xl text-teak mt-2">About Buddha Park’s management</h2>
+          <p class="mt-4 text-ink/80 leading-relaxed">Buddha Park (Wat Xieng Khuan) is in Hadxayfong District of Vientiane Capital. In 2017, the district authorities granted Lao International Travel and Investment Co., Ltd. a 30-year concession for renovation and improvement works, according to the Lao News Agency (KPL). This is a documented concession arrangement; it should not be taken as independent verification of the current day-to-day operator.</p>
+          <p class="mt-3 text-ink/80 leading-relaxed">The park began in 1958 under Bunleua Sulilat and was recognized in a local national-heritage listing announced in 2022. Today its concrete Buddhist and Hindu figures, gardens and Mekong-side setting remain central to its cultural appeal. For current admission arrangements, site rules or the responsible on-site office, consult the entrance staff.</p>
+          <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            <a href="https://kpl.gov.la/EN/detail.aspx?id=27433" target="_blank" rel="noopener noreferrer" class="underline text-teak hover:text-gold">2017 concession report ↗</a>
+            <a href="https://www.tourismlaos.org/2022/12/29/buddha-park-in-vientiane-capital-listed-as-national-heritage-site/" target="_blank" rel="noopener noreferrer" class="underline text-teak hover:text-gold">2022 heritage report ↗</a>
+          </div>
+        </section>
+      </>
+    )}
 
     <div class="mt-10 space-y-12">
       {topic.sections.map((s) => (
@@ -70,6 +113,47 @@ const ui = TOPIC_LINKS_UI;
         </div>
       ))}
     </div>
+
+    {detail && (
+      <div class="mt-14 space-y-12">
+        <section>
+          <h2 class="font-display text-2xl md:text-3xl text-teak">Suggested walking route</h2>
+          <ol class="mt-5 space-y-4">
+            {detail.route.map((step, i) => <li class="flex gap-4 items-start"><span class="shrink-0 rounded-full bg-teak text-white w-9 h-9 flex items-center justify-center font-semibold">{i + 1}</span><p class="pt-1.5 text-ink/80">{step}</p></li>)}
+          </ol>
+        </section>
+        <section class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h2 class="font-display text-2xl text-teak">Photography viewpoint</h2>
+            <p class="mt-3 leading-relaxed text-ink/80">{detail.viewpoint}</p>
+          </div>
+          <div>
+            <h2 class="font-display text-2xl text-teak">Where to stay</h2>
+            <p class="mt-3 leading-relaxed text-ink/80">{detail.stay}</p>
+          </div>
+        </section>
+        <section>
+          <h2 class="font-display text-2xl md:text-3xl text-teak">Real views of Buddha Park</h2>
+          <div class="mt-5 grid sm:grid-cols-2 gap-5">
+            {detail.photos.slice(1).map((photo) => <figure class="rounded-xl overflow-hidden border border-gold/20 bg-white/60"><img src={photoSrc(photo.number)} alt={photo.alt} width="900" height="650" loading="lazy" class="w-full h-64 object-cover" /><figcaption class="p-3 text-xs text-ink/70">{photo.caption}</figcaption></figure>)}
+          </div>
+        </section>
+      </div>
+    )}
+
+    {topic.slug === 'vientiane-day-trip' && (
+      <section class="mt-14">
+        <h2 class="font-display text-2xl md:text-3xl text-teak">Nearby places and their own maps</h2>
+        <div class="mt-5 grid sm:grid-cols-2 gap-5">
+          {[
+            { id: 'pha-that-luang', name: 'Pha That Luang', details: 'A national stupa with a ceremonial setting; compare its established Buddhist architectural tradition with Buddha Park’s modern concrete sculptures.', maps: 'https://www.google.com/maps/search/?api=1&query=Pha+That+Luang+Vientiane+Laos' },
+            { id: 'patuxai', name: 'Patuxai', details: 'A central victory monument known for its monumental gateway form. It suits a separate city-centre stop after returning from the park.', maps: 'https://www.google.com/maps/search/?api=1&query=Patuxai+Vientiane+Laos' },
+            { id: 'wat-si-saket', name: 'Wat Si Saket', details: 'A historic temple with an important collection of Buddha imagery; visit respectfully and observe any photography restrictions.', maps: 'https://www.google.com/maps/search/?api=1&query=Wat+Si+Saket+Vientiane+Laos' },
+            { id: 'ho-phra-keo', name: 'Ho Phra Keo', details: 'A historic religious building and museum attraction opposite Wat Si Saket, convenient to pair when both are open.', maps: 'https://www.google.com/maps/search/?api=1&query=Ho+Phra+Keo+Vientiane+Laos' },
+          ].map((place) => <article id={place.id} class="scroll-mt-24 rounded-2xl border border-gold/25 bg-white/65 p-6"><h3 class="font-display text-xl text-teak">{place.name}</h3><p class="mt-3 text-ink/80 leading-relaxed">{place.details}</p><p class="mt-3 text-sm text-ink/60">Vientiane Capital, Laos · Confirm the street entrance and current access on the place listing.</p><a href={place.maps} target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm text-gold hover:text-goldBright underline underline-offset-4">Open {place.name} on Google Maps ↗</a></article>)}
+        </div>
+      </section>
+    )}
 
     <!-- FAQ -->
     <div class="mt-14">
@@ -127,6 +211,5 @@ const ui = TOPIC_LINKS_UI;
       </a>
     </div>
 
-    <p class="mt-6 text-xs text-ink/50 leading-relaxed">{ui.disclaimer}</p>
   </div>
 </section>
