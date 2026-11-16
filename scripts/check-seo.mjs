@@ -85,8 +85,9 @@ if (fs.existsSync(sm)) {
   const expected = [
     ...['th', 'en', 'zh', 'fr', 'ko', 'ja'].map((l) => `https://buddhaparkvientiane.com/${l}/`),
     ...['entrance-fee', 'how-to-get-there', 'sculptures', 'history', 'visit-itinerary', 'photography-guide', 'vientiane-day-trip'].map((slug) => `https://buddhaparkvientiane.com/en/${slug}/`),
+    ...['pha-that-luang', 'patuxai', 'wat-si-saket', 'ho-phra-keo'].map((slug) => `https://buddhaparkvientiane.com/en/nearby/${slug}/`),
   ];
-  check('六语主页与七篇英文专题均进入 sitemap', urls.length === expected.length && expected.every((u) => urls.includes(u)), urls.join(', '));
+  check('六语主页、七篇英文专题及四篇周边景点均进入 sitemap', urls.length === expected.length && expected.every((u) => urls.includes(u)), urls.join(', '));
   check('无法律页', !urls.some((u) => /privacy|terms|cookie/.test(u)));
 }
 

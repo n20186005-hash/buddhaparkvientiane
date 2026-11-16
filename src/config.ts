@@ -108,7 +108,7 @@ export const siteConfig = {
   // 联系电话（Google 商家资料未提供公开电话，留空）
   phone: '',
   phoneDisplay: '',
-  streetAddress: 'Deua, Thanon Tha District, Vientiane, Laos',
+  streetAddress: 'Ban Xieng Khuan, Hadxayfong District, Vientiane Capital, Laos',
 
   // ── 评分与评价数（Google 商家资料 · 同步时间 2026 年 10 月）
   // 注意：仅用于页面展示；按合规要求不写入 JSON-LD

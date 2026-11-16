@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import NearbyPlacePage from '../../../components/NearbyPlacePage.astro';
+import { NEARBY_PLACES_EN } from '../../../data/nearby-places-en';
+import { getI18n } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return NEARBY_PLACES_EN.map((place) => ({ params: { slug: place.slug }, props: { place } }));
+}
+const { place } = Astro.props;
+const { messages } = await getI18n(new URL('https://buddhaparkvientiane.com/en/'));
+---
+<BaseLayout lang="en" title={place.title} description={place.description} messages={messages}
+  path={`/en/nearby/${place.slug}/`} allAlternates={false} faqItems={place.faqs}
+  nearbyAttraction={{name:place.name,address:place.address,map:place.maps,image:place.image,type:place.type}}
+  breadcrumbItems={[{name:'Buddha Park',url:'https://buddhaparkvientiane.com/en/'},{name:'Nearby attractions',url:'https://buddhaparkvientiane.com/en/vientiane-day-trip/'},{name:place.name}]}>
+  <Header lang="en" messages={messages}/>
+  <main><NearbyPlacePage place={place}/></main>
+  <Footer lang="en" messages={messages}/>
+</BaseLayout>

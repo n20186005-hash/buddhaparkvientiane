@@ -19,6 +19,7 @@ interface Props {
   faqItems?: { q: string; a: string }[];
   /** 面包屑覆盖（专题页用） */
   breadcrumbItems?: { name: string; url?: string }[];
+  nearbyAttraction?: { name: string; address: string; map: string; image: string; type: string };
 }
 const {
   lang,
@@ -31,6 +32,7 @@ const {
   allAlternates = true,
   faqItems,
   breadcrumbItems: breadcrumbOverride,
+  nearbyAttraction,
 } = Astro.props;
 const canonical = `${siteConfig.domain}${path ?? `/${lang}/`}`;
 
@@ -46,7 +48,9 @@ const shortName = entity.shortName[lang];
 const city = entity.city[lang];
 const province = entity.province[lang];
 const country = entity.country[lang];
-const heroImage = `${siteConfig.domain}/gallery/${siteConfig.galleryPrefix}1.jpg`;
+const heroImage = nearbyAttraction?.image
+  ? (nearbyAttraction.image.startsWith('/') ? `${siteConfig.domain}${nearbyAttraction.image}` : nearbyAttraction.image)
+  : `${siteConfig.domain}/gallery/${siteConfig.galleryPrefix}1.jpg`;
 const ogImageAlt = messages?.hero?.imgAlt || `${fullName} — ${city}, ${country}`;
 
 const bc = messages?.about?.breadcrumb;
@@ -116,6 +120,19 @@ const attraction = {
   },
 };
 
+const subjectId = nearbyAttraction ? `${canonical}#attraction` : `${siteConfig.domain}/#attraction`;
+const pageAttraction = nearbyAttraction ? {
+  '@type': 'TouristAttraction',
+  '@id': subjectId,
+  name: nearbyAttraction.name,
+  description,
+  url: canonical,
+  image: [heroImage],
+  address: { '@type': 'PostalAddress', streetAddress: nearbyAttraction.address, addressCountry: 'LA' },
+  hasMap: nearbyAttraction.map,
+  touristType: nearbyAttraction.type,
+} : attraction;
+
 const graph: Record<string, any>[] = [
   {
     '@type': 'Organization',
@@ -142,13 +159,13 @@ const graph: Record<string, any>[] = [
     name: title,
     description,
     isPartOf: { '@id': `${siteConfig.domain}/#website` },
-    about: { '@id': `${siteConfig.domain}/#attraction` },
+    about: { '@id': subjectId },
     primaryImageOfPage: { '@type': 'ImageObject', url: heroImage },
     datePublished: '2026-01-15',
     dateModified: siteConfig.lastUpdated,
     inLanguage: htmlLang[lang],
   },
-  attraction,
+  pageAttraction,
 ];
 
 if (breadcrumbItems.length) {

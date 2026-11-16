@@ -23,6 +23,8 @@ const urls = langs.map((l) => `${domain}/${l}/`);
 // 英文长尾专题页（2026-10 新增；仅英文，hreflang en + x-default）
 const TOPIC_PATHS = ['/en/entrance-fee/', '/en/how-to-get-there/', '/en/sculptures/', '/en/history/', '/en/visit-itinerary/', '/en/photography-guide/', '/en/vientiane-day-trip/'];
 urls.push(...TOPIC_PATHS.map((p) => `${domain}${p}`));
+const NEARBY_PATHS = ['pha-that-luang', 'patuxai', 'wat-si-saket', 'ho-phra-keo'].map((slug) => `/en/nearby/${slug}/`);
+urls.push(...NEARBY_PATHS.map((p) => `${domain}${p}`));
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

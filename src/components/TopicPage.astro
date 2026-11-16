@@ -69,6 +69,22 @@ const photoSrc = (number: number) => `/gallery/${siteConfig.galleryPrefix}${numb
     )}
 
     <div class="mt-10 space-y-12">
+      {!topic.sections.some((section) => /basic information/i.test(section.h2 ?? '')) && (
+        <section>
+          <h2 class="font-display text-2xl md:text-3xl text-teak mb-4">Basic information</h2>
+          <div class="overflow-x-auto"><table class="w-full border border-gold/25 text-sm"><tbody>
+            {[
+              ['Attraction', 'Buddha Park (Wat Xieng Khouane Luang / Xieng Khuan)'],
+              ['Type', 'Outdoor Buddhist and Hindu concrete sculpture park'],
+              ['Address', siteConfig.streetAddress],
+              ['Map reference', 'Plus Code WQ67+WW · 17.9124° N, 102.7622° E'],
+              ['Built', 'From 1958; initiated by Luang Pu Bunleua Sulilat'],
+              ['Visit duration', 'Roughly 1–2 hours, excluding transport (editorial estimate)'],
+              ['Admission / opening', 'Paid entry; check the current posted fee and opening information on site'],
+            ].map(([label,value]) => <tr class="border-b border-gold/15"><th scope="row" class="p-3 text-left text-teak bg-teak/5 w-40">{label}</th><td class="p-3 text-ink/80">{value}</td></tr>)}
+          </tbody></table></div>
+        </section>
+      )}
       {topic.sections.map((s) => (
         <div>
           {s.h2 && <h2 class="font-display text-2xl md:text-3xl text-teak mb-4">{s.h2}</h2>}
@@ -115,6 +131,17 @@ const photoSrc = (number: number) => `/gallery/${siteConfig.galleryPrefix}${numb
     </div>
 
     {detail && (
+      <section class="mt-14 space-y-8">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div><h2 class="font-display text-2xl text-teak">Opening hours</h2><p class="mt-3 text-ink/80">The park commonly advertises daytime visiting hours. Check the current entrance notice before travelling, especially around holidays or special events.</p></div>
+          <div><h2 class="font-display text-2xl text-teak">Entrance fees</h2><p class="mt-3 text-ink/80">Admission is charged at the park. Fees in older guides may differ from those posted today. See the <a href="/en/entrance-fee/" class="text-teak underline">dated ticket reports and payment tips</a>, then follow the posted gate price.</p></div>
+        </div>
+        <div><h2 class="font-display text-2xl text-teak">Getting to Buddha Park</h2><p class="mt-3 text-ink/80">The park is at Ban Xieng Khuan in Hadxayfong District, outside central Vientiane. Public Bus 14 is commonly used from the Talat Sao area; privately arranged transport is another option. Verify the service and return time before departure. <a href="/en/how-to-get-there/" class="text-teak underline">Read the full transport guide</a>.</p></div>
+        <div><h2 class="font-display text-2xl text-teak">Visitor reviews</h2><p class="mt-3 text-ink/80">For current Google Maps ratings, the number of reviews and the original visitor comments, <a href={siteConfig.mapsUrl} target="_blank" rel="noopener noreferrer" class="text-teak underline">open the Buddha Park place listing</a>. The displayed totals are dynamic and are not reproduced in these guides.</p></div>
+      </section>
+    )}
+
+    {detail && (
       <div class="mt-14 space-y-12">
         <section>
           <h2 class="font-display text-2xl md:text-3xl text-teak">Suggested walking route</h2>
@@ -150,7 +177,7 @@ const photoSrc = (number: number) => `/gallery/${siteConfig.galleryPrefix}${numb
             { id: 'patuxai', name: 'Patuxai', details: 'A central victory monument known for its monumental gateway form. It suits a separate city-centre stop after returning from the park.', maps: 'https://www.google.com/maps/search/?api=1&query=Patuxai+Vientiane+Laos' },
             { id: 'wat-si-saket', name: 'Wat Si Saket', details: 'A historic temple with an important collection of Buddha imagery; visit respectfully and observe any photography restrictions.', maps: 'https://www.google.com/maps/search/?api=1&query=Wat+Si+Saket+Vientiane+Laos' },
             { id: 'ho-phra-keo', name: 'Ho Phra Keo', details: 'A historic religious building and museum attraction opposite Wat Si Saket, convenient to pair when both are open.', maps: 'https://www.google.com/maps/search/?api=1&query=Ho+Phra+Keo+Vientiane+Laos' },
-          ].map((place) => <article id={place.id} class="scroll-mt-24 rounded-2xl border border-gold/25 bg-white/65 p-6"><h3 class="font-display text-xl text-teak">{place.name}</h3><p class="mt-3 text-ink/80 leading-relaxed">{place.details}</p><p class="mt-3 text-sm text-ink/60">Vientiane Capital, Laos · Confirm the street entrance and current access on the place listing.</p><a href={place.maps} target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm text-gold hover:text-goldBright underline underline-offset-4">Open {place.name} on Google Maps ↗</a></article>)}
+          ].map((place) => <article id={place.id} class="scroll-mt-24 rounded-2xl border border-gold/25 bg-white/65 p-6"><h3 class="font-display text-xl text-teak">{place.name}</h3><p class="mt-3 text-ink/80 leading-relaxed">{place.details}</p><p class="mt-3 text-sm text-ink/60">Vientiane Capital, Laos · Confirm the street entrance and current access on the place listing.</p><div class="mt-4 flex gap-4 flex-wrap"><a href={`/en/nearby/${place.id}/`} class="text-sm text-teak font-semibold underline underline-offset-4">Full attraction guide →</a><a href={place.maps} target="_blank" rel="noopener noreferrer" class="text-sm text-gold hover:text-goldBright underline underline-offset-4">Google Maps ↗</a></div></article>)}
         </div>
       </section>
     )}
